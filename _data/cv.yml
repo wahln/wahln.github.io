@@ -1,0 +1,118 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Dr. Niklas Wahl
+    - name: Date of Birth
+      value: 26th June 1988
+    - name: Languages
+      value: German, English
+
+- title: Education
+  type: time_table
+  contents:
+    - title: Dr. rer.-nat.
+      institution: Ruprecht-Karls-Universität Heidelberg, Germany
+      year: 2018
+      description:
+        - conducted in the Department of Medical Physics in Radiation Oncology, German Cancer Research Center -- DKFZ
+        - title: Thesis 
+          contents:
+            - Analytical models for Probabilistic Inverse Treatment Planning in Intensity-modulated Proton Therapy
+            - graded summa cum laude
+            - advised by Prof. Jürgen Hesser, Prof. Oliver Jäkel
+    - title: Master of Science
+      institution: Ruprecht-Karls-Universität Heidelberg, Germany
+      year: 2014
+      description:
+        - in Physics at the Faculty of Physics and Astronomy
+        - "grade: very good"
+        - "thesis title: Automated Voxel-based Penalty Adaption for ultra-fast Treatment Planning in Intensity-modulated Radiation Therapy"
+    - title: Bachelor of Science
+      institution: Ruprecht-Karls-Universität Heidelberg, Germany
+      year: 2011
+      description:
+        - in Physics at the Faculty of Physics and Astronomy
+        - "grade: good"
+        - "thesis title: Performance of the local on-line Tracking and of a Track-based Jet Trigger Algorithm for the ALICE TRD on the Basis of Monte-Carlo Simulations"
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Scientist and Group Leader
+      institution: Deutsches Krebsforschungszentrum - DKFZ, Germany
+      year: since 2019
+      description:
+        - title: leading a research team focusing on  and 
+          contents:
+            - the development and implementation of physical, biological and numerical models in the context of radiotherapy treatment planning
+            - maintaining the open source dose calculation and treatment planning toolkit matRad
+    
+    - title: Postdoctoral Researcher and Project Coordinator
+      institution: Deutsches Krebsforschungszentrum - DKFZ, Germany
+      year: 2018 - 2019
+      description:
+        - research in uncertainty quantification and probabilistic/robust treatment planning for particle therapy
+        - maintaining the open source toolkit matRad
+        - coordination of the Chilean-German Consortium for Medical Physics in Radiation Oncology (CGCoMPRO)
+
+    - title: Doctoral student (PhD Candidate)
+      institution: Deutsches Krebsforschungszentrum - DKFZ, Germany
+      year: 2015 - 2018
+
+    - title: Research Assistant
+      institution: Deutsches Krebsforschungszentrum - DKFZ
+      year: 2014
+
+    - title: Student Teaching Assistant
+      institution: Ruprecht-Karls-Universität Heidelberg, Germany
+      year: 2010 - 2014
+      description:
+        - title: "teaching practical courses on a regular basis:"
+          contents:
+            - beginner’s practical physics course
+            - practical physics course for medical students
+            - practical physics course for students of biotechnology
+    
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/e0404/matRad">matRad</a>
+      year: 2015-now
+      description: An open-source dose calculation and treatment planning toolkit for radiotherapy research and education
+
+- title: Honors and Awards
+  type: time_table
+  contents:    
+    - year: 2021
+      items: 
+        - Appointed Associate Editor, Medical Physics Journal, Wiles
+        - Distinguished Reviewer, Medical Physics Journal, Wiley
+    - year: 2019
+      items: 
+        - DEGRO Dissertationspreis
+    - year: 2017
+      items:
+        - DKFZ PhD Poster Award, Travel Grant
+    - year: 2016
+      items:
+        - Winner Science Slam, NCRO Meeting Dresden
+    - year: 2006
+      items:
+        - Jugend denkt Zukunft, national winning team
+    
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Radiation Therapy
+      items: 
+        - IMRT / IMPT
+        - Robust planning and uncertainty quantification
+        - ML and AI in radiotherapy
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Piano, Hiking, Snowboarding, Gaming

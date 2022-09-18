@@ -326,7 +326,6 @@ GEM
 
 PLATFORMS
   aarch64-linux
-  x64-unknown
   x86_64-linux
 
 DEPENDENCIES

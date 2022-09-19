@@ -322,6 +322,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  execjs
   feedjira
   github-pages
   httparty

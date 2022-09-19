@@ -250,7 +250,7 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     latex-decode (0.4.0)
-    libv8 (3.16.14.19-x86_64-linux)
+    libv8-node (16.10.0.0-x86_64-linux)
     liquid (4.0.3)
     listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -262,6 +262,8 @@ GEM
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2022.0105)
+    mini_racer (0.6.3)
+      libv8-node (~> 16.10.0.0)
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
@@ -281,7 +283,6 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    ref (2.0.0)
     rexml (3.2.5)
     rouge (3.26.0)
     ruby2_keywords (0.0.5)
@@ -300,9 +301,6 @@ GEM
       unf (~> 0.1.4)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
     thread_safe (0.3.6)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
@@ -320,9 +318,9 @@ GEM
 
 PLATFORMS
   x86_64-linux
+  x86_64-linux-libc
 
 DEPENDENCIES
-  execjs
   feedjira
   github-pages
   httparty
@@ -340,7 +338,7 @@ DEPENDENCIES
   jekyll-target-blank
   jekyll-twitter-plugin
   jemoji
-  therubyracer
+  mini_racer
   unicode_utils
   webrick
 

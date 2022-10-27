@@ -1,4 +1,3 @@
-
 @inproceedings{Bangert2019,
   title = {{{SP-0469}}: {{Mitigation}} of range uncertainties with probabilistic {{IMPT}} optimization},
   shorttitle = {Mitigation of range uncertainties with probabilistic {{IMPT}} optimization},
@@ -267,19 +266,24 @@
   file = {C\:\\Users\\Niklas\\Zotero\\storage\\4TNU2S3A\\Efficient-uncertainty-quantification-for-Monte-Car.html}
 }
 
-@unpublished{Stammer2022,
+@article{Stammer2022,
   title = {Multivariate error modeling and uncertainty quantification using importance (re-)weighting for {{Monte Carlo}} simulations in particle transport},
   author = {Stammer, Pia and Burigo, Lucas and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
-  date = {2022-01-21},
+  date = {2022-10-26},
+  journaltitle = {Journal of Computational Physics},
+  shortjournal = {Journal of Computational Physics},
   eprint = {2202.02379},
   eprinttype = {arxiv},
-  primaryclass = {physics, stat},
-  url = {http://arxiv.org/abs/2202.02379},
-  urldate = {2022-02-08},
-  abstract = {Fast and accurate predictions of uncertainties in the computed dose are crucial for the determination of robust treatment plans in radiation therapy. This requires the solution of particle transport problems with uncertain parameters or initial conditions. Monte Carlo methods are often used to solve transport problems especially for applications which require high accuracy. In these cases, common non-intrusive solution strategies that involve repeated simulations of the problem at different points in the parameter space quickly become infeasible due to their long run-times. Intrusive methods however limit the usability in combination with proprietary simulation engines. In our previous paper [51], we demonstrated the application of a new non-intrusive uncertainty quantification approach for Monte Carlo simulations in proton dose calculations with normally distributed errors on realistic patient data. In this paper, we introduce a generalized formulation and focus on a more in-depth theoretical analysis of this method concerning bias, error and convergence of the estimates. The multivariate input model of the proposed approach further supports almost arbitrary error correlation models. We demonstrate how this framework can be used to model and efficiently quantify complex auto-correlated and time-dependent errors.},
+  pages = {111725},
+  issn = {0021-9991},
+  doi = {10.1016/j.jcp.2022.111725},
+  url = {https://www.sciencedirect.com/science/article/pii/S0021999122007884},
+  urldate = {2022-10-26},
+  abstract = {Fast and accurate predictions of uncertainties in the computed dose are crucial for the determination of robust treatment plans in radiation therapy. This requires the solution of particle transport problems with uncertain parameters or initial conditions. Monte Carlo methods are often used to solve transport problems especially for applications which require high accuracy. In these cases, common non-intrusive solution strategies that involve repeated simulations of the problem at different points in the parameter space quickly become infeasible due to their long run-times. Intrusive methods however limit the usability in combination with proprietary simulation engines. In [61], we demonstrated the application of a new non-intrusive uncertainty quantification approach for Monte Carlo simulations in proton dose calculations with normally distributed errors on realistic patient data. In this paper, we introduce a generalized formulation and focus on a more in-depth theoretical analysis of this method concerning bias, error and convergence of the estimates. The multivariate input model of the proposed approach further supports almost arbitrary error correlation models. We demonstrate how this framework can be used to model and efficiently quantify complex auto-correlated and time-dependent errors.},
   archiveprefix = {arXiv},
-  keywords = {Physics - Medical Physics,Statistics - Applications},
-  file = {C\:\\Users\\Niklas\\Zotero\\storage\\FQFDMWC7\\Stammer et al. - 2022 - Multivariate error modeling and uncertainty quanti.pdf;C\:\\Users\\Niklas\\Zotero\\storage\\MH7QPC78\\2202.html}
+  langid = {english},
+  keywords = {Boltzmann equation,error modeling,importance sampling,Monte Carlo,radiative transport,uncertainty quantification},
+  file = {C\:\\Users\\Niklas\\Zotero\\storage\\FQFDMWC7\\Stammer et al. - 2022 - Multivariate error modeling and uncertainty quanti.pdf;C\:\\Users\\Niklas\\Zotero\\storage\\B7IT5FXL\\S0021999122007884.html}
 }
 
 @inproceedings{Stammer2022a,
@@ -621,5 +625,4 @@
   abstract = {Range and setup uncertainties in charged particle therapy may induce a discrepancy between the planned and the delivered dose. Countermeasures based on probabilistic (stochastic) optimization usually assume a Gaussian probability density to model the underlying range and setup error. While this standard assumption is generally taken for granted, this study explicitly investigates the dosimetric consequences if the actual range and setup errors obey a different probability density function (PDF) over the course of treatment to the one used during the probabilistic treatment plan optimization. Discrete random sampling was performed for conventionally and probabilistically optimized proton and carbon ion treatment plans utilizing various PDFs that modeled the setup and range error. This method allowed us to assess the treatment plan robustness against different PDFs of conventional and probabilistic plans, which both explicitly assume Gaussian uncertainties. The induced uncertainty in dose was quantified by estimating the expectation value and standard deviation of the RBE-weighted dose for each PDF on the basis of 2500-5000 random dose samples. Probabilistic dose metrics and standard deviation volume histograms were computed to quantify treatment plan robustness of both optimization approaches. It was shown that the classical planning target volume margin extension concept did not compensate the influence of range and setup errors and consequently resulted in a non-negligible average standard deviation in dose of 7.3\% throughout the clinical target volume (CTV). In contrast, probabilistic optimization on normally distributed errors yielded treatment plans that not only entailed a lower standard deviation against normally distributed errors accounted for during optimization, but also lower standard deviations for other symmetric PDFs. It was shown that the impact of an incorrect probability distribution assumption is of lower importance after probabilistic optimization as the average uncertainty in the CTV drops to 3.9\%. Probabilistic optimization is an effective tool to create robust particle treatment plans. Normally distributed range and setup error assumptions for probabilistic optimization are a reasonable first approximation and yield treatment plans that are also robust against other PDFs.},
   langid = {english}
 }
-
 

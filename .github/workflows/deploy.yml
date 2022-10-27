@@ -1,0 +1,71 @@
+name: build and deploy github pages website
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  jekyll-build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    # Invoke this action against the newly checked out source code.
+    # - uses: fabacab/jekyll-builder-for-github-pages-action@master
+    #  with:
+    #    # Provide this action with your repository's `GH_PAGES_TOKEN`
+    #    # "Secret" variable. This should be the value of a personal
+    #    # access token granted, at a minimum, the `public_repo` and
+    #    # the `repo_deployment` scopes needed to deploy to GH Pages.
+    #    secret_gh_pages_api_token: ${{ secrets.GITHUB_TOKEN }}
+    #    pre_build_commands: gem install libv8-node --platform x86_64-linux-libc
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '2.7.0'
+        bundler-cache: true
+    - name: Install deps
+      run: |
+        npm install -g mermaid.cli
+        
+    - name: Build with Jekyll
+      run: |
+        bundle exec jekyll build
+      env:
+        JEKYLL_ENV: production
+        JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+        
+    # Use GitHub Actions' cache to shorten build times and decrease load on servers
+    # - uses: actions/cache@v2
+    #   with:
+    #     path: vendor/bundle
+    #     key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+    #     restore-keys: |
+    #       ${{ runner.os }}-gems-
+
+    # # Specify the target branch (optional)
+    # - uses: helaili/jekyll-action@v2
+    #   with:
+    #     token: ${{ secrets.GITHUB_TOKEN }}
+    #     target_branch: 'gh-pages'
+    
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: jekyll-build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

@@ -172,6 +172,12 @@
             {%- if entry.eprinttype == "arxiv" %}
               {%- assign preprint_name = "arXiv" %}
               {%- assign preprint_url  = entry.eprint | prepend: "https://arxiv.org/abs/" %}
+            {%- elsif entry.eprinttype == "preprint" %}
+              {%- assign preprint_name = "preprint" %}
+              {%- assign preprint_url  = entry.eprint | prepend: "/assets/preprints/" %}
+            {%- elsif entry.eprinttype == "pmid" %}
+              {%- assign preprint_name = "PubMed" %}
+              {%- assign preprint_url  = entry.eprint | prepend: "https://pubmed.ncbi.nlm.nih.gov/" %}
             {%- else %}
               {%- assign preprint_name = entry.eprinttype %}
               {%- assign preprint_url = entry.eprinttype %}

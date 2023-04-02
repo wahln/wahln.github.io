@@ -1,19 +1,22 @@
 source "https://rubygems.org"
+# ruby "2.7.8"
 
 # These are my additions
 
-gem "github-pages", group: :jekyll_plugins
+# gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
+gem 'jekyll-remote-theme'
 
 # These are the plugins in the remote theme repository
 # TODO: figure out how to use them automatically
 group :jekyll_plugins do
-    gem 'jekyll'
+    gem 'jekyll', '~> 4.3.2'
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
     gem 'jekyll-imagemagick'
+    gem 'jekyll-link-attributes'
     gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-scholar'

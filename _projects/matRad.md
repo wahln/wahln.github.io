@@ -96,3 +96,9 @@ matRadGUI
 
 For educational purposes, matRad is also available as a standalone application.
 
+matRad developments were/are, in part, supported by the following research grants:
+- Grant No. BA 2279/3-1 (Project No. 265744405) from the German Research Foundation (DFG)
+- Grant No. WA 4707/1-1 (Project No. 443188743) from the German Research Foundation (DFG)
+- Grant No. 70113094 from the German Cancer Aid
+
+

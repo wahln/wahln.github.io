@@ -168,13 +168,14 @@
             {%- assign preprint_name = "arXiv" %}
             {%- assign preprint_url  = entry.arxiv %}
             {%- assign preprint = true %}
+          {%- elsif entry.preprintfile %}
+            {%- assign preprint_name = "preprint" %}
+            {%- assign preprint_url  = entry.preprintfile | prepend: "/assets/preprints/" %}
+            {%- assign preprint = true %}
           {%- elsif entry.eprint %}
             {%- if entry.eprinttype == "arxiv" %}
               {%- assign preprint_name = "arXiv" %}
               {%- assign preprint_url  = entry.eprint | prepend: "https://arxiv.org/abs/" %}
-            {%- elsif entry.eprinttype == "preprint" %}
-              {%- assign preprint_name = "preprint" %}
-              {%- assign preprint_url  = entry.eprint | prepend: "/assets/preprints/" %}
             {%- elsif entry.eprinttype == "pmid" %}
               {%- assign preprint_name = "PubMed" %}
               {%- assign preprint_url  = entry.eprint | prepend: "https://pubmed.ncbi.nlm.nih.gov/" %}
@@ -182,8 +183,8 @@
               {%- assign preprint_name = entry.eprinttype %}
               {%- assign preprint_url = entry.eprinttype %}
             {%- endif %}
-            {%- assign preprint = true}
-          {%- endif}
+            {%- assign preprint = true %}
+          {%- endif %}
           {%- if preprint == true %}
             <a href="{{ preprint_url }}" class="btn btn-sm z-depth-0" role="button">{{ preprint_name }}</a>
           {%- endif %}

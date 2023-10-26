@@ -29,26 +29,28 @@
   abstract = {DKFZ researchers developed a MATLAB toolkit that spans the entire treatment planning workflow, from setting treatment parameters and optimizing the plan to visualizing and evaluating the results.},
   langid = {english},
   organization = {{MathWorks Techincal Articles and Newsletters}},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\ZN9USI9K\\developing-matrad-an-open-source-dose-calculation-and-optimization-toolkit-for-radiation-therap.html}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\ZN9USI9K\developing-matrad-an-open-source-dose-calculation-and-optimization-toolkit-for-radiation-therap.html}
 }
 
-@online{Barkmann2022,
-  title = {Superiorization as a novel strategy for linearly constrained inverse radiotherapy treatment planning},
+@article{Barkmann2023,
+  title = {Superiorization of projection algorithms for linearly constrained inverse radiotherapy treatment planning},
   author = {Barkmann, Florian and Censor, Yair and Wahl, Niklas},
-  date = {2022-07-26},
+  date = {2023-10-26},
+  journaltitle = {Frontiers in Oncology},
+  volume = {13},
   eprint = {2207.13187},
   eprinttype = {arxiv},
   eprintclass = {physics},
-  doi = {10.48550/arXiv.2207.13187},
-  url = {http://arxiv.org/abs/2207.13187},
-  urldate = {2022-07-28},
-  abstract = {We apply the superiorization methodology to the intensity-modulated radiation therapy (IMRT) treatment planning problem. In superiorization, linear voxel dose inequality constraints are the fundamental modeling tool within which a feasibility-seeking projection algorithm will seek a feasible point. This algorithm is then perturbed with gradient descent steps to reduce a nonlinear objective function. Within the open-source inverse planning toolkit matRad, we implement a prototypical algorithmic framework for superiorization using the well-established Agmon, Motzkin, and Schoenberg (AMS) feasibility-seeking projection algorithm and common nonlinear dose optimization objective functions. Based on this prototype, we apply superiorization to intensity-modulated radiation therapy treatment planning and compare its performance with feasibility-seeking and nonlinear constrained optimization. For these comparisons, we use the TG119 water phantom and a head-and-neck patient of the CORT dataset. Bare feasibility-seeking with AMS confirms previous studies, showing it can find solutions that are nearly equivalent to those found by the established piece-wise least-squares optimization approach. The superiorization prototype solved the linearly constrained planning problem with similar performance to that of a general-purpose nonlinear constrained optimizer while showing smooth convergence in both constraint proximity and objective function reduction. Superiorization is a useful alternative to constrained optimization in radiotherapy inverse treatment planning. Future extensions with other approaches to feasibility-seeking, e.g., with dose-volume constraints and more sophisticated perturbations, may unlock its full potential for high-performant inverse treatment planning.},
-  pubstate = {preprint},
-  keywords = {Mathematics - Optimization and Control,Physics - Medical Physics},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\S2SWVAR4\\Barkmann et al. - 2022 - Superiorization as a novel strategy for linearly c.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\3JU9K2R6\\2207.html}
+  issn = {2234-943X},
+  doi = {10.3389/fonc.2023.1238824},
+  url = {https://www.frontiersin.org/articles/10.3389/fonc.2023.1238824},
+  urldate = {2023-10-26},
+  abstract = {ObjectiveWe apply the superiorization methodology to the constrained intensity-modulated radiation therapy (IMRT) treatment planning problem. Superiorization combines a feasibility-seeking projection algorithm with objective function reduction: The underlying projection algorithm is perturbed with gradient descent steps to steer the algorithm towards a solution with a lower objective function value compared to one obtained solely through feasibility-seeking.ApproachWithin the open-source inverse planning toolkit matRad, we implement a prototypical algorithmic framework for superiorization using the well-established Agmon, Motzkin, and Schoenberg (AMS) feasibility-seeking projection algorithm and common nonlinear dose optimization objective functions. Based on this prototype, we apply superiorization to intensity-modulated radiation therapy treatment planning and compare it with (i) bare feasibility-seeking (i.e., without any objective function) and (ii) nonlinear constrained optimization using first-order derivatives. For these comparisons, we use the TG119 water phantom, the head-and-neck and the prostate patient of the CORT dataset.Main resultsBare feasibility-seeking with AMS confirms previous studies, showing it can find solutions that are nearly equivalent to those found by the established piece-wise least-squares optimization approach. The superiorization prototype solved the linearly constrained planning problem with similar dosimetric performance to that of a general-purpose nonlinear constrained optimizer while showing smooth convergence in both constraint proximity and objective function reduction.SignificanceSuperiorization is a useful alternative to constrained optimization in radiotherapy inverse treatment planning. Future extensions with other approaches to feasibility-seeking, e.g., with dose-volume constraints and more sophisticated perturbations, may unlock its full potential for high performant inverse treatment planning.},
+  keywords = {⛔ No DOI found},
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\FQ7X8ISK\Barkmann et al. - 2023 - Superiorization of projection algorithms for linea.pdf}
 }
-% == BibLateX quality report for Barkmann2022:
-% ? unused Number ("arXiv:2207.13187")
+% == BibLateX quality report for Barkmann2023:
+% ? unused Library catalog ("Frontiers")
 
 @article{Bennan2021,
   title = {Joint optimization of photon – carbon ion treatments for {{Glioblastoma}}},
@@ -66,7 +68,7 @@
   abstract = {Purpose: Carbon ions are radiobiologically more effective than photons and are beneficial for treating radioresistant gross tumour volumes (GTV). However, due to a reduced fractionation effect, they may be disadvantageous for treating infiltrative tumours, where healthy tissue inside the clinical target volume (CTV) must be protected through fractionation. This work addresses the question: what is the ideal combined photon-carbon ion fluence distribution for treating infiltrative tumours given a specific fraction allocation between photons and carbon ions? Methods: We present a method to simultaneously optimize sequentially delivered intensity modulated photon (IMRT) and carbon ion (CIRT) treatments based on cumulative biological effect, incorporating both the variable RBE of carbon ions and the fractionation effect within the linear quadratic model. The method is demonstrated for six Glioblastoma patients in comparison to current clinical standard of independently optimized CIRT - IMRT plans. Results: Compared to the reference plan, joint optimization strategies yield inhomogeneous photon and carbon ion dose distributions that cumulatively deliver a homogeneous biological effect distribution. In the optimal distributions, the dose to CTV is mostly delivered by photons while carbon ions are restricted to the GTV with variations depending on tumour size and location. Improvements in conformity of high dose regions are reflected by a mean EQD2 reduction of 3.29 ± 1.22 Gy in a dose fall-off margin around the CTV. Carbon ions may deliver higher doses to the center of the GTV, while photon contributions are increased at interfaces with CTV and critical structures. This results in a mean EQD2 reduction of 8.3 ± 2.28 Gy, where the brainstem abuts the target volumes. Conclusions: We have developed a biophysical model to optimize combined photon-carbon ion treatments. For six glioblastoma patient cases, we show that our approach results in a more targeted application of carbon ions that (1) reduces dose in normal tissues within the target volume which can only be protected through fractionation (2) boosts central target volume regions in order to reduce integral dose. Joint optimization of IMRT - CIRT treatments enable the exploration of a new spectrum of plans that can better address physical and radiobiological treatment planning challenges.},
   langid = {english},
   selected = {true},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\SBHRK75R\\S0360301621006684.html}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\SBHRK75R\S0360301621006684.html}
 }
 % == BibLateX quality report for Bennan2021:
 % Unexpected field 'selected'
@@ -181,7 +183,7 @@
   urldate = {2021-07-05},
   eventtitle = {{{ESTRO}}},
   langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\FTHUJ37R\\pdf.html}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\FTHUJ37R\pdf.html}
 }
 % == BibLateX quality report for Homolka2020:
 % Unexpected field 'type'
@@ -199,7 +201,7 @@
   location = {{Online}},
   doi = {10.14338/IJPT-22-PTCOG59-9.3},
   eventtitle = {{{PTCOG}} 59},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\LDSC6PHT\\Homolka et al. - 2022 - Degradation of particle depth dose in lung tissue.pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\LDSC6PHT\Homolka et al. - 2022 - Degradation of particle depth dose in lung tissue.pdf}
 }
 % == BibLateX quality report for Homolka2022:
 % Unexpected field 'type'
@@ -227,9 +229,12 @@
   date = {2023-01-31},
   journaltitle = {International Journal of Radiation Oncology, Biology, Physics},
   shortjournal = {IJROBP},
+  volume = {116},
+  number = {4},
   eprint = {2207.08016},
   eprinttype = {arxiv},
   eprintclass = {physics},
+  pages = {P949-959},
   publisher = {{Elsevier}},
   issn = {0360-3016},
   doi = {10.1016/j.ijrobp.2023.01.048},
@@ -237,7 +242,7 @@
   urldate = {2023-02-01},
   langid = {english},
   keywords = {dose rate,FLASH,IMPT,integrated physical optimization,LET,Patient-specific ridge filter,SBPT,sparse optimized ridge filter},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\LDT2E4U3\\Liu et al. - 2023 - An Integrated Physical Optimization framework for .pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\LDT2E4U3\Liu et al. - 2023 - An Integrated Physical Optimization framework for .pdf}
 }
 % == BibLateX quality report for Liu2023:
 % Unexpected field 'publisher'
@@ -294,7 +299,7 @@
   urldate = {2021-11-15},
   eventtitle = {{{ESTRO}}},
   langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\KHBVCXZM\\fulltext.html}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\KHBVCXZM\fulltext.html}
 }
 % == BibLateX quality report for Marc2021a:
 % Unexpected field 'type'
@@ -317,7 +322,7 @@
   urldate = {2022-09-02},
   eventtitle = {{{ESTRO}}},
   langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\HRS6MP67\\pdf.html}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\HRS6MP67\pdf.html}
 }
 % == BibLateX quality report for Neishabouri2020:
 % Unexpected field 'type'
@@ -391,7 +396,7 @@
   urldate = {2022-03-23},
   abstract = {About ESTRO work},
   organization = {{ESTRO Physics Newsletter}},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\4TNU2S3A\\Efficient-uncertainty-quantification-for-Monte-Car.html}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\4TNU2S3A\Efficient-uncertainty-quantification-for-Monte-Car.html}
 }
 
 @inproceedings{Stammer2022,
@@ -405,7 +410,7 @@
   location = {{Online}},
   doi = {10.14338/IJPT-22-PTCOG59-9.3},
   eventtitle = {{{PTCOG}} 59},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\UUYGTLYI\\Stammer et al. - 2022 - Efficient uncertainty estimates in Monte Carlo dos.pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\UUYGTLYI\Stammer et al. - 2022 - Efficient uncertainty estimates in Monte Carlo dos.pdf}
 }
 % == BibLateX quality report for Stammer2022:
 % Unexpected field 'type'
@@ -425,7 +430,7 @@
   urldate = {2022-08-29},
   eventtitle = {{{ESTRO}}},
   langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\7RK4DK92\\pdf.html}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\7RK4DK92\pdf.html}
 }
 % == BibLateX quality report for Stammer2022a:
 % Unexpected field 'type'
@@ -492,7 +497,7 @@
   url = {https://www.sciencedirect.com/science/article/pii/S0167814023087169},
   urldate = {2023-08-15},
   eventtitle = {{{ESTRO}} 2023},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\GX5TTYHY\\S0167814023087169.html}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\GX5TTYHY\S0167814023087169.html}
 }
 % == BibLateX quality report for Voss2023a:
 % Unexpected field 'type'
@@ -532,7 +537,7 @@
   doi = {10.14338/IJPT.15-PTCOG-NA.1},
   url = {http://theijpt.org/doi/10.14338/IJPT.15-PTCOG-NA.1},
   eventtitle = {{{PTCOG}} \& {{PTCOG-NA}}},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\59LQBN9V\\Wahl et al. - 2015 - Robust Planning for Intensity-modulated Proton Therapy using Analytical Probabilistic Modeling.pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\59LQBN9V\Wahl et al. - 2015 - Robust Planning for Intensity-modulated Proton Therapy using Analytical Probabilistic Modeling.pdf}
 }
 % == BibLateX quality report for Wahl2015:
 % Unexpected field 'type'
@@ -563,7 +568,7 @@
   issn = {15269914},
   doi = {10.1120/jacmp.v17i4.6117},
   keywords = {adaptive radiation therapy,dose optimization,importance factors,imrt,inverse planning,matRadGrant},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\SZFBGIPM\\Wahl et al. - 2016 - Physically constrained voxel-based penalty adaptation for ultra-fast IMRT planning.pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\SZFBGIPM\Wahl et al. - 2016 - Physically constrained voxel-based penalty adaptation for ultra-fast IMRT planning.pdf}
 }
 
 @unpublished{Wahl2016b,
@@ -573,7 +578,7 @@
   date = {2016},
   eventtitle = {18th {{ICCR}}},
   venue = {{London}},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\UYP8E7IV\\Wahl, Hennig, Bangert - 2016 - Probabilistic proton treatment planning using accelerated analytical probabilistic modelling.pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\UYP8E7IV\Wahl, Hennig, Bangert - 2016 - Probabilistic proton treatment planning using accelerated analytical probabilistic modelling.pdf}
 }
 
 @article{Wahl2017a,
@@ -590,7 +595,7 @@
   doi = {10.1088/1361-6560/aa6ec5},
   url = {http://stacks.iop.org/0031-9155/62/i=14/a=5790?key=crossref.cba9093365b6707443b63a0770bf9fee},
   preprintfile = {WahlN_APMEfficiency_2017_acceptedPreprint.pdf},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\FJMELLAU\\Wahl et al. - 2017 - Efficiency of analytical and sampling-based uncertainty propagation in intensity-modulated proton therapy.pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\FJMELLAU\Wahl et al. - 2017 - Efficiency of analytical and sampling-based uncertainty propagation in intensity-modulated proton therapy.pdf}
 }
 % == BibLateX quality report for Wahl2017a:
 % Unexpected field 'preprintfile'
@@ -610,7 +615,7 @@
   url = {http://doi.wiley.com/10.1002/mp.12775},
   preprintfile = {WahlN_APMFractionation_2018_acceptedPreprint.pdf},
   keywords = {matRadGrant},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\F2MXWIMI\\Wahl et al. - 2018 - Analytical incorporation of fractionation effects in probabilistic treatment planning for intensity-modulated proto.pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\F2MXWIMI\Wahl et al. - 2018 - Analytical incorporation of fractionation effects in probabilistic treatment planning for intensity-modulated proto.pdf}
 }
 % == BibLateX quality report for Wahl2018:
 % Unexpected field 'preprintfile'
@@ -626,7 +631,7 @@
   url = {http://archiv.ub.uni-heidelberg.de/volltextserver/25127/},
   urldate = {2018-08-22},
   abstract = {The sensitivity of intensity-modulated proton therapy to uncertainties requires case-specific uncertainty assessment and mitigation. As an alternative to scenario-based methods, this thesis describes the implementation, application and conceptual extension of the Analytical Probabilistic Modeling (APM) framework introduced by Bangert, Hennig, and Oelfke (2013). APM represents moments of the probability distribution over dose in closed-form, providing a probabilistic analog to nominal pencil-beam dose calculation subject to range and setup uncertainties that further enables probabilistic optimization. First, APM was implemented in MITKrad, a treatment planning plugin for MITK built completely from scratch. APM’s computations were validated against sample statistics, showing nearly perfect agreement. Run-times within minutes could be realized for uncertainty assessment and probabilistic optimization on patient data. Reformulation of APM enabled linear separation of the computations into random and systematic uncertainty components. Uncertainty over the full fractionation spectrum could then be modeled and optimized with a single pre-computation. It could be shown that fractionation is exploited in optimization with APM for additional organ at risk sparing. APM was then extended to propagation of uncertainties from dose to clinically relevant plan quality metrics. Expectation and variance could be modeled accurately for organ mean dose and dose-volume histograms. However, approximations for equivalent uniform dose and minimum and maximum dose values did not provide reliable results. Finally, the closed-form plan metrics were used to conceptualize constrained probabilistic optimization. Besides novel probabilistic objectives, confidence constraints could be established. Due to increased computational complexity of the new models, the proof-of-concept was provided through evaluations on a one-dimensional prototype anatomy. In conclusion, the herein extended APM framework is able to provide probabilistic analogs to established nominal concepts of dose calculation, plan quality metrics, and constrained optimization. If computational hurdles can be overcome in the future, clinical application would be within reach.},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\5MNHQ94D\\Unknown - 2018 - Put forward by M . Sc . Niklas Wahl Born in Heidelberg Oral Examina on 11 . 07 . 2018.pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\5MNHQ94D\Unknown - 2018 - Put forward by M . Sc . Niklas Wahl Born in Heidelberg Oral Examina on 11 . 07 . 2018.pdf}
 }
 % == BibLateX quality report for Wahl2018a:
 % ? unused Type ("Dissertation")
@@ -730,7 +735,7 @@
   urldate = {2021-02-12},
   eventtitle = {{{ESTRO}}},
   langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\KFAFPMCV\\S0167814021013955.html}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\KFAFPMCV\S0167814021013955.html}
 }
 % == BibLateX quality report for Wahl2020a:
 % Unexpected field 'type'
@@ -840,7 +845,7 @@
   urldate = {2017-10-05},
   preprintfile = {WieserHP_APMBio_2017_acceptedPreprint.pdf},
   keywords = {matRadGrant},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\Y2RUMY4N\\Wieser et al. - 2017 - Analytical probabilistic modeling of RBE-weighted dose for ion therapy(2).pdf}
+  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\Y2RUMY4N\Wieser et al. - 2017 - Analytical probabilistic modeling of RBE-weighted dose for ion therapy(2).pdf}
 }
 % == BibLateX quality report for Wieser2017b:
 % Unexpected field 'publisher'

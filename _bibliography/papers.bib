@@ -1,7 +1,8 @@
-@inproceedings{Bangert2019,
+@inproceedings{Bangert2019a,
   type = {{Symposium Presentation}},
-  title = {{{SP-0469}}: {{Mitigation}} of range uncertainties with probabilistic {{IMPT}} optimization},
-  shorttitle = {Mitigation of range uncertainties with probabilistic {{IMPT}} optimization},
+  ids = {Bangert2019},
+  title = {{{SP-0469}}: {{Mitigation}} of Range Uncertainties with Probabilistic {{IMPT}} Optimization},
+  shorttitle = {Mitigation of Range Uncertainties with Probabilistic {{IMPT}} Optimization},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Bangert, Mark and Wahl, Niklas and Wieser, Hans-Peter},
   date = {2019-04-01},
@@ -12,28 +13,21 @@
   url = {https://www.thegreenjournal.com/article/S0167-8140(19)30889-8/abstract},
   urldate = {2019-09-18},
   eventtitle = {{{ESTRO}}},
-  langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\8SDBUC7Q\\Bangert et al. - 2019 - SP-0469 Mitigation of range uncertainties with pro.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\F6RWBE4K\\Bangert et al. - 2019 - SP-0469 Mitigation of range uncertainties with pro.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\KHZL7DMM\\abstract.html;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\UFWBCK42\\fulltext.html}
+  langid = {english}
 }
-% == BibLateX quality report for Bangert2019:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("www.thegreenjournal.com")
 
-@online{Bangert2020,
+@online{Bangert2020a,
   title = {Developing {{matRad}}, an {{Open-Source Dose Calculation}} and {{Optimization Toolkit}} for {{Radiation Therapy Planning}}},
   author = {Bangert, Mark and Jäkel, Oliver and Wahl, Niklas and Wieser, Hans-Peter},
   date = {2020},
   url = {https://www.mathworks.com/company/newsletters/articles/developing-matrad-an-open-source-dose-calculation-and-optimization-toolkit-for-radiation-therapy-planning.html},
   urldate = {2020-12-12},
-  abstract = {DKFZ researchers developed a MATLAB toolkit that spans the entire treatment planning workflow, from setting treatment parameters and optimizing the plan to visualizing and evaluating the results.},
   langid = {english},
-  organization = {{MathWorks Techincal Articles and Newsletters}},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\ZN9USI9K\developing-matrad-an-open-source-dose-calculation-and-optimization-toolkit-for-radiation-therap.html}
+  organization = {{MathWorks Techincal Articles and Newsletters}}
 }
 
 @article{Barkmann2023,
-  title = {Superiorization of projection algorithms for linearly constrained inverse radiotherapy treatment planning},
+  title = {Superiorization of Projection Algorithms for Linearly Constrained Inverse Radiotherapy Treatment Planning},
   author = {Barkmann, Florian and Censor, Yair and Wahl, Niklas},
   date = {2023-10-26},
   journaltitle = {Frontiers in Oncology},
@@ -46,15 +40,11 @@
   doi = {10.3389/fonc.2023.1238824},
   url = {https://www.frontiersin.org/articles/10.3389/fonc.2023.1238824},
   urldate = {2023-10-26},
-  abstract = {ObjectiveWe apply the superiorization methodology to the constrained intensity-modulated radiation therapy (IMRT) treatment planning problem. Superiorization combines a feasibility-seeking projection algorithm with objective function reduction: The underlying projection algorithm is perturbed with gradient descent steps to steer the algorithm towards a solution with a lower objective function value compared to one obtained solely through feasibility-seeking.ApproachWithin the open-source inverse planning toolkit matRad, we implement a prototypical algorithmic framework for superiorization using the well-established Agmon, Motzkin, and Schoenberg (AMS) feasibility-seeking projection algorithm and common nonlinear dose optimization objective functions. Based on this prototype, we apply superiorization to intensity-modulated radiation therapy treatment planning and compare it with (i) bare feasibility-seeking (i.e., without any objective function) and (ii) nonlinear constrained optimization using first-order derivatives. For these comparisons, we use the TG119 water phantom, the head-and-neck and the prostate patient of the CORT dataset.Main resultsBare feasibility-seeking with AMS confirms previous studies, showing it can find solutions that are nearly equivalent to those found by the established piece-wise least-squares optimization approach. The superiorization prototype solved the linearly constrained planning problem with similar dosimetric performance to that of a general-purpose nonlinear constrained optimizer while showing smooth convergence in both constraint proximity and objective function reduction.SignificanceSuperiorization is a useful alternative to constrained optimization in radiotherapy inverse treatment planning. Future extensions with other approaches to feasibility-seeking, e.g., with dose-volume constraints and more sophisticated perturbations, may unlock its full potential for high performant inverse treatment planning.},
-  keywords = {⛔ No DOI found},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\FQ7X8ISK\Barkmann et al. - 2023 - Superiorization of projection algorithms for linea.pdf}
+  keywords = {⛔ No DOI found}
 }
-% == BibLateX quality report for Barkmann2023:
-% ? unused Library catalog ("Frontiers")
 
-@article{Bennan2021,
-  title = {Joint optimization of photon – carbon ion treatments for {{Glioblastoma}}},
+@article{Bennan2021a,
+  title = {Joint Optimization of Photon – Carbon Ion Treatments for {{Glioblastoma}}},
   author = {Bennan, Amit Ben Antony and Unkelbach, Jan and Wahl, Niklas and Salome, Patrick and Bangert, Mark},
   date = {2021-05-28},
   journaltitle = {International Journal of Radiation Oncology*Biology*Physics},
@@ -66,18 +56,13 @@
   doi = {10.1016/j.ijrobp.2021.05.126},
   url = {https://www.sciencedirect.com/science/article/pii/S0360301621006684},
   urldate = {2021-06-30},
-  abstract = {Purpose: Carbon ions are radiobiologically more effective than photons and are beneficial for treating radioresistant gross tumour volumes (GTV). However, due to a reduced fractionation effect, they may be disadvantageous for treating infiltrative tumours, where healthy tissue inside the clinical target volume (CTV) must be protected through fractionation. This work addresses the question: what is the ideal combined photon-carbon ion fluence distribution for treating infiltrative tumours given a specific fraction allocation between photons and carbon ions? Methods: We present a method to simultaneously optimize sequentially delivered intensity modulated photon (IMRT) and carbon ion (CIRT) treatments based on cumulative biological effect, incorporating both the variable RBE of carbon ions and the fractionation effect within the linear quadratic model. The method is demonstrated for six Glioblastoma patients in comparison to current clinical standard of independently optimized CIRT - IMRT plans. Results: Compared to the reference plan, joint optimization strategies yield inhomogeneous photon and carbon ion dose distributions that cumulatively deliver a homogeneous biological effect distribution. In the optimal distributions, the dose to CTV is mostly delivered by photons while carbon ions are restricted to the GTV with variations depending on tumour size and location. Improvements in conformity of high dose regions are reflected by a mean EQD2 reduction of 3.29 ± 1.22 Gy in a dose fall-off margin around the CTV. Carbon ions may deliver higher doses to the center of the GTV, while photon contributions are increased at interfaces with CTV and critical structures. This results in a mean EQD2 reduction of 8.3 ± 2.28 Gy, where the brainstem abuts the target volumes. Conclusions: We have developed a biophysical model to optimize combined photon-carbon ion treatments. For six glioblastoma patient cases, we show that our approach results in a more targeted application of carbon ions that (1) reduces dose in normal tissues within the target volume which can only be protected through fractionation (2) boosts central target volume regions in order to reduce integral dose. Joint optimization of IMRT - CIRT treatments enable the exploration of a new spectrum of plans that can better address physical and radiobiological treatment planning challenges.},
   langid = {english},
-  selected = {true},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\SBHRK75R\S0360301621006684.html}
+  selected = {true}
 }
-% == BibLateX quality report for Bennan2021:
-% Unexpected field 'selected'
-% ? unused Library catalog ("ScienceDirect")
 
 @inproceedings{Bennan2023,
   type = {{Poster}},
-  title = {Determining the number of photon and particle fractions for jointly optimized combined treatments},
+  title = {Determining the Number of Photon and Particle Fractions for Jointly Optimized Combined Treatments},
   booktitle = {Proceedings to the 60th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}}},
   author = {Bennan, Amit Ben Antony and Unkelbach, Jan and Wahl, Niklas},
   date = {2023-02-14},
@@ -88,12 +73,10 @@
   doi = {10.14338/IJPT-23-PTCOG60-9.4},
   eventtitle = {{{PTCOG}} 60}
 }
-% == BibLateX quality report for Bennan2023:
-% Unexpected field 'type'
 
 @article{Faddegon2023,
-  title = {Ionization detail parameters and cluster dose: a mathematical model for selection of nanodosimetric quantities for use in treatment planning in charged particle radiotherapy},
-  shorttitle = {Ionization detail parameters and cluster dose},
+  title = {Ionization Detail Parameters and Cluster Dose: A Mathematical Model for Selection of Nanodosimetric Quantities for Use in Treatment Planning in Charged Particle Radiotherapy},
+  shorttitle = {Ionization Detail Parameters and Cluster Dose},
   author = {Faddegon, Bruce A and Blakely, Eleanor A and Burigo, Lucas Norberto and Censor, Yair and Dokic, Ivana and D-Kondo, J Naoki and Ortiz, Ramon and Ramos-Mendez, Jose and Rucinski, Antoni and Schubert, Keith E and Wahl, Niklas and Schulte, Reinhard W},
   date = {2023-08},
   journaltitle = {Physics in Medicine \& Biology},
@@ -105,16 +88,25 @@
   doi = {10.1088/1361-6560/acea16},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/acea16},
   urldate = {2023-07-25},
-  abstract = {Objective: To propose a mathematical model for applying Ionization Detail (ID), the detailed spatial distribution of ionization along a particle track, to proton and ion beam radiotherapy treatment planning (RTP). Approach: Our model provides for selection of preferred ID parameters (Ip ) for RTP, that associate closest to biological effects. Cluster dose is proposed to bridge the large gap between nanoscopic Ip and macroscopic RTP. Selection of Ip is demonstrated using published cell survival measurements for protons through argon, comparing results for nineteen Ip : Nk ; k = 2,3,...,10, the number of ionizations in clusters of k or more per particle, and Fk ; k = 1,2,...,10, the number of clusters of k or more per particle. We then describe application of the model to ID-based RTP and propose a path to clinical translation. Main results: The preferred Ip were N4 and F5 for aerobic cells, N5 and F7 for hypoxic cells. Significant differences were found in cell survival for beams having the same LET or the preferred Nk . Conversely, there was no significant difference for F5 for aerobic cells and F7 for hypoxic cells, regardless of ion beam atomic number or energy. Further, cells irradiated with the same cluster dose for these Ip had the same cell survival. Based on these preliminary results and other compelling results in nanodosimetry, it is reasonable to assert that Ip exist that are more closely associated with biological effects than current LET-based approaches and microdosimetric RBE-based models used in particle RTP. However, more biological variables such as cell line and cycle phase, as well as ion beam pulse structure and rate still need investigation. Significance: Our model provides a practical means to select preferred Ip from radiobiological data, and to convert Ip to the macroscopic cluster dose for particle RTP.},
-  langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\3V6CRGVA\\Faddegon et al. - 2023 - Ionization detail parameters and cluster dose a m.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\MACBY6UU\\Faddegon_2023_Phys._Med._Biol._68_175013.pdf}
+  langid = {english}
 }
-% == BibLateX quality report for Faddegon2023:
-% ? unused Library catalog ("Institute of Physics")
 
-@inproceedings{Foka2022,
+@article{Faddegon2023a,
+  title = {A Digital Male Pelvis Phantom Series Showing Anatomical Variations over the Course of Fractionated Radiotherapy Treatment},
+  author = {Faddegon, Bruce and Descovich, Martina and Chen, Katherine and Ramos-Méndez, José and Roach, III, Mack and Wahl, Niklas and Taylor, Paige and Griffin, Keith and Lee, Choonsik},
+  date = {2023-12-10},
+  journaltitle = {Medical Physics},
+  issn = {2473-4209},
+  doi = {10.1002/mp.16865},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.16865},
+  urldate = {2023-12-10},
+  langid = {english},
+  keywords = {interfraction motion,ion beams,pelvis phantom,prostate,protons,treatment planning}
+}
+
+@inproceedings{Foka2022a,
   type = {{Oral Presentation}},
-  title = {Particle therapy masterclass},
+  title = {Particle Therapy Masterclass},
   booktitle = {{{EPJ Web}} of {{Conferences}}},
   author = {Foka, Panagiota and Mamaras, Aristeidis and Skrjiel, Damir and Seco, Joao and Graeff, Christian and Pulia, Marco and Wieser, Hans-Peter and Wahl, Niklas},
   date = {2022},
@@ -125,19 +117,26 @@
   doi = {10.1051/epjconf/202225801002},
   url = {https://www.epj-conferences.org/articles/epjconf/abs/2022/02/epjconf_vconf2021_01002/epjconf_vconf2021_01002.html},
   urldate = {2022-02-11},
-  abstract = {The aim of the new Particle Therapy MasterClass (PTMC) was to develop an educational and training environment in which anyone can learn about fundamental and applied research in particle therapy. The PTMC was recently integrated into the International MasterClass 2021 online programme that attracted 1500 students from 37 institutes in 20 countries, worldwide. The PTMC focuses on the topic of cancer treatment, a particularly sensitive and socially relevant topic. The main idea is to (a) provide a basic understanding of cancer radiation therapy, (b) demonstrate that fundamental properties of particle interactions with matter, which are used for detection in physics experiments, are also the basis for treating cancer tumours; and (c) show that the same accelerator technologies are used in both, research laboratories and therapy centres. For the hands-on session, the open-source professional treatment planning software matRad is used, developed for research and training by the German Cancer Research Center – DKFZ. Ultimately, students are shown “what physics has to do with medicine” and what are the various possibilities that physics and STEM studies may open up for job opportunities in fields that are lacking expert personnel.},
   eventtitle = {{{vConf21}}},
-  langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\XM6E92E3\\Foka et al. - 2022 - Particle therapy masterclass.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\RV7I4AGA\\epjconf_vconf2021_01002.html}
+  langid = {english}
 }
-% == BibLateX quality report for Foka2022:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("www.epj-conferences.org")
+
+@article{Han2023,
+  title = {Combined {{BNCT-CIRT}} Treatment Planning for Glioblastoma Using the Effect-Based Optimization},
+  author = {Han, Yang and Geng, Changran and Altieri, Saverio and Bortolussi, Silva and Liu, Yuanhao and Wahl, Niklas and Tang, Xiaobin},
+  date = {2023-12-04},
+  journaltitle = {Physics in Medicine \& Biology},
+  shortjournal = {Phys. Med. Biol.},
+  issn = {0031-9155},
+  doi = {10.1088/1361-6560/ad120f},
+  url = {http://iopscience.iop.org/article/10.1088/1361-6560/ad120f},
+  urldate = {2023-12-11},
+  langid = {english}
+}
 
 @inproceedings{Hardt2023,
   type = {{Poster}},
-  title = {Towards a generalized ({{N}}){{TCP}} optimization framework across modalities using classical and machine learning models},
+  title = {Towards a Generalized ({{N}}){{TCP}} Optimization Framework across Modalities Using Classical and Machine Learning Models},
   booktitle = {Proceedings to the 60th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}}},
   author = {Hardt, Jennifer and Ortkamp, Tim and Wahl, Niklas},
   date = {2023-02-14},
@@ -148,11 +147,9 @@
   doi = {10.14338/IJPT-23-PTCOG60-9.4},
   eventtitle = {{{PTCOG}} 60}
 }
-% == BibLateX quality report for Hardt2023:
-% Unexpected field 'type'
 
 @online{Harrison2023,
-  title = {Solution to the integrated optimization of dose, dose rate, and {{LET}} for proton {{FLASH}} therapy using a distributed parallel computing framework},
+  title = {Solution to the Integrated Optimization of Dose, Dose Rate, and {{LET}} for Proton {{FLASH}} Therapy Using a Distributed Parallel Computing Framework},
   author = {Harrison, Nathan and Kang, Minglei and Liu, Ruirui and Charyyev, Serdar and Wahl, Niklas and Liu, Wei and Zhou, Jun and Simone, Charles and Bradley, Jeffrey and Dynan, William S. and Lin, Liyong},
   date = {2023-02-22},
   eprint = {2302.11546},
@@ -161,18 +158,14 @@
   doi = {10.48550/arXiv.2302.11546},
   url = {http://arxiv.org/abs/2302.11546},
   urldate = {2023-03-31},
-  abstract = {Purpose: The recently proposed Integrated Physical Optimization IMPT (IPO-IMPT) framework has demonstrated the feasibility of simultaneously accounting for dose, dose rate, and linear energy transfer (LET) in patient treatment planning with proton FLASH. Here we present a solution to IPO-IMPT using a distributed parallel computing framework that was used to simulate the underlying quantum physics processes involved in radiation transport. We also present animal study simulations to demonstrate the need for doing Integrated Biological Optimization IMPT (IBO-IMPT). Methods: We have developed software which simultaneously optimizes the geometry of a patient-specific set of range compensating bars and range modulating pins, and the weights of a FLASH proton pencil beam spot map, for dose, instantaneous dose rate (IDR), and LET. The method uses the Open Science Grid (OSG), a distributed computing cluster, to efficiently complete the computationally intensive calculations. We also introduce the concept of a "restricted influence grid" as a technique for significantly improving computational performance. Additionally, animal study simulations were performed using TOPAS. Results: Our optimization technique created a sizable improvement in IDR and LET in the organs at risk (OARs) of our test patient with a negligible sacrifice to dose coverage of the CTV when compared to traditional IMPT. Our animal studies demonstrate that extra biological dose (XBD) should potentially be used to optimize for biological parameters in addition to physical parameters. Conclusion: This solution to IPO-IMPT is a promising tool for patient treatment planning which has the potential to be used to more effectively spare heathly tissue via the FLASH effect without sacrificing tumor killing efficacy.},
   pubstate = {preprint},
-  keywords = {Physics - Medical Physics},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\PF6BWKPI\\Harrison et al. - 2023 - Solution to the integrated optimization of dose, d.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\Z3CZHM88\\2302.html}
+  keywords = {Physics - Medical Physics}
 }
-% == BibLateX quality report for Harrison2023:
-% ? unused Number ("arXiv:2302.11546")
 
-@inproceedings{Homolka2020,
+@inproceedings{Homolka2020a,
   type = {{Poster}},
-  title = {{{PO-1490}}: {{Lung}} degradation effects on {{RBE-weighted}} dose in proton, carbon and helium treatment plans},
-  shorttitle = {Lung degradation effects on {{RBE-weighted}} dose in proton, carbon and helium treatment plans},
+  title = {{{PO-1490}}: {{Lung}} Degradation Effects on {{RBE-weighted}} Dose in Proton, Carbon and Helium Treatment Plans},
+  shorttitle = {Lung Degradation Effects on {{RBE-weighted}} Dose in Proton, Carbon and Helium Treatment Plans},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Homolka, Noa and Wieser, Hans-Peter and Bangert, Mark and Ellerbrock, Malte and Wahl, Niklas},
   date = {2020-11-01},
@@ -183,17 +176,12 @@
   url = {https://www.thegreenjournal.com/article/S0167-8140(21)01508-5/abstract},
   urldate = {2021-07-05},
   eventtitle = {{{ESTRO}}},
-  langid = {english},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\FTHUJ37R\pdf.html}
+  langid = {english}
 }
-% == BibLateX quality report for Homolka2020:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("www.thegreenjournal.com")
 
 @inproceedings{Homolka2022,
   type = {{Oral Presentation}},
-  title = {Degradation of particle depth dose in lung tissue: {{An}} efficient and consistent model for {{Monte Carlo}} and analytical dose calculation},
+  title = {Degradation of Particle Depth Dose in Lung Tissue: {{An}} Efficient and Consistent Model for {{Monte Carlo}} and Analytical Dose Calculation},
   booktitle = {Proceedings to the 59th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}} ({{PTCOG59}} 2021 {{Online}})},
   author = {Homolka, Noa and Meder, Paul Anton and Burigo, Lucas and Wieser, Hans-Peter and Bangert, Mark and Jäkel, Oliver and Ellerbrock, Malte and Wahl, Niklas},
   date = {2022},
@@ -201,14 +189,11 @@
   pages = {23--24},
   location = {{Online}},
   doi = {10.14338/IJPT-22-PTCOG59-9.3},
-  eventtitle = {{{PTCOG}} 59},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\LDSC6PHT\Homolka et al. - 2022 - Degradation of particle depth dose in lung tissue.pdf}
+  eventtitle = {{{PTCOG}} 59}
 }
-% == BibLateX quality report for Homolka2022:
-% Unexpected field 'type'
 
 @book{Kommer2019,
-  title = {Tutorium {{Physik}} fürs {{Nebenfach}}},
+  title = {Tutorium {{Physik}} Fürs {{Nebenfach}}},
   author = {Kommer, Christoph and Tugendhat, Tim and Wahl, Niklas},
   date = {2019},
   edition = {2},
@@ -220,12 +205,9 @@
   preview = {phystut-cover.jpg},
   selected = {true}
 }
-% == BibLateX quality report for Kommer2019:
-% Unexpected field 'preview'
-% Unexpected field 'selected'
 
 @article{Liu2023,
-  title = {An {{Integrated Physical Optimization}} framework for proton {{SBRT FLASH}} treatment planning allows dose, dose rate, and {{LET}} optimization using patient-specific ridge filters},
+  title = {An {{Integrated Physical Optimization}} Framework for Proton {{SBRT FLASH}} Treatment Planning Allows Dose, Dose Rate, and {{LET}} Optimization Using Patient-Specific Ridge Filters},
   author = {Liu, Ruirui and Charyyev, Serdar and Wahl, Niklas and Liu, Wei and Kang, Minglei and Zhou, Jun and Yang, Xiaofeng and Baltazar, Filipa and Palkowitsch, Martina and Higgins, Kristin and Dynan, William and Bradley, Jeffrey and Lin, Liyong},
   date = {2023-01-31},
   journaltitle = {International Journal of Radiation Oncology, Biology, Physics},
@@ -242,16 +224,12 @@
   url = {https://www.redjournal.org/article/S0360-3016(23)00097-4/fulltext},
   urldate = {2023-02-01},
   langid = {english},
-  keywords = {dose rate,FLASH,IMPT,integrated physical optimization,LET,Patient-specific ridge filter,SBPT,sparse optimized ridge filter},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\LDT2E4U3\Liu et al. - 2023 - An Integrated Physical Optimization framework for .pdf}
+  keywords = {dose rate,FLASH,IMPT,integrated physical optimization,LET,Patient-specific ridge filter,SBPT,sparse optimized ridge filter}
 }
-% == BibLateX quality report for Liu2023:
-% Unexpected field 'publisher'
-% ? unused Library catalog ("www.redjournal.org")
 
 @inproceedings{Liu2023a,
   type = {{Oral Presentation}},
-  title = {Feasibility of proton {{SBRT FLASH}} treatment with dose, dose rate, and {{LET}} optimization using patient specific {{3D}} ridge},
+  title = {Feasibility of Proton {{SBRT FLASH}} Treatment with Dose, Dose Rate, and {{LET}} Optimization Using Patient Specific {{3D}} Ridge},
   booktitle = {Proceedings to the 60th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}}},
   author = {Liu, Ruirui and Charyyev, Serdar and Wahl, Niklas and Liu, Wei and Zhou, Jun and Xiaofeng, Yang and Higgins, Kristin and Bradley, Jeffrey and Lin, Liyong},
   date = {2023-02-14},
@@ -262,11 +240,9 @@
   doi = {10.14338/IJPT-23-PTCOG60-9.4},
   eventtitle = {{{PTCOG}} 60}
 }
-% == BibLateX quality report for Liu2023a:
-% Unexpected field 'type'
 
-@article{Marc2021,
-  title = {Combined proton-photon treatment for breast cancer},
+@article{Marc2021a,
+  title = {Combined Proton-Photon Treatment for Breast Cancer},
   author = {Marc, Louise and Fabiano, Silvia and Wahl, Niklas and Linsenmeier, Claudia and Lomax, Antony John and Unkelbach, Jan},
   date = {2021},
   journaltitle = {Physics in Medicine \& Biology},
@@ -278,16 +254,12 @@
   doi = {10.1088/1361-6560/ac36a3},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/ac36a3},
   urldate = {2021-11-08},
-  abstract = {Objective: Proton therapy remains a limited resource due to gantry size and its cost. Recently, a new design without a gantry has been suggested. It may enable combined proton-photon therapy (CPPT) in conventional bunkers and allow the widespread use of protons. In this work, we explore this concept for breast cancer. Methods: The treatment room consists of a LINAC for IMRT, a fixed proton beamline (FBL) with beam scanning and a motorized couch for treatments in lying positions with accurate patient setup. Thereby, proton and photon beams are delivered in the same fraction. Treatment planning is performed by simultaneously optimizing IMRT and IMPT plans based on the cumulative dose. The concept is investigated for three breast cancers where the goal is to minimize mean dose to the heart and lung while delivering 40.05 Gy in 15 fractions to the PTV with a SIB of 48 Gy to the tumor bed. The probabilistic approach is applied to mitigate the sensitivity to range uncertainties. Results: CPPT is particularly advantageous for irradiating concave target volumes that wrap around a curved chest wall. There, protons may deliver dose to the peripheral and medial parts of the target volume including lymph nodes. Thereby, the mean dose in normal tissues is reduced compared to single-modality IMRT. However, tangential photon beams may treat parts of the target volume near the interface to the lung. To ensure target coverage for range undershoot in an IMPT plan, proton beams have to deliberately overshoot into the lung tissue - a problem that can be mitigated via the photon component which ensures plan conformity and robustness. Conclusion: CPPT using an FBL may represent a realistic approach to make protons available to more patients. In addition, CPPT may generally improve treatment quality compared to both single-modality proton and photon treatments.},
-  langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\FDVKMUTD\\document.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\LYTMKWDJ\\Marc et al. - 2021 - Combined proton-photon treatment for breast cancer.pdf}
+  langid = {english}
 }
-% == BibLateX quality report for Marc2021:
-% ? unused Library catalog ("Institute of Physics")
 
-@inproceedings{Marc2021a,
+@inproceedings{Marc2021b,
   type = {{Poster}},
-  title = {{{PO-1905}}: {{Combined}} proton-photon treatment for breast cancer using a fixed proton beamline},
+  title = {{{PO-1905}}: {{Combined}} Proton-Photon Treatment for Breast Cancer Using a Fixed Proton Beamline},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Marc, Louise and Fabiano, Silvia and Wahl, Niklas and Linsenmeier, Claudia and Lomax, Antony John and Unkelbach, Jan},
   date = {2021-08-01},
@@ -299,18 +271,13 @@
   url = {https://www.thegreenjournal.com/article/S0167-8140(21)08356-0/fulltext#relatedArticles},
   urldate = {2021-11-15},
   eventtitle = {{{ESTRO}}},
-  langid = {english},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\KHBVCXZM\fulltext.html}
+  langid = {english}
 }
-% == BibLateX quality report for Marc2021a:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("www.thegreenjournal.com")
 
 @inproceedings{Neishabouri2020,
   type = {{Oral Presentation}},
-  title = {{{OC-0215}}: {{LSTM}} networks for proton dose calculation in highly heterogeneous tissues},
-  shorttitle = {{{LSTM}} networks for proton dose calculation in highly heterogeneous tissues},
+  title = {{{OC-0215}}: {{LSTM}} Networks for Proton Dose Calculation in Highly Heterogeneous Tissues},
+  shorttitle = {{{LSTM}} Networks for Proton Dose Calculation in Highly Heterogeneous Tissues},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Neishabouri, Ahmad and Wahl, Niklas and Burigo, Lucas Norberto and Köthe, Ullrich and Bangert, Mark},
   date = {2020-11-01},
@@ -322,16 +289,11 @@
   url = {https://www.thegreenjournal.com/article/S0167-8140(21)00239-5/abstract},
   urldate = {2022-09-02},
   eventtitle = {{{ESTRO}}},
-  langid = {english},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\HRS6MP67\pdf.html}
+  langid = {english}
 }
-% == BibLateX quality report for Neishabouri2020:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("www.thegreenjournal.com")
 
-@article{Neishabouri2021,
-  title = {Long short‐term memory networks for proton dose calculation in highly heterogeneous tissues},
+@article{Neishabouri2021a,
+  title = {Long Short‐term Memory Networks for Proton Dose Calculation in Highly Heterogeneous Tissues},
   author = {Neishabouri, Ahmad and Wahl, Niklas and Mairani, Andrea and Köthe, Ullrich and Bangert, Mark},
   date = {2021-04},
   journaltitle = {Medical Physics},
@@ -345,30 +307,23 @@
   doi = {10.1002/mp.14658},
   url = {https://onlinelibrary.wiley.com/doi/10.1002/mp.14658},
   urldate = {2021-03-11},
-  abstract = {Purpose: To investigate the feasibility and accuracy of proton dose calculations with artificial neural networks (ANNs) in challenging three-dimensional (3D) anatomies. Methods: A novel proton dose calculation approach was designed based on the application of a long short-term memory (LSTM) network. It processes the 3D geometry as a sequence of two-dimensional (2D) computed tomography slices and outputs a corresponding sequence of 2D slices that forms the 3D dose distribution. The general accuracy of the approach is investigated in comparison to Monte Carlo reference simulations and pencil beam dose calculations. We consider both artificial phantom geometries and clinically realistic lung cases for three different pencil beam energies. Results: For artificial phantom cases, the trained LSTM model achieved a 98.57\% γ-index pass rate ([1\%, 3 mm]) in comparison to MC simulations for a pencil beam with initial energy 104.25 MeV. For a lung patient case, we observe pass rates of 98.56\%, 97.74\%, and 94.51\% for an initial energy of 67.85, 104.25, and 134.68 MeV, respectively. Applying the LSTM dose calculation on patient cases that were fully excluded from the training process yields an average γ-index pass rate of 97.85\%. Conclusions: LSTM networks are well suited for proton dose calculation tasks. Further research, especially regarding model generalization and computational performance in comparison to established dose calculation methods, is warranted. © 2020 The Authors. Medical Physics published by Wiley Periodicals LLC on behalf of American Association of Physicists in Medicine. [https://doi.org/10.1002/mp.14658]},
   langid = {english},
   preview = {proton\_lstm.png},
   selected = {true},
-  keywords = {Physics - Medical Physics},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\3HDFVYW7\\Neishabouri et al. - 2020 - Long short-term memory networks for proton dose ca.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\75EGQGDY\\Neishabouri et al. - 2021 - Long short‐term memory networks for proton dose ca.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\2HABJYQG\\mp.html;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\B6RDP7TN\\2006.html;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\EA9PQW4B\\mp.html}
+  keywords = {Physics - Medical Physics}
 }
-% == BibLateX quality report for Neishabouri2021:
-% Unexpected field 'preview'
-% Unexpected field 'selected'
-% 'issn': not a valid ISSN
-% ? unused Library catalog ("DOI.org (Crossref)")
 
 @unpublished{Palkowitsch2021,
   type = {Oral Presentation},
-  title = {The role of uncertainties in jointly optimised mixed carbon/photon treatments},
+  title = {The Role of Uncertainties in Jointly Optimised Mixed Carbon/Photon Treatments},
   author = {Palkowitsch, Martina and Bennan, Amit Ben Antony and Wahl, Niklas},
   date = {2021},
   eventtitle = {{{DGMP}} 2021},
   venue = {{Online}}
 }
 
-@article{Stammer2021,
-  title = {Efficient uncertainty quantification for {{Monte Carlo}} dose calculations using importance (re-)weighting},
+@article{Stammer2021b,
+  title = {Efficient Uncertainty Quantification for {{Monte Carlo}} Dose Calculations Using Importance (Re-)Weighting},
   author = {Stammer, Pia and Burigo, Lucas and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
   date = {2021-06-22},
   journaltitle = {Physics in Medicine \& Biology},
@@ -381,28 +336,22 @@
   doi = {10.1088/1361-6560/ac287f},
   url = {https://iopscience.iop.org/article/10.1088/1361-6560/ac287f},
   urldate = {2021-06-30},
-  abstract = {The high precision and conformity of intensity-modulated particle therapy (IMPT) comes at the cost of susceptibility to treatment uncertainties in particle range and patient set-up. Dose uncertainty quantification and mitigation, which is usually based on sampled error scenarios, however becomes challenging when computing the dose with computationally expensive but accurate Monte Carlo (MC) simulations. This paper introduces an importance (re-)weighting method in MC history scoring to concurrently construct estimates for error scenarios, the expected dose and its variance from a single set of MC simulated particle histories. The approach relies on a multivariate Gaussian input and uncertainty model, which assigns probabilities to the initial phase space sample, enabling the use of different correlation models. Exploring and adapting bivariate emittance parametrizations for the beam shape, accuracy can be traded between that of the uncertainty or the nominal dose estimate. The method was implemented using the MC code TOPAS and tested for proton IMPT plan delivery in comparison to a reference scenario estimate. We achieve accurate results for set-up uncertainties (\$\textbackslash gamma\_\{3mm/3\textbackslash\%\} \textbackslash geq 99.99\textbackslash\%\$) and expectedly lower but still sufficient agreement for range uncertainties, which are approximated with uncertainty over the energy distribution (\$\textbackslash gamma\_\{3 mm/3\textbackslash\%\} \textbackslash geq 99.50\textbackslash\%\$ (\$E[\textbackslash boldsymbol\{d\}]\$), \$\textbackslash gamma\_\{3mm/3\textbackslash\%\} \textbackslash geq 91.69\textbackslash\%\$ (\$\textbackslash sigma(\textbackslash boldsymbol\{d\})\$) ). Initial experiments on a water phantom, a prostate and a liver case show that the re-weighting approach lowers the CPU time by more than an order of magnitude. Further, we show that uncertainty induced by interplay and other dynamic influences may be approximated using suitable error correlation models.},
   preview = {mcuq.png},
-  keywords = {Mathematical Physics,Physics - Medical Physics},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\35N2RL9V\\Stammer et al. - 2021 - Efficient uncertainty quantification for Monte Car.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\Y73L2JST\\Stammer et al. - 2021 - Efficient uncertainty quantification for Monte Car.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\IUW3NW85\\2106.html}
+  keywords = {Mathematical Physics,Physics - Medical Physics}
 }
-% == BibLateX quality report for Stammer2021:
-% Unexpected field 'preview'
 
-@online{Stammer2021b,
-  title = {Efficient uncertainty quantification for {{Monte Carlo}} dose calculations using importance (re-)weighting},
+@online{Stammer2021c,
+  title = {Efficient Uncertainty Quantification for {{Monte Carlo}} Dose Calculations Using Importance (Re-)Weighting},
   author = {Stammer, Pia and Burigo, Lucas and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
   date = {2021-12-15},
   url = {https://www.estro.org/About/Newsroom/Newsletter/Physics/Efficient-uncertainty-quantification-for-Monte-Car},
   urldate = {2022-03-23},
-  abstract = {About ESTRO work},
-  organization = {{ESTRO Physics Newsletter}},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\4TNU2S3A\Efficient-uncertainty-quantification-for-Monte-Car.html}
+  organization = {{ESTRO Physics Newsletter}}
 }
 
-@inproceedings{Stammer2022,
+@inproceedings{Stammer2022a,
   type = {{Oral Presentation}},
-  title = {Efficient uncertainty estimates in {{Monte Carlo}} dose calculation using importance reweighting},
+  title = {Efficient Uncertainty Estimates in {{Monte Carlo}} Dose Calculation Using Importance Reweighting},
   booktitle = {Proceedings to the 59th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}} ({{PTCOG59}} 2021 {{Online}})},
   author = {Stammer, Pia and Burigo, Lucas and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
   date = {2022},
@@ -410,15 +359,12 @@
   pages = {24},
   location = {{Online}},
   doi = {10.14338/IJPT-22-PTCOG59-9.3},
-  eventtitle = {{{PTCOG}} 59},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\UUYGTLYI\Stammer et al. - 2022 - Efficient uncertainty estimates in Monte Carlo dos.pdf}
+  eventtitle = {{{PTCOG}} 59}
 }
-% == BibLateX quality report for Stammer2022:
-% Unexpected field 'type'
 
-@inproceedings{Stammer2022a,
+@inproceedings{Stammer2022b,
   type = {{Poster}},
-  title = {{{PO-1728}}: {{Efficient}} modeling and quantification of time-dependent errors in {{IMPT}}},
+  title = {{{PO-1728}}: {{Efficient}} Modeling and Quantification of Time-Dependent Errors in {{IMPT}}},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Stammer, Pia and Burigo, Lucas and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
   date = {2022-05-01},
@@ -430,21 +376,16 @@
   url = {https://www.thegreenjournal.com/article/S0167-8140(22)03692-1/abstract},
   urldate = {2022-08-29},
   eventtitle = {{{ESTRO}}},
-  langid = {english},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\7RK4DK92\pdf.html}
+  langid = {english}
 }
-% == BibLateX quality report for Stammer2022a:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("www.thegreenjournal.com")
 
 @article{Stammer2023,
-  title = {Multivariate error modeling and uncertainty quantification using importance (re-)weighting for {{Monte Carlo}} simulations in particle transport},
+  title = {Multivariate Error Modeling and Uncertainty Quantification Using Importance (Re-)Weighting for {{Monte Carlo}} Simulations in Particle Transport},
   author = {Stammer, Pia and Burigo, Lucas and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
   date = {2023-01-15},
   journaltitle = {Journal of Computational Physics},
   shortjournal = {JCP},
-  number = {473},
+  volume = {473},
   eprint = {2202.02379},
   eprinttype = {arxiv},
   pages = {111725},
@@ -452,15 +393,11 @@
   doi = {10.1016/j.jcp.2022.111725},
   url = {https://www.sciencedirect.com/science/article/pii/S0021999122007884},
   urldate = {2022-10-26},
-  abstract = {Fast and accurate predictions of uncertainties in the computed dose are crucial for the determination of robust treatment plans in radiation therapy. This requires the solution of particle transport problems with uncertain parameters or initial conditions. Monte Carlo methods are often used to solve transport problems especially for applications which require high accuracy. In these cases, common non-intrusive solution strategies that involve repeated simulations of the problem at different points in the parameter space quickly become infeasible due to their long run-times. Intrusive methods however limit the usability in combination with proprietary simulation engines. In [61], we demonstrated the application of a new non-intrusive uncertainty quantification approach for Monte Carlo simulations in proton dose calculations with normally distributed errors on realistic patient data. In this paper, we introduce a generalized formulation and focus on a more in-depth theoretical analysis of this method concerning bias, error and convergence of the estimates. The multivariate input model of the proposed approach further supports almost arbitrary error correlation models. We demonstrate how this framework can be used to model and efficiently quantify complex auto-correlated and time-dependent errors.},
   langid = {english},
-  keywords = {Boltzmann equation,error modeling,importance sampling,Monte Carlo,radiative transport,uncertainty quantification},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\FQFDMWC7\\Stammer et al. - 2022 - Multivariate error modeling and uncertainty quanti.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\NHYRDM28\\Stammer et al. - 2022 - Multivariate error modeling and uncertainty quanti.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\B7IT5FXL\\S0021999122007884.html}
+  keywords = {Boltzmann equation,error modeling,importance sampling,Monte Carlo,radiative transport,uncertainty quantification}
 }
-% == BibLateX quality report for Stammer2023:
-% ? unused Library catalog ("ScienceDirect")
 
-@article{Vargas-Bedoya2022,
+@article{Vargas-Bedoya2022a,
   title = {Contour {{Propagation}} for {{Radiotherapy Treatment Planning Using Nonrigid Registration}} and {{Parameter Optimization}}: {{Case Studies}} in {{Liver}} and {{Breast Cancer}}},
   shorttitle = {Contour {{Propagation}} for {{Radiotherapy Treatment Planning Using Nonrigid Registration}} and {{Parameter Optimization}}},
   author = {Vargas-Bedoya, Eliseo and Rivera, Juan Carlos and Puerta, Maria Eugenia and Angulo, Aurelio and Wahl, Niklas and Cabal, Gonzalo},
@@ -475,19 +412,14 @@
   doi = {10.3390/app12178523},
   url = {https://www.mdpi.com/2076-3417/12/17/8523},
   urldate = {2022-08-26},
-  abstract = {Radiotherapy treatments are carried out using computerized axial tomography. In radiation therapy planning, the radiation oncologist must do a manual segmentation of volumes of interest to delineate the organs that should be irradiated. This way of carrying out the process generates long execution times and introduces a subjective component. In this study, a contour-propagation algorithm is formulated to automate the segmentation, based on elastic registration or nonrigid demon registration. A heuristic algorithm to find the parameters that optimize the registration is also proposed. The parameters found along with the contour-propagation algorithm are able to estimate contours of scans with Dice similarity coefficients (DSC) greater than 0.92 and maintain stability with B-spline registration, which takes in the parameters found as input. The study allows for validating the results using the correlation coefficient (CC) to compare the similarity between the voxels’ gray-scale intensity of the estimated tomography and the original tomography, obtaining values greater than 0.96. These values were validated under medical criteria and applied to liver and breast CT scans, indicating good performance for radiation therapy planning.},
   issue = {17},
   langid = {english},
-  keywords = {demons,heuristic methods,image registration,nonrigid registration},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\B6LJ5G67\\Vargas-Bedoya et al. - 2022 - Contour Propagation for Radiotherapy Treatment Pla.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\5UD6C7XK\\8523.html}
+  keywords = {demons,heuristic methods,image registration,nonrigid registration}
 }
-% == BibLateX quality report for Vargas-Bedoya2022:
-% Unexpected field 'publisher'
-% ? unused Library catalog ("www.mdpi.com")
 
-@inproceedings{Voss2023a,
+@inproceedings{Voss2023,
   type = {{Oral Presentation}},
-  title = {{{OC-0775 Comprehensive}} proton dose prediction with {{Bayesian LSTMs}}},
+  title = {{{OC-0775 Comprehensive}} Proton Dose Prediction with {{Bayesian LSTMs}}},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Voss, Luke and Neishabouri, Ahmad and Ortkamp, Tim and Wahl, Niklas},
   date = {2023-05-01},
@@ -497,16 +429,11 @@
   doi = {10.1016/S0167-8140(23)08716-9},
   url = {https://www.sciencedirect.com/science/article/pii/S0167814023087169},
   urldate = {2023-08-15},
-  eventtitle = {{{ESTRO}} 2023},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\GX5TTYHY\S0167814023087169.html}
+  eventtitle = {{{ESTRO}} 2023}
 }
-% == BibLateX quality report for Voss2023a:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("ScienceDirect")
 
 @online{Voss2023b,
-  title = {{{BayesDose}}: {{Comprehensive}} proton dose prediction with model uncertainty using {{Bayesian LSTMs}}},
+  title = {{{BayesDose}}: {{Comprehensive}} Proton Dose Prediction with Model Uncertainty Using {{Bayesian LSTMs}}},
   shorttitle = {{{BayesDose}}},
   author = {Voss, Luke and Neishabouri, Ahmad and Ortkamp, Tim and Mairani, Andrea and Wahl, Niklas},
   date = {2023-07-03},
@@ -516,17 +443,13 @@
   doi = {10.48550/arXiv.2307.01151},
   url = {http://arxiv.org/abs/2307.01151},
   urldate = {2023-08-15},
-  abstract = {We propose the BayesDose-Framework, a Bayesian approach for fast and accurate dose prediction in proton therapy. Our framework is based on a previously published deterministic LSTM model and is trained and evaluated on simulated beamlet doses from water phantoms and patient geometries. We parameterize the network's weights using 2D Gaussian mixture models and use ensemble predictions to quantify mean dose predictions and their standard deviation. The BayesDose model performs similarly to the deterministic variant. The uncertainty predictions are conservative but correlate well spatially and in magnitude with dose differences. This correlation is reduced when applied to patient data with unseen relative stopping power value ranges, which could be successfully addressed by re-training. We parallelize predictions and presample network weights to reduce runtime overhead. Bayesian models like BayesDose can provide fast predictions with quality equal to deterministic models and may support decision making and quality assurance in clinical settings in the future.},
   pubstate = {preprint},
-  keywords = {Physics - Medical Physics},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\HPARZQB2\\Voss et al. - 2023 - BayesDose Comprehensive proton dose prediction wi.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\GYCJSZXP\\2307.html}
+  keywords = {Physics - Medical Physics}
 }
-% == BibLateX quality report for Voss2023b:
-% ? unused Number ("arXiv:2307.01151")
 
 @inproceedings{Wahl2015,
   type = {{Poster}},
-  title = {Robust {{Planning}} for {{Intensity-modulated Proton Therapy}} using {{Analytical Probabilistic Modeling}}},
+  title = {Robust {{Planning}} for {{Intensity-modulated Proton Therapy}} Using {{Analytical Probabilistic Modeling}}},
   booktitle = {International {{Journal}} of {{Particle Therapy}}},
   author = {Wahl, Niklas and Kamerling, Cornelis Philippus and Heinrich, Hendrik and Hennig, Philipp and Bangert, Mark},
   date = {2015},
@@ -537,16 +460,11 @@
   issn = {2331-5180},
   doi = {10.14338/IJPT.15-PTCOG-NA.1},
   url = {http://theijpt.org/doi/10.14338/IJPT.15-PTCOG-NA.1},
-  eventtitle = {{{PTCOG}} \& {{PTCOG-NA}}},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\59LQBN9V\Wahl et al. - 2015 - Robust Planning for Intensity-modulated Proton Therapy using Analytical Probabilistic Modeling.pdf}
+  eventtitle = {{{PTCOG}} \& {{PTCOG-NA}}}
 }
-% == BibLateX quality report for Wahl2015:
-% Unexpected field 'type'
-% Unexpected field 'issn'
-% ? Unsure about the formatting of the booktitle
 
 @book{Wahl2015Book,
-  title = {Tutorium {{Physik}} fürs {{Nebenfach}}},
+  title = {Tutorium {{Physik}} Fürs {{Nebenfach}}},
   author = {Kommer, Christoph and Tugendhat, Tim and Wahl, Niklas},
   date = {2015},
   edition = {1},
@@ -558,7 +476,7 @@
 }
 
 @article{Wahl2016,
-  title = {Physically constrained voxel-based penalty adaptation for ultra-fast {{IMRT}} planning},
+  title = {Physically Constrained Voxel-Based Penalty Adaptation for Ultra-Fast {{IMRT}} Planning},
   author = {Wahl, Niklas and Bangert, Mark and Kamerling, Cornelis P and Ziegenhein, Peter and Bol, Gijsbert H and Raaymakers, Bas W and Oelfke, Uwe},
   date = {2016},
   journaltitle = {Journal of Applied Clinical Medical Physics},
@@ -568,22 +486,20 @@
   pages = {172--189},
   issn = {15269914},
   doi = {10.1120/jacmp.v17i4.6117},
-  keywords = {adaptive radiation therapy,dose optimization,importance factors,imrt,inverse planning,matRadGrant},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\SZFBGIPM\Wahl et al. - 2016 - Physically constrained voxel-based penalty adaptation for ultra-fast IMRT planning.pdf}
+  keywords = {adaptive radiation therapy,dose optimization,importance factors,imrt,inverse planning,matRadGrant}
 }
 
 @unpublished{Wahl2016b,
   type = {{Oral Presentation}},
-  title = {Probabilistic proton treatment planning using accelerated analytical probabilistic modelling},
+  title = {Probabilistic Proton Treatment Planning Using Accelerated Analytical Probabilistic Modelling},
   author = {Wahl, Niklas and Hennig, Philipp and Bangert, Mark},
   date = {2016},
   eventtitle = {18th {{ICCR}}},
-  venue = {{London}},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\UYP8E7IV\Wahl, Hennig, Bangert - 2016 - Probabilistic proton treatment planning using accelerated analytical probabilistic modelling.pdf}
+  venue = {{London}}
 }
 
 @article{Wahl2017a,
-  title = {Efficiency of analytical and sampling-based uncertainty propagation in intensity-modulated proton therapy},
+  title = {Efficiency of Analytical and Sampling-Based Uncertainty Propagation in Intensity-Modulated Proton Therapy},
   author = {Wahl, Niklas and Hennig, Philipp and Wieser, Hans-Peter and Bangert, Mark},
   date = {2017-06-26},
   journaltitle = {Physics in Medicine and Biology},
@@ -595,14 +511,11 @@
   issn = {1361-6560},
   doi = {10.1088/1361-6560/aa6ec5},
   url = {http://stacks.iop.org/0031-9155/62/i=14/a=5790?key=crossref.cba9093365b6707443b63a0770bf9fee},
-  preprintfile = {WahlN_APMEfficiency_2017_acceptedPreprint.pdf},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\FJMELLAU\Wahl et al. - 2017 - Efficiency of analytical and sampling-based uncertainty propagation in intensity-modulated proton therapy.pdf}
+  preprintfile = {WahlN_APMEfficiency_2017_acceptedPreprint.pdf}
 }
-% == BibLateX quality report for Wahl2017a:
-% Unexpected field 'preprintfile'
 
 @article{Wahl2018,
-  title = {Analytical incorporation of fractionation effects in probabilistic treatment planning for intensity-modulated proton therapy},
+  title = {Analytical Incorporation of Fractionation Effects in Probabilistic Treatment Planning for Intensity-Modulated Proton Therapy},
   author = {Wahl, Niklas and Hennig, Philipp and Wieser, Hans-Peter and Bangert, Mark},
   date = {2018-04-27},
   journaltitle = {Medical Physics},
@@ -615,11 +528,8 @@
   doi = {10.1002/mp.12775},
   url = {http://doi.wiley.com/10.1002/mp.12775},
   preprintfile = {WahlN_APMFractionation_2018_acceptedPreprint.pdf},
-  keywords = {matRadGrant},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\F2MXWIMI\Wahl et al. - 2018 - Analytical incorporation of fractionation effects in probabilistic treatment planning for intensity-modulated proto.pdf}
+  keywords = {matRadGrant}
 }
-% == BibLateX quality report for Wahl2018:
-% Unexpected field 'preprintfile'
 
 @thesis{Wahl2018a,
   type = {phdthesis},
@@ -630,18 +540,14 @@
   location = {{Heidelberg}},
   doi = {10.11588/heidok.00025127},
   url = {http://archiv.ub.uni-heidelberg.de/volltextserver/25127/},
-  urldate = {2018-08-22},
-  abstract = {The sensitivity of intensity-modulated proton therapy to uncertainties requires case-specific uncertainty assessment and mitigation. As an alternative to scenario-based methods, this thesis describes the implementation, application and conceptual extension of the Analytical Probabilistic Modeling (APM) framework introduced by Bangert, Hennig, and Oelfke (2013). APM represents moments of the probability distribution over dose in closed-form, providing a probabilistic analog to nominal pencil-beam dose calculation subject to range and setup uncertainties that further enables probabilistic optimization. First, APM was implemented in MITKrad, a treatment planning plugin for MITK built completely from scratch. APM’s computations were validated against sample statistics, showing nearly perfect agreement. Run-times within minutes could be realized for uncertainty assessment and probabilistic optimization on patient data. Reformulation of APM enabled linear separation of the computations into random and systematic uncertainty components. Uncertainty over the full fractionation spectrum could then be modeled and optimized with a single pre-computation. It could be shown that fractionation is exploited in optimization with APM for additional organ at risk sparing. APM was then extended to propagation of uncertainties from dose to clinically relevant plan quality metrics. Expectation and variance could be modeled accurately for organ mean dose and dose-volume histograms. However, approximations for equivalent uniform dose and minimum and maximum dose values did not provide reliable results. Finally, the closed-form plan metrics were used to conceptualize constrained probabilistic optimization. Besides novel probabilistic objectives, confidence constraints could be established. Due to increased computational complexity of the new models, the proof-of-concept was provided through evaluations on a one-dimensional prototype anatomy. In conclusion, the herein extended APM framework is able to provide probabilistic analogs to established nominal concepts of dose calculation, plan quality metrics, and constrained optimization. If computational hurdles can be overcome in the future, clinical application would be within reach.},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\5MNHQ94D\Unknown - 2018 - Put forward by M . Sc . Niklas Wahl Born in Heidelberg Oral Examina on 11 . 07 . 2018.pdf}
+  urldate = {2018-08-22}
 }
-% == BibLateX quality report for Wahl2018a:
-% ? unused Type ("Dissertation")
 
 @inproceedings{Wahl2018b,
   type = {{Poster}},
   ids = {Wahl2018d},
-  title = {{{PO-0909}}: {{Analytical}} probabilistic models for dose quality metrics and optimization objectives},
-  shorttitle = {Analytical probabilistic models for dose quality metrics and optimization objectives},
+  title = {{{PO-0909}}: {{Analytical}} Probabilistic Models for Dose Quality Metrics and Optimization Objectives},
+  shorttitle = {Analytical Probabilistic Models for Dose Quality Metrics and Optimization Objectives},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Wahl, Niklas and Hennig, Philipp and Wieser, Hans-Peter and Bangert, Mark},
   date = {2018-04-01},
@@ -650,18 +556,14 @@
   location = {{Barcelona}},
   doi = {10.1016/S0167-8140(18)31219-2},
   url = {https://www.thegreenjournal.com/article/S0167-8140(18)31219-2/abstract},
-  eventtitle = {{{ESTRO}}},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\D6TN79XE\\Wahl et al. - 2018 - PO-0909 Analytical probabilistic models for dose .pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\2KV6BD49\\fulltext.html}
+  eventtitle = {{{ESTRO}}}
 }
-% == BibLateX quality report for Wahl2018b:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
 
 @inproceedings{Wahl2018c,
   type = {{Poster}},
   ids = {Wahl2018d},
-  title = {{{EP-1898}}: {{Smooth}} animations of the probabilistic analog to worst-case dose distributions},
-  shorttitle = {Smooth animations of the probabilistic analog to worst-case dose distributions},
+  title = {{{EP-1898}}: {{Smooth}} Animations of the Probabilistic Analog to Worst-Case Dose Distributions},
+  shorttitle = {Smooth Animations of the Probabilistic Analog to Worst-Case Dose Distributions},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Wahl, Niklas and Hennig, Philipp and Wieser, Hans-Peter and Bangert, Mark},
   date = {2018-04},
@@ -670,16 +572,12 @@
   location = {{Barcelona}},
   doi = {10.1016/S0167-8140(18)32207-2},
   url = {https://www.thegreenjournal.com/article/S0167-8140(18)32207-2/abstract},
-  eventtitle = {{{ESTRO}}},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\PUCDJ33Q\\Wahl et al. - 2018 - EP-1898 Smooth animations of the probabilistic an.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\AT7CJ4GA\\fulltext.html}
+  eventtitle = {{{ESTRO}}}
 }
-% == BibLateX quality report for Wahl2018c:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
 
 @unpublished{Wahl2019,
   type = {Oral Presentation},
-  title = {Development report for the open source dose calculation and optimization toolkit {{matRad}}},
+  title = {Development Report for the Open Source Dose Calculation and Optimization Toolkit {{matRad}}},
   author = {Wahl, Niklas and Doerner, Edgardo and Burigo, Lucas Noberto and Ramirez, Daniel and Neishabouri, Ahmad and Bennan, Amit Ben Antony and Wieser, Hans-Peter and Bangert, Mark},
   date = {2019},
   eventtitle = {19th {{ICCR}}},
@@ -688,15 +586,16 @@
 
 @unpublished{Wahl2019a,
   type = {Oral Presentation},
-  title = {Confidence constraints for probabilistic radiotherapy treatment planning},
+  title = {Confidence Constraints for Probabilistic Radiotherapy Treatment Planning},
   author = {Wahl, Niklas and Hennig, Philipp and Wieser, Hans-Peter and Bangert, Mark},
   date = {2019},
   eventtitle = {19th {{ICCR}}},
   venue = {{Montréal}}
 }
 
-@article{Wahl2020,
-  title = {Analytical probabilistic modeling of dose-volume histograms},
+@article{Wahl2020b,
+  ids = {Wahl2020},
+  title = {Analytical Probabilistic Modeling of Dose-Volume Histograms},
   author = {Wahl, Niklas and Hennig, Philipp and Wieser, Hans-Peter and Bangert, Mark},
   date = {2020-09-06},
   journaltitle = {Medical Physics},
@@ -710,21 +609,15 @@
   doi = {10.1002/mp.14414},
   url = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.14414},
   urldate = {2020-08-03},
-  abstract = {Purpose Radiotherapy, especially with charged particles, is sensitive to executional and preparational uncertainties that propagate to uncertainty in dose and plan quality indicators, e. g., dose-volume histograms (DVHs). Current approaches to quantify and mitigate such uncertainties rely on explicitly computed error scenarios and are thus subject to statistical uncertainty and limitations regarding the underlying uncertainty model. Here we present an alternative, analytical method to approximate moments, in particular expectation value and (co)variance, of the probability distribution of DVH-points, and evaluate its accuracy on patient data. Methods We use Analytical Probabilistic Modeling (APM) to derive moments of the probability distribution over individual DVH-points based on the probability distribution over dose. By using the computed moments to parameterize distinct probability distributions over DVH-points (here normal or beta distributions), not only the moments but also percentiles, i. e., α-DVHs, are computed. The model is subsequently evaluated on three patient cases (intracranial, paraspinal, prostate) in 30- and singlefraction scenarios by assuming the dose to follow a multivariate normal distribution, whose moments are computed in closed-form with APM. The results are compared to a benchmark based on discrete random sampling. Results The evaluation of the new probabilistic model on the three patient cases against a sampling benchmark proves its correctness under perfect assumptions as well as good agreement in realistic conditions. More precisely, ca. 90\% of all computed expected DVH-points and their standard deviations agree within 1\% volume with their empirical counterpart from sampling computations, for both fractionated and single fraction treatments. When computing α-DVHs, the assumption of a beta distribution achieved better agreement with empirical percentiles than the assumption of a normal distribution: While in both cases probabilities locally showed large deviations (up to ±0.2), the respective α -DVHs for α = 0:05; 0:5; 0:95 only showed small deviations in respective volume (up to ±5\% volume for a normal distribution, and up to 2\% for a beta distribution). A previously published model from literature, which was included for comparison, exhibited substantially larger deviations. Conclusions With APM we could derive a mathematically exact description of moments of probability distributions over DVH-points given a probability distribution over dose. The model generalizes previous attempts and performs well for both choices of probability distributions, i. e., normal or beta distributions, over DVH-points.},
   langid = {english},
   preview = {dvh\_anim.gif},
-  keywords = {Physics - Medical Physics},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\83IVWLPY\\Wahl et al. - Analytical probabilistic modeling of dose-volume h.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\WUUJ92ZC\\Wahl et al. - 2020 - Analytical probabilistic modeling of dose-volume h.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\R8UEQDZ3\\mp.html}
+  keywords = {Physics - Medical Physics}
 }
-% == BibLateX quality report for Wahl2020:
-% Unexpected field 'preview'
-% ? unused extra: _eprint ("https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1002/mp.14414")
-% ? unused Library catalog ("Wiley Online Library")
 
-@inproceedings{Wahl2020a,
+@inproceedings{Wahl2020c,
   type = {{Poster}},
-  title = {{{PO-1377}}: {{Monte Carlo}} vs. pencil-beam dose calculation for uncertainty estimation in proton therapy},
-  shorttitle = {Monte {{Carlo}} vs. pencil-beam dose calculation for uncertainty estimation in proton therapy},
+  title = {{{PO-1377}}: {{Monte Carlo}} vs. Pencil-Beam Dose Calculation for Uncertainty Estimation in Proton Therapy},
+  shorttitle = {Monte {{Carlo}} vs. Pencil-Beam Dose Calculation for Uncertainty Estimation in Proton Therapy},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Wahl, Niklas and Wieser, Hans-Peter and Burigo, Lucas and Bangert, Mark},
   date = {2020-11-01},
@@ -735,42 +628,21 @@
   url = {https://www.sciencedirect.com/science/article/pii/S0167814021013955},
   urldate = {2021-02-12},
   eventtitle = {{{ESTRO}}},
-  langid = {english},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\KFAFPMCV\S0167814021013955.html}
+  langid = {english}
 }
-% == BibLateX quality report for Wahl2020a:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("ScienceDirect")
 
 @unpublished{Wahl2023,
   type = {Oral Presentation},
-  title = {The {{Particle Therapy Masterclass}} for targeted education and outreach on real-world application of fundamental physics},
+  title = {The {{Particle Therapy Masterclass}} for Targeted Education and Outreach on Real-World Application of Fundamental Physics},
   author = {Wahl, Niklas},
   date = {2023-03-21},
   eventtitle = {{{DPG SMuK Frühjahrstagung}}},
   venue = {{Dresden}}
 }
 
-@inproceedings{Wahl2023a,
+@inproceedings{Wahl2023b,
   type = {{Oral Presentation}},
-  title = {Scenario-free probabilistic proton dose optimization using expected dose influence and total variance},
-  booktitle = {Proceedings to the 60th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}}},
-  author = {Wahl, Niklas and Wieser, Hans-Peter},
-  date = {2023-02-14},
-  series = {International {{Journal}} of {{Particle Therapy}}},
-  volume = {9},
-  pages = {383},
-  location = {{Miami}},
-  doi = {10.14338/IJPT-23-PTCOG60-9.4},
-  eventtitle = {{{PTCOG}} 60}
-}
-% == BibLateX quality report for Wahl2023a:
-% Unexpected field 'type'
-
-@inproceedings{Wahl2023c,
-  type = {{Oral Presentation}},
-  title = {{{MO-0563 Youth}} education and outreach with the international {{Particle Therapy Masterclass}}},
+  title = {{{MO-0563 Youth}} Education and Outreach with the International {{Particle Therapy Masterclass}}},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Wahl, Niklas and Charitonidis, Nikolaos and Dosanjh, Manjit and Homolka, Noa and Graeff, Christian and Mamaras, Aristeidis and Seco, Joao and Skrijelj, Damir and Taylor, Rebecca L. and Topi, Albana and Wieser, Hans-Peter and Foka, Panagiota},
   date = {2023-05-01},
@@ -784,14 +656,24 @@
   eventtitle = {{{ESTRO}} 2023},
   langid = {english}
 }
-% == BibLateX quality report for Wahl2023c:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("www.thegreenjournal.com")
+
+@inproceedings{Wahl2023c,
+  type = {{Oral Presentation}},
+  title = {Scenario-Free Probabilistic Proton Dose Optimization Using Expected Dose Influence and Total Variance},
+  booktitle = {Proceedings to the 60th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}}},
+  author = {Wahl, Niklas and Wieser, Hans-Peter},
+  date = {2023-02-14},
+  series = {International {{Journal}} of {{Particle Therapy}}},
+  volume = {9},
+  pages = {383},
+  location = {{Miami}},
+  doi = {10.14338/IJPT-23-PTCOG60-9.4},
+  eventtitle = {{{PTCOG}} 60}
+}
 
 @unpublished{Wieser2016,
   type = {{Oral Presentation}},
-  title = {Analytical probabilistic modeling of range and setup uncertainties in carbon ion therapy planning},
+  title = {Analytical Probabilistic Modeling of Range and Setup Uncertainties in Carbon Ion Therapy Planning},
   author = {Wieser, Hans-Peter and Wahl, Niklas and Hennig, Philipp and Bangert, Mark},
   date = {2016},
   eventtitle = {18th {{ICCR}}},
@@ -799,7 +681,7 @@
 }
 
 @article{Wieser2017,
-  title = {Development of the open-source dose calculation and optimization toolkit {{matRad}}},
+  title = {Development of the Open-Source Dose Calculation and Optimization Toolkit {{matRad}}},
   author = {Wieser, Hans-Peter and Cisternas, Eduardo and Wahl, Niklas and Ulrich, Silke and Stadler, Alexander and Mescher, Henning and Müller, Lucas-Raphael and Klinge, Thomas and Gabrys, Hubert and Burigo, Lucas and Mairani, Andrea and Ecker, Swantje and Ackermann, Benjamin and Ellerbrock, Malte and Parodi, Katia and Jäkel, Oliver and Bangert, Mark},
   date = {2017},
   journaltitle = {Medical Physics},
@@ -814,23 +696,15 @@
   doi = {10.1002/mp.12251},
   url = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.12251},
   urldate = {2019-08-13},
-  abstract = {Purpose We report on the development of the open-source cross-platform radiation treatment planning toolkit matRad and its comparison against validated treatment planning systems. The toolkit enables three-dimensional intensity-modulated radiation therapy treatment planning for photons, scanned protons and scanned carbon ions. Methods matRad is entirely written in Matlab and is freely available online. It re-implements well-established algorithms employing a modular and sequential software design to model the entire treatment planning workflow. It comprises core functionalities to import DICOM data, to calculate and optimize dose as well as a graphical user interface for visualization. matRad dose calculation algorithms (for carbon ions this also includes the computation of the relative biological effect) are compared against dose calculation results originating from clinically approved treatment planning systems. Results We observe three-dimensional γ-analysis pass rates ≥ 99.67\% for all three radiation modalities utilizing a distance to agreement of 2 mm and a dose difference criterion of 2\%. The computational efficiency of matRad is evaluated in a treatment planning study considering three different treatment scenarios for every radiation modality. For photons, we measure total run times of 145 s–1260 s for dose calculation and fluence optimization combined considering 4–72 beam orientations and 2608–13597 beamlets. For charged particles, we measure total run times of 63 s–993 s for dose calculation and fluence optimization combined considering 9963–45574 pencil beams. Using a CT and dose grid resolution of 0.3 cm3 requires a memory consumption of 1.59 GB–9.07 GB and 0.29 GB–17.94 GB for photons and charged particles, respectively. Conclusion The dosimetric accuracy, computational performance and open-source character of matRad encourages a future application of matRad for both educational and research purposes.},
   isbn = {4955139574},
   langid = {english},
   preview = {matrad\_hat.svg},
   selected = {true},
-  keywords = {DICOM,dose calculation,inverse planning,matRadGrant,optimization,radiation therapy},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\D2L5K3WM\\Wieser et al. - 2017 - Development of the open-source dose calculation and optimization toolkit matRad(2).pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\N9TKMPVD\\Wieser et al. - 2017 - Development of the open-source dose calculation and optimization toolkit matRad(2).pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\QRX7A56P\\Wieser et al. - 2017 - Development of the open-source dose calculation an.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\LPILBTA8\\mp.html}
+  keywords = {DICOM,dose calculation,inverse planning,matRadGrant,optimization,radiation therapy}
 }
-% == BibLateX quality report for Wieser2017:
-% Unexpected field 'publisher'
-% Unexpected field 'isbn'
-% Unexpected field 'preview'
-% Unexpected field 'selected'
-% ? unused Library catalog ("Wiley Online Library")
 
 @article{Wieser2017b,
-  title = {Analytical probabilistic modeling of {{RBE-weighted}} dose for ion therapy},
+  title = {Analytical Probabilistic Modeling of {{RBE-weighted}} Dose for Ion Therapy},
   author = {Wieser, Hans-Peter and Hennig, Philipp and Wahl, Niklas and Bangert, Mark},
   date = {2017-10-05},
   journaltitle = {Physics in Medicine and Biology},
@@ -845,17 +719,27 @@
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/aa915d},
   urldate = {2017-10-05},
   preprintfile = {WieserHP_APMBio_2017_acceptedPreprint.pdf},
-  keywords = {matRadGrant},
-  file = {C:\Users\wahln\AppData\Local\ZoteroContent\storage\Y2RUMY4N\Wieser et al. - 2017 - Analytical probabilistic modeling of RBE-weighted dose for ion therapy(2).pdf}
+  keywords = {matRadGrant}
 }
-% == BibLateX quality report for Wieser2017b:
-% Unexpected field 'publisher'
-% Unexpected field 'preprintfile'
 
-@inproceedings{Wieser2018a,
+@article{Wieser2018b,
+  ids = {Wieser2018c},
+  title = {{{matRad}} - an Open-Source Treatment Planning Toolkit for Educational Purposes},
+  author = {Wieser, Hans-Peter and Wahl, Niklas and Gabryś, Hubert S. and Müller, Lucas-Raphael and Pezzano, Giuseppe and Winter, Johanna and Ulrich, Silke and Burigo, Lucas Noberto and Jäkel, Oliver and Bangert, Mark},
+  date = {2018},
+  journaltitle = {Medical Physics International Journal},
+  volume = {6},
+  number = {1},
+  pages = {119--127},
+  issn = {2306-4609},
+  url = {http://www.mpijournal.org/pdf/2018-01/MPI-2018-01-p119.pdf},
+  langid = {english}
+}
+
+@inproceedings{Wieser2018c,
   type = {{Oral Presentation}},
-  title = {{{OC-0088}}: {{Simultaneous}} consideration of biologyical and physical uncertainties in robust ion therapy planning},
-  shorttitle = {Simultaneous consideration of biologyical and physical uncertainties in robust ion therapy planning},
+  title = {{{OC-0088}}: {{Simultaneous}} Consideration of Biologyical and Physical Uncertainties in Robust Ion Therapy Planning},
+  shorttitle = {Simultaneous Consideration of Biologyical and Physical Uncertainties in Robust Ion Therapy Planning},
   booktitle = {Radiotherapy and {{Oncology}}},
   author = {Wieser, Hans-Peter and Wahl, Niklas and Hennig, Philipp and Bangert, Mark},
   date = {2018-04-01},
@@ -866,52 +750,29 @@
   url = {https://www.thegreenjournal.com/article/S0167-8140(18)30398-0/abstract},
   urldate = {2019-11-25},
   eventtitle = {{{ESTRO}}},
-  langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\9MHB6VIN\\Wieser et al. - 2018 - OC-0088 Simultaneous consideration of biologyical.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\28S2RBSV\\fulltext.html}
+  langid = {english}
 }
-% == BibLateX quality report for Wieser2018a:
-% Unexpected field 'type'
-% ? Unsure about the formatting of the booktitle
-% ? unused Library catalog ("www.thegreenjournal.com")
 
-@article{Wieser2018b,
-  ids = {Wieser2018c},
-  title = {{{matRad}} - an open-source treatment planning toolkit for educational purposes},
-  author = {Wieser, Hans-Peter and Wahl, Niklas and Gabryś, Hubert S. and Müller, Lucas-Raphael and Pezzano, Giuseppe and Winter, Johanna and Ulrich, Silke and Burigo, Lucas Noberto and Jäkel, Oliver and Bangert, Mark},
-  date = {2018},
-  journaltitle = {Medical Physics International Journal},
-  volume = {6},
-  number = {1},
-  pages = {119--127},
-  issn = {2306-4609},
-  url = {http://www.mpijournal.org/pdf/2018-01/MPI-2018-01-p119.pdf},
-  abstract = {We present educational aspects of matRad –an open-source treatment planning toolkit for threedimensional intensity-modulated radiotherapy treatment planning supporting photons, scanned protons and scanned carbon ions. matRad is publicly available for download on GitHub and does not require payable software-products to run or to change its source code. This manuscript helps new users to get familiar with the basic concept, the matRad GitHub environment, and potential applications. Specifically we discuss seven novel workflow examples that illustrate usage of matRad’s code base and we introduce three practical treatment planning examples from a planner's point of view. The workflow examples and the treatment planning tutorial are available in the form of Matlab scripts and documented with pdf files and wiki pages, respectively. They are intended as both learning and teaching material, e.g., in a classroom setting. The provided examples range from simple to complex treatment planning scenarios and can all be executed in a couple of minutes on a standard desktop computer.},
-  langid = {english},
-  file = {C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\JXP4WXPV\\2018 - MEDICAL PHYSICS INTERNATIONAL.pdf;C\:\\Users\\wahln\\AppData\\Local\\ZoteroContent\\storage\\YV99642P\\Wieser et al. - 2018 - MATRAD-AN OPEN-SOURCE TREATMENT PLANNING TOOLKIT F.pdf}
-}
-% == BibLateX quality report for Wieser2018b:
-% ? unused Library catalog ("Zotero")
-
-@unpublished{Wieser2019,
+@unpublished{Wieser2019b,
   type = {Oral Presentation},
-  title = {Impact of {{Gaussian}} uncertainty assumptions for probabilistic optimization considering range errors},
-  author = {Wieser, Hans-Peter and Karger, Christian P. and Wahl, Niklas and Bangert, Mark},
-  date = {2019},
-  eventtitle = {19th {{ICCR}}},
-  venue = {{Montréal}}
-}
-
-@unpublished{Wieser2019a,
-  type = {Oral Presentation},
-  title = {Closed-form modeling of biological uncertainties in carbon ion therapy},
+  title = {Closed-Form Modeling of Biological Uncertainties in Carbon Ion Therapy},
   author = {Wieser, Hans-Peter and Hennig, Philipp and Wahl, Niklas and Bangert, Mark},
   date = {2019},
   eventtitle = {19th {{ICCR}}},
   venue = {{Montréal}}
 }
 
+@unpublished{Wieser2019c,
+  type = {Oral Presentation},
+  title = {Impact of {{Gaussian}} Uncertainty Assumptions for Probabilistic Optimization Considering Range Errors},
+  author = {Wieser, Hans-Peter and Karger, Christian P. and Wahl, Niklas and Bangert, Mark},
+  date = {2019},
+  eventtitle = {19th {{ICCR}}},
+  venue = {{Montréal}}
+}
+
 @article{Wieser2020,
-  title = {Impact of {{Gaussian}} uncertainty assumptions on probabilistic optimization in particle therapy},
+  title = {Impact of {{Gaussian}} Uncertainty Assumptions on Probabilistic Optimization in Particle Therapy},
   author = {Wieser, Hans-Peter and Karger, Christian P. and Wahl, Niklas and Bangert, Mark},
   date = {2020-07},
   journaltitle = {Physics in Medicine \& Biology},
@@ -925,11 +786,6 @@
   doi = {10.1088/1361-6560/ab8d77},
   url = {https://doi.org/10.1088%2F1361-6560%2Fab8d77},
   urldate = {2020-07-22},
-  abstract = {Range and setup uncertainties in charged particle therapy may induce a discrepancy between the planned and the delivered dose. Countermeasures based on probabilistic (stochastic) optimization usually assume a Gaussian probability density to model the underlying range and setup error. While this standard assumption is generally taken for granted, this study explicitly investigates the dosimetric consequences if the actual range and setup errors obey a different probability density function (PDF) over the course of treatment to the one used during the probabilistic treatment plan optimization. Discrete random sampling was performed for conventionally and probabilistically optimized proton and carbon ion treatment plans utilizing various PDFs that modeled the setup and range error. This method allowed us to assess the treatment plan robustness against different PDFs of conventional and probabilistic plans, which both explicitly assume Gaussian uncertainties. The induced uncertainty in dose was quantified by estimating the expectation value and standard deviation of the RBE-weighted dose for each PDF on the basis of 2500-5000 random dose samples. Probabilistic dose metrics and standard deviation volume histograms were computed to quantify treatment plan robustness of both optimization approaches. It was shown that the classical planning target volume margin extension concept did not compensate the influence of range and setup errors and consequently resulted in a non-negligible average standard deviation in dose of 7.3\% throughout the clinical target volume (CTV). In contrast, probabilistic optimization on normally distributed errors yielded treatment plans that not only entailed a lower standard deviation against normally distributed errors accounted for during optimization, but also lower standard deviations for other symmetric PDFs. It was shown that the impact of an incorrect probability distribution assumption is of lower importance after probabilistic optimization as the average uncertainty in the CTV drops to 3.9\%. Probabilistic optimization is an effective tool to create robust particle treatment plans. Normally distributed range and setup error assumptions for probabilistic optimization are a reasonable first approximation and yield treatment plans that are also robust against other PDFs.},
   langid = {english},
   preprintfile = {WieserHP_GaussianUncertainties_2020_acceptedPreprint.pdf}
 }
-% == BibLateX quality report for Wieser2020:
-% Unexpected field 'publisher'
-% Unexpected field 'preprintfile'
-% ? unused Library catalog ("Institute of Physics")

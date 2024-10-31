@@ -503,12 +503,14 @@
 }
 
 @article{Radonic2024,
-  type = {{Accepted Manuscript}},
   title = {Proton dose calculation with {{LSTM}} networks in presence of a magnetic field},
   author = {Radonic, Domagoj and Xiao, Fan and Wahl, Niklas and Voss, Luke and Neishabouri, Ahmad and Delopoulos, Nikolaos and Marschner, Sebastian and Corradini, Stefanie and Belka, Claus and Dedes, Georgios and Kurz, Christopher and Landry, Guillaume},
-  date = {2024-09-25},
+  date = {2024-10-21},
   journaltitle = {Physics in Medicine \& Biology},
   shortjournal = {Phys. Med. Biol.},
+  volume = {69},
+  number = {21},
+  pages = {215019},
   issn = {0031-9155},
   doi = {10.1088/1361-6560/ad7f1e},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/ad7f1e},
@@ -566,6 +568,23 @@
   urldate = {2024-09-13},
   eventtitle = {{{ESTRO}} 2024},
   langid = {english}
+}
+
+@article{Sitarz2024a,
+  type = {{Accepted Manuscript}},
+  title = {Implementation and validation of a very-high-energy electron model in the {{matRad}} treatment planning system},
+  author = {Sitarz, Mateusz and Ronga, Maria Grazia and Gesualdi, Flavia and Bonfrate, Anthony and Wahl, Niklas and De Marzi, Ludovic},
+  date = {2024-10-17},
+  journaltitle = {Medical Physics},
+  volume = {n/a},
+  number = {n/a},
+  issn = {2473-4209},
+  doi = {10.1002/mp.17392},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.17392},
+  urldate = {2024-10-19},
+  abstract = {Background While electron beams of up to 20 MeV are commonly used in radiotherapy, the use of very-high-energy electrons (VHEEs) in the range of 100–200 MeV is now becoming a realistic option thanks to the recent advancements in accelerator technology. Indeed, VHEE offers several clinically attractive features and can be delivered using various conformation methods (including scanning, collimation, and focussing) at ultra-high dose rates. To date, there is a lack of research tools for fast simulation of treatment plans using VHEE beams. Purpose This work aims to implement and validate a simple and fast dose calculation algorithm based on the Fermi–Eyges theory of multiple Coulomb scattering for VHEE radiation therapy, with energies up to 200 MeV. A treatment planning system (TPS) toolkit with VHEE modality would indeed allow for further preclinical investigations, including treatment plan optimization and evaluation, and thus contribute to the gradual introduction of VHEE radiotherapy in clinical practice. Methods A VHEE pencil beam scanning double Gaussian model was introduced into the open-source TPS matRad environment along with new functions and options dedicated to VHEE dose calculations. Various geometries and field configurations were then calculated in matRad (up to 200 MeV and 15 × 15 cm2, with complex bone or lung heterogeneities) and the results were compared to Monte Carlo simulations in the TOPAS/Geant4 toolkit. Two types of beam model (divergent or focused) were also tested. Examples of clinical treatment plans were computed, and the results were compared between the two codes. Results VHEE modality was fully implemented in matRad with GUI capabilities while preserving all original TPS features. New relevant options such as the importation of specific spot-lists or adjustment of the lateral dose calculation cutoff to optimize the calculation speed were validated. Single spot and square field dose distributions were validated in water alone as well as in clinically relevant inhomogeneities. Dose maps from the VHEE model in matRad were in good agreement with TOPAS (2D gamma index [2\%/1 mm] with passing rates superior to 90\%, {$<$}6\% mean dose differences), except for large interface heterogeneities. Conclusions This work describes the implementation of a simple but efficient VHEE simulation model in matRad. A few configurations were studied in order to validate the model against accurate Monte Carlo simulations, demonstrating its usefulness for carrying out preliminary studies involving VHEE radiotherapy.},
+  langid = {english},
+  keywords = {beam model,Monte Carlo,radiotherapy,treatment planning system,VHEE}
 }
 
 @article{Stammer2021,

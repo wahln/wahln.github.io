@@ -940,7 +940,7 @@
   eventtitle = {{{PTCOG}} 60}
 }
 
-@inproceedings{Wahl2023b,
+@inproceedings{Wahl2023c,
   type = {{Oral Presentation}},
   title = {{{MO-0563}}: {{Youth}} education and outreach with the international {{Particle Therapy Masterclass}}},
   booktitle = {Radiotherapy and {{Oncology}}},
@@ -1027,7 +1027,7 @@
   keywords = {matRadGrant}
 }
 
-@inproceedings{Wieser2018,
+@inproceedings{Wieser2018a,
   type = {{Oral Presentation}},
   title = {{{OC-0088}}: {{Simultaneous}} consideration of biologyical and physical uncertainties in robust ion therapy planning},
   shorttitle = {Simultaneous consideration of biologyical and physical uncertainties in robust ion therapy planning},
@@ -1044,7 +1044,7 @@
   langid = {english}
 }
 
-@article{Wieser2018a,
+@article{Wieser2018b,
   ids = {Wieser2018c},
   title = {{{matRad}} - an open-source treatment planning toolkit for educational purposes},
   author = {Wieser, Hans-Peter and Wahl, Niklas and Gabryś, Hubert S. and Müller, Lucas-Raphael and Pezzano, Giuseppe and Winter, Johanna and Ulrich, Silke and Burigo, Lucas Noberto and Jäkel, Oliver and Bangert, Mark},
@@ -1095,4 +1095,19 @@
   abstract = {Range and setup uncertainties in charged particle therapy may induce a discrepancy between the planned and the delivered dose. Countermeasures based on probabilistic (stochastic) optimization usually assume a Gaussian probability density to model the underlying range and setup error. While this standard assumption is generally taken for granted, this study explicitly investigates the dosimetric consequences if the actual range and setup errors obey a different probability density function (PDF) over the course of treatment to the one used during the probabilistic treatment plan optimization. Discrete random sampling was performed for conventionally and probabilistically optimized proton and carbon ion treatment plans utilizing various PDFs that modeled the setup and range error. This method allowed us to assess the treatment plan robustness against different PDFs of conventional and probabilistic plans, which both explicitly assume Gaussian uncertainties. The induced uncertainty in dose was quantified by estimating the expectation value and standard deviation of the RBE-weighted dose for each PDF on the basis of 2500-5000 random dose samples. Probabilistic dose metrics and standard deviation volume histograms were computed to quantify treatment plan robustness of both optimization approaches. It was shown that the classical planning target volume margin extension concept did not compensate the influence of range and setup errors and consequently resulted in a non-negligible average standard deviation in dose of 7.3\% throughout the clinical target volume (CTV). In contrast, probabilistic optimization on normally distributed errors yielded treatment plans that not only entailed a lower standard deviation against normally distributed errors accounted for during optimization, but also lower standard deviations for other symmetric PDFs. It was shown that the impact of an incorrect probability distribution assumption is of lower importance after probabilistic optimization as the average uncertainty in the CTV drops to 3.9\%. Probabilistic optimization is an effective tool to create robust particle treatment plans. Normally distributed range and setup error assumptions for probabilistic optimization are a reasonable first approximation and yield treatment plans that are also robust against other PDFs.},
   langid = {english},
   preprintfile = {WieserHP_GaussianUncertainties_2020_acceptedPreprint.pdf}
+}
+
+@article{Xiao2024,
+  type = {{Accepted Manuscript}},
+  title = {Prompt gamma emission prediction using a long short-term memory network},
+  author = {Xiao, Fan and Radonic, Domagoj and Kriechbaum, Michael and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
+  date = {2024-11-02},
+  journaltitle = {Physics in Medicine \& Biology},
+  shortjournal = {Phys. Med. Biol.},
+  issn = {0031-9155},
+  doi = {10.1088/1361-6560/ad8e2a},
+  url = {http://iopscience.iop.org/article/10.1088/1361-6560/ad8e2a},
+  urldate = {2024-11-04},
+  abstract = {Objective: To present a long short-term memory (LSTM)-based prompt gamma (PG) emission prediction method for proton therapy. Approach: Computed tomography (CT) scans of 33 patients with a prostate tumor were included in the dataset. A set of 10 million histories proton pencil beam (PB)s was generated for Monte Carlo (MC) dose and PG simulation. For training (20 patients) and validation (3 patients), over 6000 PBs at 150, 175 and 200 MeV were simulated. 3D relative stopping power (RSP), PG and dose cuboids that included the PB were extracted. Three models were trained, validated and tested based on an LSTM-based network: (1) input RSP and output PG, (2) input RSP with dose and output PG (single-energy), and (3) input RSP/dose and output PG (multi-energy). 540 PBs at each of the four energy levels (150, 175, 200, and 125-210 MeV) were simulated across 10 patients to test the three models. The gamma passing rate (2\%/2mm) and PG range shift were evaluated and compared among the three models. Results: The model with input RSP/dose and output PG (multi-energy) showed the best performance in terms of gamma passing rate and range shift metrics. Its mean gamma passing rate of testing PBs of 125-210 MeV was 98.5\% and the worst case was 92.8\%. Its mean absolute range shift between predicted and MC PGs was 0.15 mm, where the maximum shift was 1.1mm. The prediction time of our models was within 130 ms per PB. Significance: We developed a sub-second LSTM-based PG emission prediction method. Its accuracy in prostate patients has been confirmed across an extensive range of proton energies.},
+  langid = {english}
 }

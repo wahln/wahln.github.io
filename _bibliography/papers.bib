@@ -108,6 +108,21 @@
   eventtitle = {{{PTCOG62}}}
 }
 
+@online{Cristoforetti2025,
+  title = {Scenario-free robust optimization algorithm for {{IMRT}} and {{IMPT}} treatment planning},
+  author = {Cristoforetti, Remo and Hardt, Jennifer Josephine and Wahl, Niklas},
+  date = {2025-01-10},
+  eprint = {2501.05818},
+  eprinttype = {arXiv},
+  eprintclass = {physics},
+  doi = {10.48550/arXiv.2501.05818},
+  url = {http://arxiv.org/abs/2501.05818},
+  urldate = {2025-01-13},
+  abstract = {Robust treatment planning algorithms for Intensity Modulated Proton Therapy (IMPT) and Intensity Modulated Radiation Therapy (IMRT) allow for uncertainty reduction in the delivered dose distributions through explicit inclusion of error scenarios. Due to the curse of dimensionality, application of such algorithms can easily become computationally prohibitive. This work proposes a scenario-free probabilistic robust optimization algorithm that overcomes both the runtime and memory limitations typical of traditional robustness algorithms. The scenario-free approach minimizes cost-functions evaluated on expected-dose distributions and total variance. Calculation of these quantities relies on precomputed expected-dose-influence and total-variance-influence matrices, such that no scenarios need to be stored for optimization. The algorithm was developed within matRad and tested in several optimization configurations for photon and proton irradiation plans. A traditional robust optimization algorithm and a margin-based approach are used as a reference to benchmark the performances of the scenario-free algorithm in terms of plan quality, robustness and computational workload. The scenario-free approach achieves plan quality compatible with traditional robust optimization algorithms and it reduces the standard deviation within selected structures when variance reduction objectives are defined. Avoiding the storage of individual scenario information allows for the inclusion of an arbitrary number of error scenarios. The observed optimization time is independent on the number of included scenarios, compatible with a nominal, non-robust algorithm and significantly lower than the traditional robust approach. These properties make the scenario-free approach suitable for the optimization of robust plans involving a high number of error scenarios and CT phases as 4D robust optimization.},
+  pubstate = {prepublished},
+  keywords = {Physics - Medical Physics}
+}
+
 @inproceedings{Facchiano2024,
   type = {{Poster Oral}},
   title = {{{SO026}} / \#456 - {{An Ion Therapy Treatment Planning Framework}} for {{Direct Optimization}} of {{Nanodosimetric Ionization Detail Through Cluster Dose}}},
@@ -692,6 +707,21 @@
   doi = {10.14338/IJPT-23-PTCOG61-10.2},
   eventtitle = {{{PTCOG}} 61},
   issue = {{2}}
+}
+
+@online{Stammer2025,
+  title = {A {{Deterministic Dynamical Low-rank Approach}} for {{Charged Particle Transport}}},
+  author = {Stammer, Pia and Burlacu, Tiberiu and Wahl, Niklas and Lathouwers, Danny and Kusch, Jonas},
+  date = {2025-01-10},
+  eprint = {2412.09484},
+  eprinttype = {arXiv},
+  eprintclass = {math},
+  doi = {10.48550/arXiv.2412.09484},
+  url = {http://arxiv.org/abs/2412.09484},
+  urldate = {2025-01-13},
+  abstract = {Deterministically solving charged particle transport problems at a sufficient spatial and angular resolution is often prohibitively expensive, especially due to their highly forward peaked scattering. We propose a model order reduction approach which evolves the solution on a low-rank manifold in time, making computations feasible at much higher resolutions and reducing the overall run-time and memory footprint. For this, we use a hybrid dynamical low-rank approach based on a collided-uncollided split, i.e., the transport equation is split through a collision source method. Uncollided particles are described using a ray tracer, facilitating the inclusion of boundary conditions and straggling, whereas collided particles are represented using a moment method combined with the dynamical low-rank approximation. Here the energy is treated as a pseudo-time and a rank adaptive integrator is chosen to dynamically adapt the rank in energy. We can reproduce the results of a full-rank reference code at a much lower rank and thus computational cost and memory usage. The solution further achieves comparable accuracy with respect to TOPAS MC as previous deterministic approaches.},
+  pubstate = {prepublished},
+  keywords = {Computer Science - Numerical Analysis,Mathematics - Numerical Analysis,Physics - Computational Physics,Physics - Medical Physics}
 }
 
 @article{Vargas-Bedoya2022,

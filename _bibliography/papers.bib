@@ -581,6 +581,26 @@
   issue = {{2}}
 }
 
+@article{Sevilla-Moreno2025,
+  title = {Interval {{Analysis-Based Optimization}}: {{A Robust Model}} for {{Intensity-Modulated Radiotherapy}} ({{IMRT}})},
+  shorttitle = {Interval {{Analysis-Based Optimization}}},
+  author = {Sevilla-Moreno, Andrés Camilo and Puerta-Yepes, María Eugenia and Wahl, Niklas and Benito-Herce, Rafael and Cabal-Arango, Gonzalo},
+  date = {2025-02-03},
+  journaltitle = {Cancers},
+  volume = {17},
+  number = {3},
+  pages = {504},
+  publisher = {Multidisciplinary Digital Publishing Institute},
+  issn = {2072-6694},
+  doi = {10.3390/cancers17030504},
+  url = {https://www.mdpi.com/2072-6694/17/3/504},
+  urldate = {2025-02-03},
+  abstract = {Background: Cancer remains one of the leading causes of mortality worldwide, with radiotherapy playing a crucial role in its treatment. Intensity-modulated radiotherapy (IMRT) enables precise dose delivery to tumors while sparing healthy tissues. However, geometric uncertainties such as patient positioning errors and anatomical deformations can compromise treatment accuracy. Traditional methods use safety margins, which may lead to excessive irradiation of healthy organs or insufficient tumor coverage. Robust optimization techniques, such as minimax approaches, attempt to address these uncertainties but can result in overly conservative treatment plans. This study introduces an interval analysis-based optimization model for IMRT, offering a more flexible approach to uncertainty management. Methods: The proposed model represents geometric uncertainties using interval dose influence matrices and incorporates Bertoluzza’s metric to balance tumor coverage and organ-at-risk (OAR) protection. The θ parameter allows controlled robustness modulation. The model was implemented in matRad, an open-source treatment planning system, and evaluated on five prostate cancer cases. Results were compared against traditional Planning Target Volume (PTV) and minimax robust optimization approaches. Results: The interval-based model improved tumor coverage by 5.8\% while reducing bladder dose by 4.2\% compared to PTV. In contrast, minimax robust optimization improved tumor coverage by 25.8\% but increased bladder dose by 23.2\%. The interval-based approach provided a better balance between tumor coverage and OAR protection, demonstrating its potential to enhance treatment effectiveness without excessive conservatism. Conclusions: This study presents a novel framework for IMRT planning that improves uncertainty management through interval analysis. By allowing adjustable robustness modulation, the proposed model enables more personalized and clinically adaptable treatment plans. These findings highlight the potential of interval analysis as a powerful tool for optimizing radiotherapy outcomes, balancing treatment efficacy and patient safety.},
+  issue = {3},
+  langid = {english},
+  keywords = {IMRT,interval analysis,radiotherapy,robust optimization,uncertainty}
+}
+
 @inproceedings{Sitarz2024,
   type = {{Poster}},
   title = {2764: {{Development}} and validation of {{Very High Energy Electrons}} dose calculation in {{matRad TPS}}},
@@ -984,7 +1004,7 @@
   eventtitle = {{{PTCOG}} 60}
 }
 
-@inproceedings{Wahl2023b,
+@inproceedings{Wahl2023c,
   type = {{Oral Presentation}},
   title = {{{MO-0563}}: {{Youth}} education and outreach with the international {{Particle Therapy Masterclass}}},
   booktitle = {Radiotherapy and {{Oncology}}},
@@ -1071,7 +1091,7 @@
   keywords = {matRadGrant}
 }
 
-@inproceedings{Wieser2018,
+@inproceedings{Wieser2018a,
   type = {{Oral Presentation}},
   title = {{{OC-0088}}: {{Simultaneous}} consideration of biologyical and physical uncertainties in robust ion therapy planning},
   shorttitle = {Simultaneous consideration of biologyical and physical uncertainties in robust ion therapy planning},
@@ -1088,7 +1108,7 @@
   langid = {english}
 }
 
-@article{Wieser2018a,
+@article{Wieser2018b,
   ids = {Wieser2018c},
   title = {{{matRad}} - an open-source treatment planning toolkit for educational purposes},
   author = {Wieser, Hans-Peter and Wahl, Niklas and Gabryś, Hubert S. and Müller, Lucas-Raphael and Pezzano, Giuseppe and Winter, Johanna and Ulrich, Silke and Burigo, Lucas Noberto and Jäkel, Oliver and Bangert, Mark},
@@ -1141,21 +1161,7 @@
   preprintfile = {WieserHP_GaussianUncertainties_2020_acceptedPreprint.pdf}
 }
 
-@inproceedings{Xiao2024,
-  type = {{Oral Presentation}},
-  title = {{{SC29}}.07 {{AI-based}} prompt gamma prediction},
-  booktitle = {Physica {{Medica}}},
-  author = {Xiao, Fan and Kriechbaum, Michael and Radonic, Domagoj and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
-  date = {2024-09-01},
-  series = {Abstracts of the 5th {{European Congress}} of {{Medical Physics}}},
-  volume = {125},
-  pages = {103532},
-  doi = {10.1016/j.ejmp.2024.103532},
-  url = {https://www.sciencedirect.com/science/article/pii/S1120179724003582},
-  urldate = {2024-11-04}
-}
-
-@article{Xiao2024a,
+@article{Xiao2024,
   title = {Prompt gamma emission prediction using a long short-term memory network},
   author = {Xiao, Fan and Radonic, Domagoj and Kriechbaum, Michael and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
   date = {2024-11-02},
@@ -1170,4 +1176,18 @@
   urldate = {2024-11-04},
   abstract = {Objective: To present a long short-term memory (LSTM)-based prompt gamma (PG) emission prediction method for proton therapy. Approach: Computed tomography (CT) scans of 33 patients with a prostate tumor were included in the dataset. A set of 10 million histories proton pencil beam (PB)s was generated for Monte Carlo (MC) dose and PG simulation. For training (20 patients) and validation (3 patients), over 6000 PBs at 150, 175 and 200 MeV were simulated. 3D relative stopping power (RSP), PG and dose cuboids that included the PB were extracted. Three models were trained, validated and tested based on an LSTM-based network: (1) input RSP and output PG, (2) input RSP with dose and output PG (single-energy), and (3) input RSP/dose and output PG (multi-energy). 540 PBs at each of the four energy levels (150, 175, 200, and 125-210 MeV) were simulated across 10 patients to test the three models. The gamma passing rate (2\%/2mm) and PG range shift were evaluated and compared among the three models. Results: The model with input RSP/dose and output PG (multi-energy) showed the best performance in terms of gamma passing rate and range shift metrics. Its mean gamma passing rate of testing PBs of 125-210 MeV was 98.5\% and the worst case was 92.8\%. Its mean absolute range shift between predicted and MC PGs was 0.15 mm, where the maximum shift was 1.1mm. The prediction time of our models was within 130 ms per PB. Significance: We developed a sub-second LSTM-based PG emission prediction method. Its accuracy in prostate patients has been confirmed across an extensive range of proton energies.},
   langid = {english}
+}
+
+@inproceedings{Xiao2024a,
+  type = {{Oral Presentation}},
+  title = {{{SC29}}.07 {{AI-based}} prompt gamma prediction},
+  booktitle = {Physica {{Medica}}},
+  author = {Xiao, Fan and Kriechbaum, Michael and Radonic, Domagoj and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
+  date = {2024-09-01},
+  series = {Abstracts of the 5th {{European Congress}} of {{Medical Physics}}},
+  volume = {125},
+  pages = {103532},
+  doi = {10.1016/j.ejmp.2024.103532},
+  url = {https://www.sciencedirect.com/science/article/pii/S1120179724003582},
+  urldate = {2024-11-04}
 }

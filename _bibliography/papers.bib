@@ -601,6 +601,22 @@
   keywords = {IMRT,interval analysis,radiotherapy,robust optimization,uncertainty}
 }
 
+@article{Sevilla2025,
+  type = {{Accepted Manuscript}},
+  title = {A robust optimization model for intensity-modulated radiotherapy: {{Cheap-Minimax}}},
+  shorttitle = {A robust optimization model for intensity-modulated radiotherapy},
+  author = {Sevilla, Andrés C. and Cabal, Gonzalo and Wahl, Niklas and Puerta, María E. and Rivera, Juan C.},
+  date = {2025-02-26},
+  journaltitle = {Medical Physics},
+  issn = {2473-4209},
+  doi = {10.1002/mp.17709},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.17709},
+  urldate = {2025-02-27},
+  abstract = {Background Over the past three decades, the intensity-modulated radiotherapy (IMRT) has become a standard technique, enabling highly conformal dose distributions tailored to specific clinical objectives. Despite these advancements, IMRT treatment plans are significantly susceptible to uncertainties during both the planning and delivery phases. The most commonly used strategy to address these uncertainties is the margin-based or planning target volume (PTV) approach, which relies on the so-called dose cloud approximation. However, the PTV concept has notable limitations, particularly in complex scenarios where target volumes are superficial or located near critical structures. In contrast, the advent of intensity-modulated particle therapy has driven the development of robust optimization models, which have emerged as a promising alternative for managing uncertainties. Among these, the worst-case scenario or minimax strategy is the most widely employed. While minimax can be directly applied to photon treatments, its use in IMRT often leads to overly conservative plans or plans that are very similar to those obtained using the conventional margin-based PTV approach. Purpose In this work, we present a robust optimization model particularly suitable for photon treatments. The new approach, called Cheap-Minimax, is a generalization of the minimax strategy used for particle therapy and aims to improve the balance between plan robustness and the price of robustness in terms of dose to organs at risk (OARs), an issue particularly pronounced in photon treatments. Methods The c-minimax model was implemented in the MatRad treatment planning system, developed at the German Cancer Research Center (DKFZ). It was applied to 20 clinical cases, comprising 5 prostate cancer cases and 15 breast cancer cases. The results were compared with those obtained using the conventional minimax model and the PTV-based approach. Results For prostate cancer cases, the c-minimax model maintained a robustness comparable to the PTV approach, while achieving a 20\% reduction in V40Gy\textbackslash V\_40 \textbackslash, \textbackslash textGy\textbackslash{} for the rectum and a 10\% reduction in V60Gy\textbackslash V\_60 \textbackslash, \textbackslash textGy\textbackslash{} for the bladder compared to the minimax model. In breast cancer cases, the c-minimax model improved robustness by 23.7\% relative to the PTV approach and by 18.2\% compared to the minimax model. Additionally, the c-minimax model reduced V20Gy\textbackslash V\_20 \textbackslash, \textbackslash textGy\textbackslash{} for the ipsilateral lung by 3.7\% and the mean heart dose by 1.2 Gy (20\%) compared to minimax. Both the c-minimax and minimax models reduced D5\%\textbackslash D\_5\%\textbackslash{} skin dose by 10.9 Gy (18.9\%) and 11.1 Gy (19.3\%), respectively, compared to the PTV approach. Conclusions The c-minimax model successfully overcomes the limitations of the PTV approach and the over-conservativeness of the minimax model, demonstrating significant advantages in managing uncertainties in complex cases, such as breast cancer. By providing superior robustness compared to PTV and reducing OAR doses relative to minimax, the model offers a flexible and clinically feasible strategy to enhance treatment quality. The marked reduction in high-dose regions (hotspots) in superficial tissues and skin highlights its potential to lower toxicity risks and improve patient outcomes. These results provide quantitative evidence of the practical benefits of robustness-compromise-oriented approaches in IMRT.},
+  langid = {english},
+  keywords = {IMRT,robust optimization,uncertainty}
+}
+
 @inproceedings{Sitarz2024,
   type = {{Poster}},
   title = {2764: {{Development}} and validation of {{Very High Energy Electrons}} dose calculation in {{matRad TPS}}},

@@ -531,6 +531,22 @@
   venue = {Online}
 }
 
+@article{Pryanichnikov2025,
+  title = {Feasibility study of using fast low-dose pencil beam proton and helium radiographs for intrafractional motion management},
+  author = {Pryanichnikov, Alexander A. and Hardt, Jennifer J. and DeJongh, Ethan A. and Martin, Lukas and DeJongh, Don F. and Jäkel, Oliver and Wahl, Niklas and Seco, Joao},
+  date = {2025-05-01},
+  journaltitle = {Physica Medica},
+  shortjournal = {Physica Medica},
+  volume = {133},
+  pages = {104959},
+  issn = {1120-1797},
+  doi = {10.1016/j.ejmp.2025.104959},
+  url = {https://www.sciencedirect.com/science/article/pii/S1120179725000699},
+  urldate = {2025-04-01},
+  abstract = {Purpose This study aims to evaluate the feasibility of using fast, low-dose proton (pRad) and helium (HeRad) radiography for intrafractional motion management. This approach uses pencil ion beam delivery systems, modern particle imaging detectors and fast image reconstruction. Methods A plastic respiratory phantom underwent four-dimensional computed tomography (4DCT) using a commercial X-ray scanner, experimental pRad with a continuous proton beam from a clinical serial cyclotron, and experimental pRad and HeRad with pulsed proton and helium beams from a synchrotron-based ion therapy facility. Open-source patient 4DCT data were used in a Monte Carlo simulation study to evaluate pRad and HeRad in a realistic patient geometry. Treatment plans involving mixed carbon-helium beams were calculated using matRad and simulated in TOPAS. Results The experimental pRad achieved a temporal resolution of 8 fps for the cyclotron-based facility, while both pRad and HeRad achieved 2 fps for the synchrotron-based facility within a 10~cm~×~10~cm region of interest. pRad reconstructed the respiratory phantom motion pattern with a dose of less than 2~µGy per image. In simulations of mixed carbon-helium beams, HeRad, both integral and single iso-energy, detected water equivalent thickness differences with sub-millimeter accuracy across different phases of the patient’s 4DCT data. Conclusion This study demonstrates that low-dose small-field proton and helium radiography, utilizing pencil beam scanning, can effectively monitor intrafractional anatomical displacements with millimeter-level spatial accuracy and sub-second temporal resolution. Current particle imaging and beam delivery technologies have the potential to enable real-time patient monitoring in promising mixed ion beam therapy.},
+  keywords = {Adaptive radiation therapy,Helium imaging,Ion beam therapy,Motion management,Proton imaging,Proton therapy}
+}
+
 @article{Radonic2024,
   title = {Proton dose calculation with {{LSTM}} networks in presence of a magnetic field},
   author = {Radonic, Domagoj and Xiao, Fan and Wahl, Niklas and Voss, Luke and Neishabouri, Ahmad and Delopoulos, Nikolaos and Marschner, Sebastian and Corradini, Stefanie and Belka, Claus and Dedes, Georgios and Kurz, Christopher and Landry, Guillaume},
@@ -1036,7 +1052,7 @@
   eventtitle = {{{PTCOG}} 60}
 }
 
-@inproceedings{Wahl2023c,
+@inproceedings{Wahl2023b,
   type = {{Oral Presentation}},
   title = {{{MO-0563}}: {{Youth}} education and outreach with the international {{Particle Therapy Masterclass}}},
   booktitle = {Radiotherapy and {{Oncology}}},
@@ -1089,7 +1105,7 @@
   volume = {44},
   number = {6},
   eprint = {28370020},
-  eprinttype = {pmid},
+  eprinttype = {pubmed},
   pages = {2556--2568},
   publisher = {Wiley},
   issn = {2473-4209},
@@ -1123,7 +1139,7 @@
   keywords = {matRadGrant}
 }
 
-@inproceedings{Wieser2018a,
+@inproceedings{Wieser2018,
   type = {{Oral Presentation}},
   title = {{{OC-0088}}: {{Simultaneous}} consideration of biologyical and physical uncertainties in robust ion therapy planning},
   shorttitle = {Simultaneous consideration of biologyical and physical uncertainties in robust ion therapy planning},
@@ -1140,7 +1156,7 @@
   langid = {english}
 }
 
-@article{Wieser2018b,
+@article{Wieser2018a,
   ids = {Wieser2018c},
   title = {{{matRad}} - an open-source treatment planning toolkit for educational purposes},
   author = {Wieser, Hans-Peter and Wahl, Niklas and Gabryś, Hubert S. and Müller, Lucas-Raphael and Pezzano, Giuseppe and Winter, Johanna and Ulrich, Silke and Burigo, Lucas Noberto and Jäkel, Oliver and Bangert, Mark},
@@ -1193,7 +1209,21 @@
   preprintfile = {WieserHP_GaussianUncertainties_2020_acceptedPreprint.pdf}
 }
 
-@article{Xiao2024,
+@inproceedings{Xiao2024,
+  type = {{Oral Presentation}},
+  title = {{{SC29}}.07 {{AI-based}} prompt gamma prediction},
+  booktitle = {Physica {{Medica}}},
+  author = {Xiao, Fan and Kriechbaum, Michael and Radonic, Domagoj and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
+  date = {2024-09-01},
+  series = {Abstracts of the 5th {{European Congress}} of {{Medical Physics}}},
+  volume = {125},
+  pages = {103532},
+  doi = {10.1016/j.ejmp.2024.103532},
+  url = {https://www.sciencedirect.com/science/article/pii/S1120179724003582},
+  urldate = {2024-11-04}
+}
+
+@article{Xiao2024a,
   title = {Prompt gamma emission prediction using a long short-term memory network},
   author = {Xiao, Fan and Radonic, Domagoj and Kriechbaum, Michael and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
   date = {2024-11-02},
@@ -1208,18 +1238,4 @@
   urldate = {2024-11-04},
   abstract = {Objective: To present a long short-term memory (LSTM)-based prompt gamma (PG) emission prediction method for proton therapy. Approach: Computed tomography (CT) scans of 33 patients with a prostate tumor were included in the dataset. A set of 10 million histories proton pencil beam (PB)s was generated for Monte Carlo (MC) dose and PG simulation. For training (20 patients) and validation (3 patients), over 6000 PBs at 150, 175 and 200 MeV were simulated. 3D relative stopping power (RSP), PG and dose cuboids that included the PB were extracted. Three models were trained, validated and tested based on an LSTM-based network: (1) input RSP and output PG, (2) input RSP with dose and output PG (single-energy), and (3) input RSP/dose and output PG (multi-energy). 540 PBs at each of the four energy levels (150, 175, 200, and 125-210 MeV) were simulated across 10 patients to test the three models. The gamma passing rate (2\%/2mm) and PG range shift were evaluated and compared among the three models. Results: The model with input RSP/dose and output PG (multi-energy) showed the best performance in terms of gamma passing rate and range shift metrics. Its mean gamma passing rate of testing PBs of 125-210 MeV was 98.5\% and the worst case was 92.8\%. Its mean absolute range shift between predicted and MC PGs was 0.15 mm, where the maximum shift was 1.1mm. The prediction time of our models was within 130 ms per PB. Significance: We developed a sub-second LSTM-based PG emission prediction method. Its accuracy in prostate patients has been confirmed across an extensive range of proton energies.},
   langid = {english}
-}
-
-@inproceedings{Xiao2024a,
-  type = {{Oral Presentation}},
-  title = {{{SC29}}.07 {{AI-based}} prompt gamma prediction},
-  booktitle = {Physica {{Medica}}},
-  author = {Xiao, Fan and Kriechbaum, Michael and Radonic, Domagoj and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
-  date = {2024-09-01},
-  series = {Abstracts of the 5th {{European Congress}} of {{Medical Physics}}},
-  volume = {125},
-  pages = {103532},
-  doi = {10.1016/j.ejmp.2024.103532},
-  url = {https://www.sciencedirect.com/science/article/pii/S1120179724003582},
-  urldate = {2024-11-04}
 }

@@ -141,6 +141,21 @@
   eventtitle = {{{PTCOG}} 62}
 }
 
+@online{Facchiano2025,
+  title = {An ion treatment planning framework for inclusion of nanodosimetric ionization detail through cluster dose},
+  author = {Facchiano, Simona and Ortiz, Ramon and Cristoforetti, Remo and D-Kondo, Naoki and Jaekel, Oliver and Faddegon, Bruce and Wahl, Niklas},
+  date = {2025-05-14},
+  eprint = {2505.09667},
+  eprinttype = {arXiv},
+  eprintclass = {physics},
+  doi = {10.48550/arXiv.2505.09667},
+  url = {http://arxiv.org/abs/2505.09667},
+  urldate = {2025-05-16},
+  abstract = {Nanodosimetry relates Ionization Detail (ID) and ionization parameters (Ip) to biological endpoints relevant for charged-particle radiotherapy. This supports a more physics-based modeling of biological effectiveness than traditional dose-response relationships and RBE models. Faddegon et al. (2023) introduced cluster dose g(Ip) as a physical quantity, bridging ID to the treatment planning level, which can be directly optimized. We developed a framework enabling cluster dose optimization via a pencil-beam (PB) algorithm, and validated against Monte Carlo (MC) simulations. The framework, integrated into the treatment planning toolkit matRad, uses precomputed Ip values obtained from MC track-structure simulations. We applied our tool for plan optimization with protons, helium, and carbon ions in a water phantom and a prostate case. Recalculation with TOPAS showed 3D gamma passing rates {$>$}97\% (phantom) and {$>$}98\% (patient) using a 3\%/3mm criterion and a threshold of 10\% of the maximum dose. Cluster dose F5 optimization produced homogeneous target coverage, with heavier ions requiring lower absorbed doses for the same prescribed cluster dose level. This demonstrates the feasibility of fast, accurate cluster dose optimization using PB algorithms.},
+  pubstate = {prepublished},
+  keywords = {Physics - Medical Physics}
+}
+
 @article{Faddegon2023,
   title = {Ionization detail parameters and cluster dose: a mathematical model for selection of nanodosimetric quantities for use in treatment planning in charged particle radiotherapy},
   shorttitle = {Ionization detail parameters and cluster dose},
@@ -280,6 +295,21 @@
   url = {https://www.sciencedirect.com/science/article/pii/S233151802400564X},
   urldate = {2024-09-09},
   eventtitle = {{{PTCOG}} 62}
+}
+
+@online{Hardt2025,
+  title = {Helium {{Range Viability}} for {{Online Range Probing}} in {{Mixed Carbon-Helium Beams}}},
+  author = {Hardt, Jennifer J. and Pryanichnikov, Alexander A. and Jäkel, Oliver and Seco, Joao and Wahl, Niklas},
+  date = {2025-05-02},
+  eprint = {2505.01165},
+  eprinttype = {arXiv},
+  eprintclass = {physics},
+  doi = {10.48550/arXiv.2505.01165},
+  url = {http://arxiv.org/abs/2505.01165},
+  urldate = {2025-05-05},
+  abstract = {Background: Recently, mixed carbon-helium beams were proposed for range verification in carbon ion therapy: Helium, with three times the range of carbon, serves as an on-line range probe, and is mixed into a therapeutic carbon beam. Purpose: Treatment monitoring is of special interest for lung cancer therapy, however the helium range might not always be sufficient to exit the patient distally. Therefore mixed beam use cases of several patient sites are considered. Methods: An extension to the open-source planning toolkit, matRad allows for calculation and optimization of mixed beam treatment plans. The use of the mixed beam method in 15 patients with lung cancer, as well as in a prostate and liver case, for various potential beam configurations was investigated. Planning strategies to optimize the residual helium range considering the sensitive energy range of the imaging detector were developed. A strategy involves adding helium to energies whose range is sufficient. Another one is to use range shifters to increase the helium energy and thus range. Results: In most patient cases, the residual helium range of at least one spot is too low. All investigated planning strategies can be used to ensure a high enough helium range while still keeping a low helium dose and a satisfactory total mixed carbon-helium beam dose. The use of range shifters allows for the detection of more spots. Conclusion: The mixed beam method shows promising results for online motioning. The use of range shifters ensures a high enough helium range and more detectable spots, allowing for a wider-spread application.},
+  pubstate = {prepublished},
+  keywords = {Physics - Medical Physics}
 }
 
 @article{Harrison2024,
@@ -624,6 +654,9 @@
   author = {Sevilla, Andrés C. and Cabal, Gonzalo and Wahl, Niklas and Puerta, María E. and Rivera, Juan C.},
   date = {2025-02-26},
   journaltitle = {Medical Physics},
+  volume = {52},
+  number = {2},
+  pages = {3360--3376},
   issn = {2473-4209},
   doi = {10.1002/mp.17709},
   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.17709},

@@ -108,10 +108,12 @@
   eventtitle = {{{PTCOG62}}}
 }
 
-@online{Cristoforetti2025,
+@article{Cristoforetti2025,
+  type = {{Accepted Manuscript}},
   title = {Scenario-free robust optimization algorithm for {{IMRT}} and {{IMPT}} treatment planning},
   author = {Cristoforetti, Remo and Hardt, Jennifer Josephine and Wahl, Niklas},
-  date = {2025-01-10},
+  date = {2025-05-07},
+  journaltitle = {Medical Physics},
   eprint = {2501.05818},
   eprinttype = {arXiv},
   eprintclass = {physics},
@@ -119,7 +121,7 @@
   url = {http://arxiv.org/abs/2501.05818},
   urldate = {2025-01-13},
   abstract = {Robust treatment planning algorithms for Intensity Modulated Proton Therapy (IMPT) and Intensity Modulated Radiation Therapy (IMRT) allow for uncertainty reduction in the delivered dose distributions through explicit inclusion of error scenarios. Due to the curse of dimensionality, application of such algorithms can easily become computationally prohibitive. This work proposes a scenario-free probabilistic robust optimization algorithm that overcomes both the runtime and memory limitations typical of traditional robustness algorithms. The scenario-free approach minimizes cost-functions evaluated on expected-dose distributions and total variance. Calculation of these quantities relies on precomputed expected-dose-influence and total-variance-influence matrices, such that no scenarios need to be stored for optimization. The algorithm was developed within matRad and tested in several optimization configurations for photon and proton irradiation plans. A traditional robust optimization algorithm and a margin-based approach are used as a reference to benchmark the performances of the scenario-free algorithm in terms of plan quality, robustness and computational workload. The scenario-free approach achieves plan quality compatible with traditional robust optimization algorithms and it reduces the standard deviation within selected structures when variance reduction objectives are defined. Avoiding the storage of individual scenario information allows for the inclusion of an arbitrary number of error scenarios. The observed optimization time is independent on the number of included scenarios, compatible with a nominal, non-robust algorithm and significantly lower than the traditional robust approach. These properties make the scenario-free approach suitable for the optimization of robust plans involving a high number of error scenarios and CT phases as 4D robust optimization.},
-  pubstate = {prepublished},
+  pubstate = {{In Press}},
   keywords = {Physics - Medical Physics}
 }
 
@@ -664,7 +666,6 @@
 }
 
 @article{Sevilla2025,
-  type = {{Accepted Manuscript}},
   title = {A robust optimization model for intensity-modulated radiotherapy: {{Cheap-Minimax}}},
   shorttitle = {A robust optimization model for intensity-modulated radiotherapy},
   author = {Sevilla, Andrés C. and Cabal, Gonzalo and Wahl, Niklas and Puerta, María E. and Rivera, Juan C.},

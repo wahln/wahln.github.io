@@ -35,7 +35,6 @@
   date = {2020},
   url = {https://www.mathworks.com/company/newsletters/articles/developing-matrad-an-open-source-dose-calculation-and-optimization-toolkit-for-radiation-therapy-planning.html},
   urldate = {2020-12-12},
-  abstract = {DKFZ researchers developed a MATLAB toolkit that spans the entire treatment planning workflow, from setting treatment parameters and optimizing the plan to visualizing and evaluating the results.},
   langid = {english},
   organization = {MathWorks Techincal Articles and Newsletters}
 }
@@ -53,9 +52,7 @@
   issn = {2234-943X},
   doi = {10.3389/fonc.2023.1238824},
   url = {https://www.frontiersin.org/articles/10.3389/fonc.2023.1238824},
-  urldate = {2023-10-26},
-  abstract = {ObjectiveWe apply the superiorization methodology to the constrained intensity-modulated radiation therapy (IMRT) treatment planning problem. Superiorization combines a feasibility-seeking projection algorithm with objective function reduction: The underlying projection algorithm is perturbed with gradient descent steps to steer the algorithm towards a solution with a lower objective function value compared to one obtained solely through feasibility-seeking.ApproachWithin the open-source inverse planning toolkit matRad, we implement a prototypical algorithmic framework for superiorization using the well-established Agmon, Motzkin, and Schoenberg (AMS) feasibility-seeking projection algorithm and common nonlinear dose optimization objective functions. Based on this prototype, we apply superiorization to intensity-modulated radiation therapy treatment planning and compare it with (i) bare feasibility-seeking (i.e., without any objective function) and (ii) nonlinear constrained optimization using first-order derivatives. For these comparisons, we use the TG119 water phantom, the head-and-neck and the prostate patient of the CORT dataset.Main resultsBare feasibility-seeking with AMS confirms previous studies, showing it can find solutions that are nearly equivalent to those found by the established piece-wise least-squares optimization approach. The superiorization prototype solved the linearly constrained planning problem with similar dosimetric performance to that of a general-purpose nonlinear constrained optimizer while showing smooth convergence in both constraint proximity and objective function reduction.SignificanceSuperiorization is a useful alternative to constrained optimization in radiotherapy inverse treatment planning. Future extensions with other approaches to feasibility-seeking, e.g., with dose-volume constraints and more sophisticated perturbations, may unlock its full potential for high performant inverse treatment planning.},
-  keywords = {⛔ No DOI found}
+  urldate = {2023-10-26}
 }
 
 @article{Bennan2021,
@@ -71,7 +68,6 @@
   doi = {10.1016/j.ijrobp.2021.05.126},
   url = {https://www.sciencedirect.com/science/article/pii/S0360301621006684},
   urldate = {2021-06-30},
-  abstract = {Purpose: Carbon ions are radiobiologically more effective than photons and are beneficial for treating radioresistant gross tumour volumes (GTV). However, due to a reduced fractionation effect, they may be disadvantageous for treating infiltrative tumours, where healthy tissue inside the clinical target volume (CTV) must be protected through fractionation. This work addresses the question: what is the ideal combined photon-carbon ion fluence distribution for treating infiltrative tumours given a specific fraction allocation between photons and carbon ions? Methods: We present a method to simultaneously optimize sequentially delivered intensity modulated photon (IMRT) and carbon ion (CIRT) treatments based on cumulative biological effect, incorporating both the variable RBE of carbon ions and the fractionation effect within the linear quadratic model. The method is demonstrated for six Glioblastoma patients in comparison to current clinical standard of independently optimized CIRT - IMRT plans. Results: Compared to the reference plan, joint optimization strategies yield inhomogeneous photon and carbon ion dose distributions that cumulatively deliver a homogeneous biological effect distribution. In the optimal distributions, the dose to CTV is mostly delivered by photons while carbon ions are restricted to the GTV with variations depending on tumour size and location. Improvements in conformity of high dose regions are reflected by a mean EQD2 reduction of 3.29 ± 1.22 Gy in a dose fall-off margin around the CTV. Carbon ions may deliver higher doses to the center of the GTV, while photon contributions are increased at interfaces with CTV and critical structures. This results in a mean EQD2 reduction of 8.3 ± 2.28 Gy, where the brainstem abuts the target volumes. Conclusions: We have developed a biophysical model to optimize combined photon-carbon ion treatments. For six glioblastoma patient cases, we show that our approach results in a more targeted application of carbon ions that (1) reduces dose in normal tissues within the target volume which can only be protected through fractionation (2) boosts central target volume regions in order to reduce integral dose. Joint optimization of IMRT - CIRT treatments enable the exploration of a new spectrum of plans that can better address physical and radiobiological treatment planning challenges.},
   langid = {english},
   selected = {true}
 }
@@ -109,20 +105,16 @@
 }
 
 @article{Cristoforetti2025,
-  type = {{Accepted Manuscript}},
   title = {Scenario-free robust optimization algorithm for {{IMRT}} and {{IMPT}} treatment planning},
   author = {Cristoforetti, Remo and Hardt, Jennifer Josephine and Wahl, Niklas},
-  date = {2025-05-07},
+  date = {2025-05-26},
   journaltitle = {Medical Physics},
   eprint = {2501.05818},
   eprinttype = {arXiv},
   eprintclass = {physics},
-  doi = {10.48550/arXiv.2501.05818},
-  url = {http://arxiv.org/abs/2501.05818},
-  urldate = {2025-01-13},
-  abstract = {Robust treatment planning algorithms for Intensity Modulated Proton Therapy (IMPT) and Intensity Modulated Radiation Therapy (IMRT) allow for uncertainty reduction in the delivered dose distributions through explicit inclusion of error scenarios. Due to the curse of dimensionality, application of such algorithms can easily become computationally prohibitive. This work proposes a scenario-free probabilistic robust optimization algorithm that overcomes both the runtime and memory limitations typical of traditional robustness algorithms. The scenario-free approach minimizes cost-functions evaluated on expected-dose distributions and total variance. Calculation of these quantities relies on precomputed expected-dose-influence and total-variance-influence matrices, such that no scenarios need to be stored for optimization. The algorithm was developed within matRad and tested in several optimization configurations for photon and proton irradiation plans. A traditional robust optimization algorithm and a margin-based approach are used as a reference to benchmark the performances of the scenario-free algorithm in terms of plan quality, robustness and computational workload. The scenario-free approach achieves plan quality compatible with traditional robust optimization algorithms and it reduces the standard deviation within selected structures when variance reduction objectives are defined. Avoiding the storage of individual scenario information allows for the inclusion of an arbitrary number of error scenarios. The observed optimization time is independent on the number of included scenarios, compatible with a nominal, non-robust algorithm and significantly lower than the traditional robust approach. These properties make the scenario-free approach suitable for the optimization of robust plans involving a high number of error scenarios and CT phases as 4D robust optimization.},
-  pubstate = {{In Press}},
-  keywords = {Physics - Medical Physics}
+  doi = {10.1002/mp.17905},
+  url = {https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.17905},
+  urldate = {2025-01-13}
 }
 
 @inproceedings{Facchiano2024,
@@ -153,9 +145,7 @@
   doi = {10.48550/arXiv.2505.09667},
   url = {http://arxiv.org/abs/2505.09667},
   urldate = {2025-05-16},
-  abstract = {Nanodosimetry relates Ionization Detail (ID) and ionization parameters (Ip) to biological endpoints relevant for charged-particle radiotherapy. This supports a more physics-based modeling of biological effectiveness than traditional dose-response relationships and RBE models. Faddegon et al. (2023) introduced cluster dose g(Ip) as a physical quantity, bridging ID to the treatment planning level, which can be directly optimized. We developed a framework enabling cluster dose optimization via a pencil-beam (PB) algorithm, and validated against Monte Carlo (MC) simulations. The framework, integrated into the treatment planning toolkit matRad, uses precomputed Ip values obtained from MC track-structure simulations. We applied our tool for plan optimization with protons, helium, and carbon ions in a water phantom and a prostate case. Recalculation with TOPAS showed 3D gamma passing rates {$>$}97\% (phantom) and {$>$}98\% (patient) using a 3\%/3mm criterion and a threshold of 10\% of the maximum dose. Cluster dose F5 optimization produced homogeneous target coverage, with heavier ions requiring lower absorbed doses for the same prescribed cluster dose level. This demonstrates the feasibility of fast, accurate cluster dose optimization using PB algorithms.},
-  pubstate = {prepublished},
-  keywords = {Physics - Medical Physics}
+  pubstate = {prepublished}
 }
 
 @article{Faddegon2023,
@@ -172,7 +162,6 @@
   doi = {10.1088/1361-6560/acea16},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/acea16},
   urldate = {2023-07-25},
-  abstract = {Objective: To propose a mathematical model for applying Ionization Detail (ID), the detailed spatial distribution of ionization along a particle track, to proton and ion beam radiotherapy treatment planning (RTP). Approach: Our model provides for selection of preferred ID parameters (Ip ) for RTP, that associate closest to biological effects. Cluster dose is proposed to bridge the large gap between nanoscopic Ip and macroscopic RTP. Selection of Ip is demonstrated using published cell survival measurements for protons through argon, comparing results for nineteen Ip : Nk ; k = 2,3,...,10, the number of ionizations in clusters of k or more per particle, and Fk ; k = 1,2,...,10, the number of clusters of k or more per particle. We then describe application of the model to ID-based RTP and propose a path to clinical translation. Main results: The preferred Ip were N4 and F5 for aerobic cells, N5 and F7 for hypoxic cells. Significant differences were found in cell survival for beams having the same LET or the preferred Nk . Conversely, there was no significant difference for F5 for aerobic cells and F7 for hypoxic cells, regardless of ion beam atomic number or energy. Further, cells irradiated with the same cluster dose for these Ip had the same cell survival. Based on these preliminary results and other compelling results in nanodosimetry, it is reasonable to assert that Ip exist that are more closely associated with biological effects than current LET-based approaches and microdosimetric RBE-based models used in particle RTP. However, more biological variables such as cell line and cycle phase, as well as ion beam pulse structure and rate still need investigation. Significance: Our model provides a practical means to select preferred Ip from radiobiological data, and to convert Ip to the macroscopic cluster dose for particle RTP.},
   langid = {english}
 }
 
@@ -189,9 +178,7 @@
   doi = {10.1002/mp.16865},
   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.16865},
   urldate = {2023-12-10},
-  abstract = {Background Daily IGRT images show day-to-day anatomical variations in patients undergoing fractionated prostate radiotherapy. This is of particular importance in particle beam treatments. Purpose To develop a digital phantom series showing variation in pelvic anatomy for evaluating treatment planning and IGRT procedures in particle radiotherapy. Methods A pelvic phantom series was developed from the planning MRI and kVCT (planning CT) images along with six of the daily serial MVCT images taken of a single patient treated with a full bladder on a Tomotherapy unit. The selected patient had clearly visible yet unexceptional internal anatomy variation. Prostate, urethra, bladder, rectum, bowel, bowel gas, bone and soft tissue were contoured and a single Hounsfield Unit was assigned to each region. Treatment plans developed on the kVCT for photon, proton and carbon beams were recalculated on each phantom to demonstrate a clinical application of the series. Proton plans were developed with and without robust optimization. Results Limited to axial slices with prostate, the bladder volume varied from 6 to 46 cm3, the rectal volume (excluding gas) from 22 to 52 cm3, and rectal gas volume from zero to 18 cm3. The water equivalent path length to the prostate varied by up to 1.5 cm . The variations resulted in larger changes in the RBE-weighted Dose Volume Histograms of the non-robust proton plan and the carbon plan compared to the robust proton plan, the latter similar to the photon plan. The prostate coverage (V100\%) decreased by an average of 18\% in the carbon plan, 16\% in the non-robust proton plan, 1.8\% in the robust proton plan, and 4.4\% in the photon plan. The volume of rectum receiving 75\% of the prescription dose (V75\%) increased by an average of 3.7 cm3, 4.7 cm3, 1.9 cm3, and 0.6 cm3 in those four plans, respectively. Conclusions The digital pelvic phantom series provides for quantitative investigation of IGRT procedures and new methods for improving accuracy in particle therapy and may be used in cross-institutional comparisons for clinical trial quality assurance.},
-  langid = {english},
-  keywords = {interfraction motion,ion beams,pelvis phantom,prostate,protons,treatment planning}
+  langid = {english}
 }
 
 @inproceedings{Foka2022,
@@ -207,7 +194,6 @@
   doi = {10.1051/epjconf/202225801002},
   url = {https://www.epj-conferences.org/articles/epjconf/abs/2022/02/epjconf_vconf2021_01002/epjconf_vconf2021_01002.html},
   urldate = {2022-02-11},
-  abstract = {The aim of the new Particle Therapy MasterClass (PTMC) was to develop an educational and training environment in which anyone can learn about fundamental and applied research in particle therapy. The PTMC was recently integrated into the International MasterClass 2021 online programme that attracted 1500 students from 37 institutes in 20 countries, worldwide. The PTMC focuses on the topic of cancer treatment, a particularly sensitive and socially relevant topic. The main idea is to (a) provide a basic understanding of cancer radiation therapy, (b) demonstrate that fundamental properties of particle interactions with matter, which are used for detection in physics experiments, are also the basis for treating cancer tumours; and (c) show that the same accelerator technologies are used in both, research laboratories and therapy centres. For the hands-on session, the open-source professional treatment planning software matRad is used, developed for research and training by the German Cancer Research Center – DKFZ. Ultimately, students are shown “what physics has to do with medicine” and what are the various possibilities that physics and STEM studies may open up for job opportunities in fields that are lacking expert personnel.},
   eventtitle = {{{vConf21}}},
   langid = {english}
 }
@@ -226,10 +212,8 @@
   doi = {10.3390/stats7010017},
   url = {https://www.mdpi.com/2571-905X/7/1/17},
   urldate = {2024-03-06},
-  abstract = {In radiotherapy treatment planning, the absorbed doses are subject to executional and preparational errors, which propagate to plan quality metrics. Accurately quantifying these uncertainties is imperative for improved treatment outcomes. One approach, analytical probabilistic modeling (APM), presents a highly computationally efficient method. This study evaluates the empirical distribution of dose–volume histogram points (a typical plan metric) derived from Monte Carlo sampling to quantify the accuracy of modeling uncertainties under different distribution assumptions, including Gaussian, log-normal, four-parameter beta, gamma, and Gumbel distributions. Since APM necessitates the bivariate cumulative distribution functions, this investigation also delves into approximations using a Gaussian or an Ali–Mikhail–Haq Copula. The evaluations are performed in a one-dimensional simulated geometry and on patient data for a lung case. Our findings suggest that employing a beta distribution offers improved modeling accuracy compared to a normal distribution. Moreover, the multivariate Gaussian model outperforms the Copula models in patient data. This investigation highlights the significance of appropriate statistical distribution selection in advancing the accuracy of uncertainty modeling in radiotherapy treatment planning, extending an understanding of the analytical probabilistic modeling capacities in this crucial medical domain.},
   issue = {1},
-  langid = {english},
-  keywords = {analytical,copulas,distribution,dose,optimization,radiation}
+  langid = {english}
 }
 
 @article{Han2024,
@@ -245,7 +229,6 @@
   doi = {10.1088/1361-6560/ad120f},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/ad120f},
   urldate = {2023-12-11},
-  abstract = {Objective: Boron neutron capture therapy (BNCT) and carbon ion radiotherapy (CIRT) are emerging treatment modalities for glioblastoma. In this study, we investigated the methodology and feasibility to combine BNCT and CIRT treatments. The combined treatment plan illustrated how the synergistic utilization of BNCT’s biological targeting and CIRT’s intensity modulation capabilities could lead to optimized treatment outcomes. Approach: The Monte Carlo toolkit, TOPAS, was employed to calculate the dose distribution for BNCT, while matRad was utilized for the optimization of CIRT. The biological effect-based approach, instead of the dose-based approach, was adopted to develop the combined BNCT-CIRT treatment plans for six patients diagnosed with glioblastoma, considering the different radiosensitivity and fraction. Five optional combined treatment plans with specific BNCT effect proportions for each patient were evaluated to identify the optimal treatment that minimizes damage on normal tissue. Main results: Individual BNCT exhibits a significant effect gradient along with the beam direction in the large tumor, while combined BNCT-CIRT treatments can achieve uniform effect delivery within the CTV through the effect filling with reversed gradient by the CIRT part. In addition, the increasing BNCT effect proportion in combined treatments can reduce damage in the normal brain tissue near the CTV. Besides, the combined treatments effectively minimize damage to the skin compared to individual BNCT treatments. Significance: The initial endeavor to combine BNCT and CIRT treatment plans is achieved by the effect-based optimization. The observed advantages of the combined treatment suggest its potential applicability for tumors characterized by pleomorphic, infiltrative, radioresistant and voluminous features.},
   langid = {english}
 }
 
@@ -277,7 +260,6 @@
   doi = {10.1088/1361-6560/ad46db},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/ad46db},
   urldate = {2024-05-04},
-  abstract = {Objective: Recently, a new and promising approach for range verification was proposed. This method requires the use of two different ion species. Due to their equal magnetic rigidity, fully ionized carbon and helium ions can be simultaneously accelerated in accelerators like synchrotrons. At sufficiently high treatment energies, helium ions can exit the patient distally, reaching approximately three times the range of carbon ions at an equal energy per nucleon. Therefore, the proposal involves adding a small helium fluence to the carbon ion beam and utilizing helium as an online range probe during radiation therapy. This work aims to develop a software framework for treatment planning and motion verification in range-guided radiation therapy using mixed carbon-helium beams. Approach: The developed framework is based on the open-source treatment planning toolkit matRad. Dose distributions and helium radiographs were simulated using the open-source Monte Carlo package TOPAS. Beam delivery system parameters were obtained from the Heidelberg Ion Therapy Center, and imaging detectors along with reconstruction were facilitated by ProtonVDA. Methods for reconstructing the most likely patient positioning error scenarios and the motion phase of 4DCT are presented for prostate and lung cancer sites. Main results: The developed framework provides the capability to calculate and optimize treatment plans for mixed carbon-helium ion therapy. It can simulate the treatment process and generate helium radiographs for simulated patient geometry, including small beam views. Furthermore, motion reconstruction based on these radiographs seems possible with preliminary validation. Significance: The developed framework can be applied for further experimental work with the promising mixed carbon-helium ion implementation of range-guided radiotherapy. It offers opportunities for adaptation in particle therapy, improving dose accumulation, and enabling patient anatomy reconstruction during radiotherapy.},
   langid = {english}
 }
 
@@ -309,9 +291,7 @@
   doi = {10.48550/arXiv.2505.01165},
   url = {http://arxiv.org/abs/2505.01165},
   urldate = {2025-05-05},
-  abstract = {Background: Recently, mixed carbon-helium beams were proposed for range verification in carbon ion therapy: Helium, with three times the range of carbon, serves as an on-line range probe, and is mixed into a therapeutic carbon beam. Purpose: Treatment monitoring is of special interest for lung cancer therapy, however the helium range might not always be sufficient to exit the patient distally. Therefore mixed beam use cases of several patient sites are considered. Methods: An extension to the open-source planning toolkit, matRad allows for calculation and optimization of mixed beam treatment plans. The use of the mixed beam method in 15 patients with lung cancer, as well as in a prostate and liver case, for various potential beam configurations was investigated. Planning strategies to optimize the residual helium range considering the sensitive energy range of the imaging detector were developed. A strategy involves adding helium to energies whose range is sufficient. Another one is to use range shifters to increase the helium energy and thus range. Results: In most patient cases, the residual helium range of at least one spot is too low. All investigated planning strategies can be used to ensure a high enough helium range while still keeping a low helium dose and a satisfactory total mixed carbon-helium beam dose. The use of range shifters allows for the detection of more spots. Conclusion: The mixed beam method shows promising results for online motioning. The use of range shifters ensures a high enough helium range and more detectable spots, allowing for a wider-spread application.},
-  pubstate = {prepublished},
-  keywords = {Physics - Medical Physics}
+  pubstate = {prepublished}
 }
 
 @article{Harrison2024,
@@ -331,8 +311,7 @@
   doi = {10.1016/j.ijrobp.2023.11.061},
   url = {https://www.redjournal.org/article/S0360-3016(23)08187-7/fulltext},
   urldate = {2023-12-16},
-  langid = {english},
-  keywords = {FLASH proton therapy,linear energy transfer (LET),lung stereotactic body radiation therapy (SBRT),Monte Carlo simulation,radiotherapy optimization}
+  langid = {english}
 }
 
 @inproceedings{Homolka2020,
@@ -396,8 +375,7 @@
   doi = {10.1016/j.ijrobp.2023.01.048},
   url = {https://www.redjournal.org/article/S0360-3016(23)00097-4/fulltext},
   urldate = {2023-02-01},
-  langid = {english},
-  keywords = {dose rate,FLASH,IMPT,integrated physical optimization,LET,Patient-specific ridge filter,SBPT,sparse optimized ridge filter}
+  langid = {english}
 }
 
 @inproceedings{Liu2023a,
@@ -460,7 +438,6 @@
   doi = {10.1088/1361-6560/ac36a3},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/ac36a3},
   urldate = {2021-11-08},
-  abstract = {Objective: Proton therapy remains a limited resource due to gantry size and its cost. Recently, a new design without a gantry has been suggested. It may enable combined proton-photon therapy (CPPT) in conventional bunkers and allow the widespread use of protons. In this work, we explore this concept for breast cancer. Methods: The treatment room consists of a LINAC for IMRT, a fixed proton beamline (FBL) with beam scanning and a motorized couch for treatments in lying positions with accurate patient setup. Thereby, proton and photon beams are delivered in the same fraction. Treatment planning is performed by simultaneously optimizing IMRT and IMPT plans based on the cumulative dose. The concept is investigated for three breast cancers where the goal is to minimize mean dose to the heart and lung while delivering 40.05 Gy in 15 fractions to the PTV with a SIB of 48 Gy to the tumor bed. The probabilistic approach is applied to mitigate the sensitivity to range uncertainties. Results: CPPT is particularly advantageous for irradiating concave target volumes that wrap around a curved chest wall. There, protons may deliver dose to the peripheral and medial parts of the target volume including lymph nodes. Thereby, the mean dose in normal tissues is reduced compared to single-modality IMRT. However, tangential photon beams may treat parts of the target volume near the interface to the lung. To ensure target coverage for range undershoot in an IMPT plan, proton beams have to deliberately overshoot into the lung tissue - a problem that can be mitigated via the photon component which ensures plan conformity and robustness. Conclusion: CPPT using an FBL may represent a realistic approach to make protons available to more patients. In addition, CPPT may generally improve treatment quality compared to both single-modality proton and photon treatments.},
   langid = {english}
 }
 
@@ -514,11 +491,9 @@
   doi = {10.1002/mp.14658},
   url = {https://onlinelibrary.wiley.com/doi/10.1002/mp.14658},
   urldate = {2021-03-11},
-  abstract = {Purpose: To investigate the feasibility and accuracy of proton dose calculations with artificial neural networks (ANNs) in challenging three-dimensional (3D) anatomies. Methods: A novel proton dose calculation approach was designed based on the application of a long short-term memory (LSTM) network. It processes the 3D geometry as a sequence of two-dimensional (2D) computed tomography slices and outputs a corresponding sequence of 2D slices that forms the 3D dose distribution. The general accuracy of the approach is investigated in comparison to Monte Carlo reference simulations and pencil beam dose calculations. We consider both artificial phantom geometries and clinically realistic lung cases for three different pencil beam energies. Results: For artificial phantom cases, the trained LSTM model achieved a 98.57\% γ-index pass rate ([1\%, 3 mm]) in comparison to MC simulations for a pencil beam with initial energy 104.25 MeV. For a lung patient case, we observe pass rates of 98.56\%, 97.74\%, and 94.51\% for an initial energy of 67.85, 104.25, and 134.68 MeV, respectively. Applying the LSTM dose calculation on patient cases that were fully excluded from the training process yields an average γ-index pass rate of 97.85\%. Conclusions: LSTM networks are well suited for proton dose calculation tasks. Further research, especially regarding model generalization and computational performance in comparison to established dose calculation methods, is warranted. © 2020 The Authors. Medical Physics published by Wiley Periodicals LLC on behalf of American Association of Physicists in Medicine. [https://doi.org/10.1002/mp.14658]},
   langid = {english},
   preview = {proton\_lstm.png},
-  selected = {true},
-  keywords = {Physics - Medical Physics}
+  selected = {true}
 }
 
 @inproceedings{Ortkamp2023,
@@ -574,9 +549,7 @@
   issn = {1120-1797},
   doi = {10.1016/j.ejmp.2025.104959},
   url = {https://www.sciencedirect.com/science/article/pii/S1120179725000699},
-  urldate = {2025-04-01},
-  abstract = {Purpose This study aims to evaluate the feasibility of using fast, low-dose proton (pRad) and helium (HeRad) radiography for intrafractional motion management. This approach uses pencil ion beam delivery systems, modern particle imaging detectors and fast image reconstruction. Methods A plastic respiratory phantom underwent four-dimensional computed tomography (4DCT) using a commercial X-ray scanner, experimental pRad with a continuous proton beam from a clinical serial cyclotron, and experimental pRad and HeRad with pulsed proton and helium beams from a synchrotron-based ion therapy facility. Open-source patient 4DCT data were used in a Monte Carlo simulation study to evaluate pRad and HeRad in a realistic patient geometry. Treatment plans involving mixed carbon-helium beams were calculated using matRad and simulated in TOPAS. Results The experimental pRad achieved a temporal resolution of 8 fps for the cyclotron-based facility, while both pRad and HeRad achieved 2 fps for the synchrotron-based facility within a 10~cm~×~10~cm region of interest. pRad reconstructed the respiratory phantom motion pattern with a dose of less than 2~µGy per image. In simulations of mixed carbon-helium beams, HeRad, both integral and single iso-energy, detected water equivalent thickness differences with sub-millimeter accuracy across different phases of the patient’s 4DCT data. Conclusion This study demonstrates that low-dose small-field proton and helium radiography, utilizing pencil beam scanning, can effectively monitor intrafractional anatomical displacements with millimeter-level spatial accuracy and sub-second temporal resolution. Current particle imaging and beam delivery technologies have the potential to enable real-time patient monitoring in promising mixed ion beam therapy.},
-  keywords = {Adaptive radiation therapy,Helium imaging,Ion beam therapy,Motion management,Proton imaging,Proton therapy}
+  urldate = {2025-04-01}
 }
 
 @article{Radonic2024,
@@ -592,7 +565,6 @@
   doi = {10.1088/1361-6560/ad7f1e},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/ad7f1e},
   urldate = {2024-09-26},
-  abstract = {Objective: To present a long short-term memory (LSTM) network-based dose calculation method for magnetic resonance (MR)-guided proton therapy. Approach: 35 planning computed tomography (CT) images of prostate cancer patients were collected for Monte Carlo (MC) dose calculation under a perpendicular 1.5 T magnetic field. Proton pencil beams (PB) at three energies (150, 175, and 200 MeV) were simulated (7560 PBs at each energy). A 3D relative stopping power (RSP) cuboid covering the extent of the PB dose was extracted and given as input to the LSTM model, yielding a 3D predicted PB dose. Three single-energy (SE) LSTM models were trained separately on the corresponding 150/175/200 MeV datasets and a multi-energy (ME) LSTM model with an energy embedding layer was trained on either the combined dataset with three energies or a continuous energy (CE) dataset with 1 MeV steps ranging from 125 to 200 MeV. For each model, training and validation involved 25 patients and 10 patients were for testing. Two single field uniform dose prostate treatment plans were optimized and recalculated with MC and the CE model. Results: Test results of all PBs from the three SE models showed a mean gamma passing rate (2\%/2mm, 10\% dose cutoff) above 99.9\% with an average center-of-mass (COM) discrepancy below 0.4 mm between predicted and simulated trajectories. The ME model showed a mean gamma passing rate exceeding 99.8\% and a COM discrepancy of less than 0.5 mm at the three energies. Treatment plan recalculation by the CE model yielded gamma passing rates of 99.6\% and 97.9\%. The inference time of the models was 9-10 ms per PB. Significance: LSTM models for proton dose calculation in a magnetic field were developed and showed promising accuracy and efficiency for prostate cancer patients.},
   langid = {english}
 }
 
@@ -625,7 +597,6 @@
   doi = {10.48550/arXiv.2505.15482},
   url = {https://arxiv.org/abs/2505.15482v1},
   urldate = {2025-05-22},
-  abstract = {As depth increases, linear energy transfer (LET) rises toward the distal edge of the Bragg peak, boosting the radiobiological effectiveness (RBE). To manage the biological variation and limit normal-tissue damage, LET-modifying objective functions on, e.g., dose-weighted LET or dirty dose and/or usage of variable RBE models were introduced. Because shaping LET by proton irradiation alone has its limits, this work proposes to jointly optimize mixed-modality proton-photon treatments based on directly LET-modifying objective functions. The investigated objective functions rely on either dose-weighted LET or dirty dose concepts. To formulate a consistent combined optimization problem, the contribution of secondary electron LET in photon treatments is considered (and discussed) as well. Combined dose/LET calculation and optimization are realized in the open source toolkit matRad. Phantom plans as well as a patient plans are optimized for analysis on the method, combining five proton fractions with 25 photon fractions. Dose-optimized combined plans are used as a reference. The reference plan shows that protons are, in general, dosimetrically superior and thus preferred, with photons aiding in achieving conformity. The introduction of LET modified objectives locally modifies the proton contribution in the targeted regions of interest. Especially at the distal edge, the photon contribution increases to move high-LET/dirty dose out of the OARs. Dirty dose objectives seem to allow a more comprehensive steering of the high-LET regions compared to LETxDose. Incorporating LET-based objectives into a jointly optimized proton-photon system allows for improved dose conformity and reduced high-LET exposure in critical regions in proximity to the distal proton edge. This approach enables the utilization of modality-specific strengths and can contribute to safer, more effective treatment plans.},
   langid = {english},
   pubstate = {prepublished}
 }
@@ -659,10 +630,8 @@
   doi = {10.3390/cancers17030504},
   url = {https://www.mdpi.com/2072-6694/17/3/504},
   urldate = {2025-02-03},
-  abstract = {Background: Cancer remains one of the leading causes of mortality worldwide, with radiotherapy playing a crucial role in its treatment. Intensity-modulated radiotherapy (IMRT) enables precise dose delivery to tumors while sparing healthy tissues. However, geometric uncertainties such as patient positioning errors and anatomical deformations can compromise treatment accuracy. Traditional methods use safety margins, which may lead to excessive irradiation of healthy organs or insufficient tumor coverage. Robust optimization techniques, such as minimax approaches, attempt to address these uncertainties but can result in overly conservative treatment plans. This study introduces an interval analysis-based optimization model for IMRT, offering a more flexible approach to uncertainty management. Methods: The proposed model represents geometric uncertainties using interval dose influence matrices and incorporates Bertoluzza’s metric to balance tumor coverage and organ-at-risk (OAR) protection. The θ parameter allows controlled robustness modulation. The model was implemented in matRad, an open-source treatment planning system, and evaluated on five prostate cancer cases. Results were compared against traditional Planning Target Volume (PTV) and minimax robust optimization approaches. Results: The interval-based model improved tumor coverage by 5.8\% while reducing bladder dose by 4.2\% compared to PTV. In contrast, minimax robust optimization improved tumor coverage by 25.8\% but increased bladder dose by 23.2\%. The interval-based approach provided a better balance between tumor coverage and OAR protection, demonstrating its potential to enhance treatment effectiveness without excessive conservatism. Conclusions: This study presents a novel framework for IMRT planning that improves uncertainty management through interval analysis. By allowing adjustable robustness modulation, the proposed model enables more personalized and clinically adaptable treatment plans. These findings highlight the potential of interval analysis as a powerful tool for optimizing radiotherapy outcomes, balancing treatment efficacy and patient safety.},
   issue = {3},
-  langid = {english},
-  keywords = {IMRT,interval analysis,radiotherapy,robust optimization,uncertainty}
+  langid = {english}
 }
 
 @article{Sevilla2025,
@@ -678,9 +647,7 @@
   doi = {10.1002/mp.17709},
   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.17709},
   urldate = {2025-02-27},
-  abstract = {Background Over the past three decades, the intensity-modulated radiotherapy (IMRT) has become a standard technique, enabling highly conformal dose distributions tailored to specific clinical objectives. Despite these advancements, IMRT treatment plans are significantly susceptible to uncertainties during both the planning and delivery phases. The most commonly used strategy to address these uncertainties is the margin-based or planning target volume (PTV) approach, which relies on the so-called dose cloud approximation. However, the PTV concept has notable limitations, particularly in complex scenarios where target volumes are superficial or located near critical structures. In contrast, the advent of intensity-modulated particle therapy has driven the development of robust optimization models, which have emerged as a promising alternative for managing uncertainties. Among these, the worst-case scenario or minimax strategy is the most widely employed. While minimax can be directly applied to photon treatments, its use in IMRT often leads to overly conservative plans or plans that are very similar to those obtained using the conventional margin-based PTV approach. Purpose In this work, we present a robust optimization model particularly suitable for photon treatments. The new approach, called Cheap-Minimax, is a generalization of the minimax strategy used for particle therapy and aims to improve the balance between plan robustness and the price of robustness in terms of dose to organs at risk (OARs), an issue particularly pronounced in photon treatments. Methods The c-minimax model was implemented in the MatRad treatment planning system, developed at the German Cancer Research Center (DKFZ). It was applied to 20 clinical cases, comprising 5 prostate cancer cases and 15 breast cancer cases. The results were compared with those obtained using the conventional minimax model and the PTV-based approach. Results For prostate cancer cases, the c-minimax model maintained a robustness comparable to the PTV approach, while achieving a 20\% reduction in V40Gy\textbackslash V\_40 \textbackslash, \textbackslash textGy\textbackslash{} for the rectum and a 10\% reduction in V60Gy\textbackslash V\_60 \textbackslash, \textbackslash textGy\textbackslash{} for the bladder compared to the minimax model. In breast cancer cases, the c-minimax model improved robustness by 23.7\% relative to the PTV approach and by 18.2\% compared to the minimax model. Additionally, the c-minimax model reduced V20Gy\textbackslash V\_20 \textbackslash, \textbackslash textGy\textbackslash{} for the ipsilateral lung by 3.7\% and the mean heart dose by 1.2 Gy (20\%) compared to minimax. Both the c-minimax and minimax models reduced D5\%\textbackslash D\_5\%\textbackslash{} skin dose by 10.9 Gy (18.9\%) and 11.1 Gy (19.3\%), respectively, compared to the PTV approach. Conclusions The c-minimax model successfully overcomes the limitations of the PTV approach and the over-conservativeness of the minimax model, demonstrating significant advantages in managing uncertainties in complex cases, such as breast cancer. By providing superior robustness compared to PTV and reducing OAR doses relative to minimax, the model offers a flexible and clinically feasible strategy to enhance treatment quality. The marked reduction in high-dose regions (hotspots) in superficial tissues and skin highlights its potential to lower toxicity risks and improve patient outcomes. These results provide quantitative evidence of the practical benefits of robustness-compromise-oriented approaches in IMRT.},
-  langid = {english},
-  keywords = {IMRT,robust optimization,uncertainty}
+  langid = {english}
 }
 
 @inproceedings{Sitarz2024,
@@ -713,9 +680,7 @@
   doi = {10.1002/mp.17392},
   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.17392},
   urldate = {2024-10-19},
-  abstract = {Background While electron beams of up to 20 MeV are commonly used in radiotherapy, the use of very-high-energy electrons (VHEEs) in the range of 100–200 MeV is now becoming a realistic option thanks to the recent advancements in accelerator technology. Indeed, VHEE offers several clinically attractive features and can be delivered using various conformation methods (including scanning, collimation, and focussing) at ultra-high dose rates. To date, there is a lack of research tools for fast simulation of treatment plans using VHEE beams. Purpose This work aims to implement and validate a simple and fast dose calculation algorithm based on the Fermi–Eyges theory of multiple Coulomb scattering for VHEE radiation therapy, with energies up to 200 MeV. A treatment planning system (TPS) toolkit with VHEE modality would indeed allow for further preclinical investigations, including treatment plan optimization and evaluation, and thus contribute to the gradual introduction of VHEE radiotherapy in clinical practice. Methods A VHEE pencil beam scanning double Gaussian model was introduced into the open-source TPS matRad environment along with new functions and options dedicated to VHEE dose calculations. Various geometries and field configurations were then calculated in matRad (up to 200 MeV and 15 × 15 cm2, with complex bone or lung heterogeneities) and the results were compared to Monte Carlo simulations in the TOPAS/Geant4 toolkit. Two types of beam model (divergent or focused) were also tested. Examples of clinical treatment plans were computed, and the results were compared between the two codes. Results VHEE modality was fully implemented in matRad with GUI capabilities while preserving all original TPS features. New relevant options such as the importation of specific spot-lists or adjustment of the lateral dose calculation cutoff to optimize the calculation speed were validated. Single spot and square field dose distributions were validated in water alone as well as in clinically relevant inhomogeneities. Dose maps from the VHEE model in matRad were in good agreement with TOPAS (2D gamma index [2\%/1 mm] with passing rates superior to 90\%, {$<$}6\% mean dose differences), except for large interface heterogeneities. Conclusions This work describes the implementation of a simple but efficient VHEE simulation model in matRad. A few configurations were studied in order to validate the model against accurate Monte Carlo simulations, demonstrating its usefulness for carrying out preliminary studies involving VHEE radiotherapy.},
-  langid = {english},
-  keywords = {beam model,Monte Carlo,radiotherapy,treatment planning system,VHEE}
+  langid = {english}
 }
 
 @article{Stammer2021,
@@ -732,9 +697,7 @@
   doi = {10.1088/1361-6560/ac287f},
   url = {https://iopscience.iop.org/article/10.1088/1361-6560/ac287f},
   urldate = {2021-06-30},
-  abstract = {The high precision and conformity of intensity-modulated particle therapy (IMPT) comes at the cost of susceptibility to treatment uncertainties in particle range and patient set-up. Dose uncertainty quantification and mitigation, which is usually based on sampled error scenarios, however becomes challenging when computing the dose with computationally expensive but accurate Monte Carlo (MC) simulations. This paper introduces an importance (re-)weighting method in MC history scoring to concurrently construct estimates for error scenarios, the expected dose and its variance from a single set of MC simulated particle histories. The approach relies on a multivariate Gaussian input and uncertainty model, which assigns probabilities to the initial phase space sample, enabling the use of different correlation models. Exploring and adapting bivariate emittance parametrizations for the beam shape, accuracy can be traded between that of the uncertainty or the nominal dose estimate. The method was implemented using the MC code TOPAS and tested for proton IMPT plan delivery in comparison to a reference scenario estimate. We achieve accurate results for set-up uncertainties (\$\textbackslash gamma\_\{3mm/3\textbackslash\%\} \textbackslash geq 99.99\textbackslash\%\$) and expectedly lower but still sufficient agreement for range uncertainties, which are approximated with uncertainty over the energy distribution (\$\textbackslash gamma\_\{3 mm/3\textbackslash\%\} \textbackslash geq 99.50\textbackslash\%\$ (\$E[\textbackslash boldsymbol\{d\}]\$), \$\textbackslash gamma\_\{3mm/3\textbackslash\%\} \textbackslash geq 91.69\textbackslash\%\$ (\$\textbackslash sigma(\textbackslash boldsymbol\{d\})\$) ). Initial experiments on a water phantom, a prostate and a liver case show that the re-weighting approach lowers the CPU time by more than an order of magnitude. Further, we show that uncertainty induced by interplay and other dynamic influences may be approximated using suitable error correlation models.},
-  preview = {mcuq.png},
-  keywords = {Mathematical Physics,Physics - Medical Physics}
+  preview = {mcuq.png}
 }
 
 @online{Stammer2021b,
@@ -743,7 +706,6 @@
   date = {2021-12-15},
   url = {https://www.estro.org/About/Newsroom/Newsletter/Physics/Efficient-uncertainty-quantification-for-Monte-Car},
   urldate = {2022-03-23},
-  abstract = {About ESTRO work},
   organization = {ESTRO Physics Newsletter}
 }
 
@@ -791,9 +753,7 @@
   doi = {10.1016/j.jcp.2022.111725},
   url = {https://www.sciencedirect.com/science/article/pii/S0021999122007884},
   urldate = {2022-10-26},
-  abstract = {Fast and accurate predictions of uncertainties in the computed dose are crucial for the determination of robust treatment plans in radiation therapy. This requires the solution of particle transport problems with uncertain parameters or initial conditions. Monte Carlo methods are often used to solve transport problems especially for applications which require high accuracy. In these cases, common non-intrusive solution strategies that involve repeated simulations of the problem at different points in the parameter space quickly become infeasible due to their long run-times. Intrusive methods however limit the usability in combination with proprietary simulation engines. In [61], we demonstrated the application of a new non-intrusive uncertainty quantification approach for Monte Carlo simulations in proton dose calculations with normally distributed errors on realistic patient data. In this paper, we introduce a generalized formulation and focus on a more in-depth theoretical analysis of this method concerning bias, error and convergence of the estimates. The multivariate input model of the proposed approach further supports almost arbitrary error correlation models. We demonstrate how this framework can be used to model and efficiently quantify complex auto-correlated and time-dependent errors.},
-  langid = {english},
-  keywords = {Boltzmann equation,error modeling,importance sampling,Monte Carlo,radiative transport,uncertainty quantification}
+  langid = {english}
 }
 
 @inproceedings{Stammer2023a,
@@ -821,9 +781,7 @@
   doi = {10.48550/arXiv.2412.09484},
   url = {http://arxiv.org/abs/2412.09484},
   urldate = {2025-01-13},
-  abstract = {Deterministically solving charged particle transport problems at a sufficient spatial and angular resolution is often prohibitively expensive, especially due to their highly forward peaked scattering. We propose a model order reduction approach which evolves the solution on a low-rank manifold in time, making computations feasible at much higher resolutions and reducing the overall run-time and memory footprint. For this, we use a hybrid dynamical low-rank approach based on a collided-uncollided split, i.e., the transport equation is split through a collision source method. Uncollided particles are described using a ray tracer, facilitating the inclusion of boundary conditions and straggling, whereas collided particles are represented using a moment method combined with the dynamical low-rank approximation. Here the energy is treated as a pseudo-time and a rank adaptive integrator is chosen to dynamically adapt the rank in energy. We can reproduce the results of a full-rank reference code at a much lower rank and thus computational cost and memory usage. The solution further achieves comparable accuracy with respect to TOPAS MC as previous deterministic approaches.},
-  pubstate = {prepublished},
-  keywords = {Computer Science - Numerical Analysis,Mathematics - Numerical Analysis,Physics - Computational Physics,Physics - Medical Physics}
+  pubstate = {prepublished}
 }
 
 @online{Thummerer2025,
@@ -837,9 +795,7 @@
   doi = {10.48550/arXiv.2502.17609},
   url = {http://arxiv.org/abs/2502.17609},
   urldate = {2025-02-26},
-  abstract = {Medical imaging is essential in modern radiotherapy, supporting diagnosis, treatment planning, and monitoring. Synthetic imaging, particularly synthetic computed tomography (sCT), is gaining traction in radiotherapy. The SynthRAD2025 dataset and Grand Challenge promote advancements in sCT generation by providing a benchmarking platform for algorithms using cone-beam CT (CBCT) and magnetic resonance imaging (MRI). The dataset includes 2362 cases: 890 MRI-CT and 1472 CBCT-CT pairs from head-and-neck, thoracic, and abdominal cancer patients treated at five European university medical centers (UMC Groningen, UMC Utrecht, Radboud UMC, LMU University Hospital Munich, and University Hospital of Cologne). Data were acquired with diverse scanners and protocols. Pre-processing, including rigid and deformable image registration, ensures high-quality, modality-aligned images. Extensive quality assurance validates image consistency and usability. All imaging data is provided in MetaImage (.mha) format, ensuring compatibility with medical image processing tools. Metadata, including acquisition parameters and registration details, is available in structured CSV files. To maintain dataset integrity, SynthRAD2025 is divided into training (65\%), validation (10\%), and test (25\%) sets. The dataset is accessible at https://doi.org/10.5281/zenodo.14918089 under the SynthRAD2025 collection. This dataset supports benchmarking and the development of synthetic imaging techniques for radiotherapy applications. Use cases include sCT generation for MRI-only and MR-guided photon/proton therapy, CBCT-based dose calculations, and adaptive radiotherapy workflows. By integrating diverse acquisition settings, SynthRAD2025 fosters robust, generalizable image synthesis algorithms, advancing personalized cancer care and adaptive radiotherapy.},
-  pubstate = {prepublished},
-  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Electrical Engineering and Systems Science - Image and Video Processing,Physics - Medical Physics}
+  pubstate = {prepublished}
 }
 
 @article{Vargas-Bedoya2022,
@@ -857,10 +813,8 @@
   doi = {10.3390/app12178523},
   url = {https://www.mdpi.com/2076-3417/12/17/8523},
   urldate = {2022-08-26},
-  abstract = {Radiotherapy treatments are carried out using computerized axial tomography. In radiation therapy planning, the radiation oncologist must do a manual segmentation of volumes of interest to delineate the organs that should be irradiated. This way of carrying out the process generates long execution times and introduces a subjective component. In this study, a contour-propagation algorithm is formulated to automate the segmentation, based on elastic registration or nonrigid demon registration. A heuristic algorithm to find the parameters that optimize the registration is also proposed. The parameters found along with the contour-propagation algorithm are able to estimate contours of scans with Dice similarity coefficients (DSC) greater than 0.92 and maintain stability with B-spline registration, which takes in the parameters found as input. The study allows for validating the results using the correlation coefficient (CC) to compare the similarity between the voxels’ gray-scale intensity of the estimated tomography and the original tomography, obtaining values greater than 0.96. These values were validated under medical criteria and applied to liver and breast CT scans, indicating good performance for radiation therapy planning.},
   issue = {17},
-  langid = {english},
-  keywords = {demons,heuristic methods,image registration,nonrigid registration}
+  langid = {english}
 }
 
 @online{Voss2023,
@@ -874,9 +828,7 @@
   doi = {10.48550/arXiv.2307.01151},
   url = {http://arxiv.org/abs/2307.01151},
   urldate = {2023-07-10},
-  abstract = {We propose the BayesDose-Framework, a Bayesian approach for fast and accurate dose prediction in proton therapy. Our framework is based on a previously published deterministic LSTM model and is trained and evaluated on simulated beamlet doses from water phantoms and patient geometries. We parameterize the network's weights using 2D Gaussian mixture models and use ensemble predictions to quantify mean dose predictions and their standard deviation. The BayesDose model performs similarly to the deterministic variant. The uncertainty predictions are conservative but correlate well spatially and in magnitude with dose differences. This correlation is reduced when applied to patient data with unseen relative stopping power value ranges, which could be successfully addressed by re-training. We parallelize predictions and presample network weights to reduce runtime overhead. Bayesian models like BayesDose can provide fast predictions with quality equal to deterministic models and may support decision making and quality assurance in clinical settings in the future.},
-  pubstate = {prepublished},
-  keywords = {Physics - Medical Physics}
+  pubstate = {prepublished}
 }
 
 @inproceedings{Voss2023a,
@@ -932,8 +884,7 @@
   number = {4},
   pages = {172--189},
   issn = {15269914},
-  doi = {10.1120/jacmp.v17i4.6117},
-  keywords = {adaptive radiation therapy,dose optimization,importance factors,imrt,inverse planning,matRadGrant}
+  doi = {10.1120/jacmp.v17i4.6117}
 }
 
 @unpublished{Wahl2016b,
@@ -974,8 +925,7 @@
   issn = {00942405},
   doi = {10.1002/mp.12775},
   url = {http://doi.wiley.com/10.1002/mp.12775},
-  preprintfile = {WahlN_APMFractionation_2018_acceptedPreprint.pdf},
-  keywords = {matRadGrant}
+  preprintfile = {WahlN_APMFractionation_2018_acceptedPreprint.pdf}
 }
 
 @thesis{Wahl2018a,
@@ -987,8 +937,7 @@
   location = {Heidelberg},
   doi = {10.11588/heidok.00025127},
   url = {http://archiv.ub.uni-heidelberg.de/volltextserver/25127/},
-  urldate = {2018-08-22},
-  abstract = {The sensitivity of intensity-modulated proton therapy to uncertainties requires case-specific uncertainty assessment and mitigation. As an alternative to scenario-based methods, this thesis describes the implementation, application and conceptual extension of the Analytical Probabilistic Modeling (APM) framework introduced by Bangert, Hennig, and Oelfke (2013). APM represents moments of the probability distribution over dose in closed-form, providing a probabilistic analog to nominal pencil-beam dose calculation subject to range and setup uncertainties that further enables probabilistic optimization. First, APM was implemented in MITKrad, a treatment planning plugin for MITK built completely from scratch. APM’s computations were validated against sample statistics, showing nearly perfect agreement. Run-times within minutes could be realized for uncertainty assessment and probabilistic optimization on patient data. Reformulation of APM enabled linear separation of the computations into random and systematic uncertainty components. Uncertainty over the full fractionation spectrum could then be modeled and optimized with a single pre-computation. It could be shown that fractionation is exploited in optimization with APM for additional organ at risk sparing. APM was then extended to propagation of uncertainties from dose to clinically relevant plan quality metrics. Expectation and variance could be modeled accurately for organ mean dose and dose-volume histograms. However, approximations for equivalent uniform dose and minimum and maximum dose values did not provide reliable results. Finally, the closed-form plan metrics were used to conceptualize constrained probabilistic optimization. Besides novel probabilistic objectives, confidence constraints could be established. Due to increased computational complexity of the new models, the proof-of-concept was provided through evaluations on a one-dimensional prototype anatomy. In conclusion, the herein extended APM framework is able to provide probabilistic analogs to established nominal concepts of dose calculation, plan quality metrics, and constrained optimization. If computational hurdles can be overcome in the future, clinical application would be within reach.}
+  urldate = {2018-08-22}
 }
 
 @inproceedings{Wahl2018b,
@@ -1056,10 +1005,8 @@
   doi = {10.1002/mp.14414},
   url = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.14414},
   urldate = {2020-08-03},
-  abstract = {Purpose Radiotherapy, especially with charged particles, is sensitive to executional and preparational uncertainties that propagate to uncertainty in dose and plan quality indicators, e. g., dose-volume histograms (DVHs). Current approaches to quantify and mitigate such uncertainties rely on explicitly computed error scenarios and are thus subject to statistical uncertainty and limitations regarding the underlying uncertainty model. Here we present an alternative, analytical method to approximate moments, in particular expectation value and (co)variance, of the probability distribution of DVH-points, and evaluate its accuracy on patient data. Methods We use Analytical Probabilistic Modeling (APM) to derive moments of the probability distribution over individual DVH-points based on the probability distribution over dose. By using the computed moments to parameterize distinct probability distributions over DVH-points (here normal or beta distributions), not only the moments but also percentiles, i. e., α-DVHs, are computed. The model is subsequently evaluated on three patient cases (intracranial, paraspinal, prostate) in 30- and singlefraction scenarios by assuming the dose to follow a multivariate normal distribution, whose moments are computed in closed-form with APM. The results are compared to a benchmark based on discrete random sampling. Results The evaluation of the new probabilistic model on the three patient cases against a sampling benchmark proves its correctness under perfect assumptions as well as good agreement in realistic conditions. More precisely, ca. 90\% of all computed expected DVH-points and their standard deviations agree within 1\% volume with their empirical counterpart from sampling computations, for both fractionated and single fraction treatments. When computing α-DVHs, the assumption of a beta distribution achieved better agreement with empirical percentiles than the assumption of a normal distribution: While in both cases probabilities locally showed large deviations (up to ±0.2), the respective α -DVHs for α = 0:05; 0:5; 0:95 only showed small deviations in respective volume (up to ±5\% volume for a normal distribution, and up to 2\% for a beta distribution). A previously published model from literature, which was included for comparison, exhibited substantially larger deviations. Conclusions With APM we could derive a mathematically exact description of moments of probability distributions over DVH-points given a probability distribution over dose. The model generalizes previous attempts and performs well for both choices of probability distributions, i. e., normal or beta distributions, over DVH-points.},
   langid = {english},
-  preview = {dvh\_anim.gif},
-  keywords = {Physics - Medical Physics}
+  preview = {dvh\_anim.gif}
 }
 
 @inproceedings{Wahl2020a,
@@ -1102,7 +1049,7 @@
   eventtitle = {{{PTCOG}} 60}
 }
 
-@inproceedings{Wahl2023b,
+@inproceedings{Wahl2023c,
   type = {{Oral Presentation}},
   title = {{{MO-0563}}: {{Youth}} education and outreach with the international {{Particle Therapy Masterclass}}},
   booktitle = {Radiotherapy and {{Oncology}}},
@@ -1162,12 +1109,10 @@
   doi = {10.1002/mp.12251},
   url = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.12251},
   urldate = {2019-08-13},
-  abstract = {Purpose We report on the development of the open-source cross-platform radiation treatment planning toolkit matRad and its comparison against validated treatment planning systems. The toolkit enables three-dimensional intensity-modulated radiation therapy treatment planning for photons, scanned protons and scanned carbon ions. Methods matRad is entirely written in Matlab and is freely available online. It re-implements well-established algorithms employing a modular and sequential software design to model the entire treatment planning workflow. It comprises core functionalities to import DICOM data, to calculate and optimize dose as well as a graphical user interface for visualization. matRad dose calculation algorithms (for carbon ions this also includes the computation of the relative biological effect) are compared against dose calculation results originating from clinically approved treatment planning systems. Results We observe three-dimensional γ-analysis pass rates ≥ 99.67\% for all three radiation modalities utilizing a distance to agreement of 2 mm and a dose difference criterion of 2\%. The computational efficiency of matRad is evaluated in a treatment planning study considering three different treatment scenarios for every radiation modality. For photons, we measure total run times of 145 s–1260 s for dose calculation and fluence optimization combined considering 4–72 beam orientations and 2608–13597 beamlets. For charged particles, we measure total run times of 63 s–993 s for dose calculation and fluence optimization combined considering 9963–45574 pencil beams. Using a CT and dose grid resolution of 0.3 cm3 requires a memory consumption of 1.59 GB–9.07 GB and 0.29 GB–17.94 GB for photons and charged particles, respectively. Conclusion The dosimetric accuracy, computational performance and open-source character of matRad encourages a future application of matRad for both educational and research purposes.},
   isbn = {4955139574},
   langid = {english},
   preview = {matrad\_hat.svg},
-  selected = {true},
-  keywords = {DICOM,dose calculation,inverse planning,matRadGrant,optimization,radiation therapy}
+  selected = {true}
 }
 
 @article{Wieser2017b,
@@ -1185,11 +1130,23 @@
   doi = {10.1088/1361-6560/aa915d},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/aa915d},
   urldate = {2017-10-05},
-  preprintfile = {WieserHP_APMBio_2017_acceptedPreprint.pdf},
-  keywords = {matRadGrant}
+  preprintfile = {WieserHP_APMBio_2017_acceptedPreprint.pdf}
 }
 
-@inproceedings{Wieser2018,
+@article{Wieser2018,
+  title = {{{matRad}} - an open-source treatment planning toolkit for educational purposes},
+  author = {Wieser, Hans-Peter and Wahl, Niklas and Gabryś, Hubert S. and Müller, Lucas-Raphael and Pezzano, Giuseppe and Winter, Johanna and Ulrich, Silke and Burigo, Lucas Noberto and Jäkel, Oliver and Bangert, Mark},
+  date = {2018},
+  journaltitle = {Medical Physics International Journal},
+  volume = {6},
+  number = {1},
+  pages = {119--127},
+  issn = {2306-4609},
+  url = {http://www.mpijournal.org/pdf/2018-01/MPI-2018-01-p119.pdf},
+  langid = {english}
+}
+
+@inproceedings{Wieser2018a,
   type = {{Oral Presentation}},
   title = {{{OC-0088}}: {{Simultaneous}} consideration of biologyical and physical uncertainties in robust ion therapy planning},
   shorttitle = {Simultaneous consideration of biologyical and physical uncertainties in robust ion therapy planning},
@@ -1203,20 +1160,6 @@
   url = {https://www.thegreenjournal.com/article/S0167-8140(18)30398-0/abstract},
   urldate = {2019-11-25},
   eventtitle = {{{ESTRO}}},
-  langid = {english}
-}
-
-@article{Wieser2018a,
-  title = {{{matRad}} - an open-source treatment planning toolkit for educational purposes},
-  author = {Wieser, Hans-Peter and Wahl, Niklas and Gabryś, Hubert S. and Müller, Lucas-Raphael and Pezzano, Giuseppe and Winter, Johanna and Ulrich, Silke and Burigo, Lucas Noberto and Jäkel, Oliver and Bangert, Mark},
-  date = {2018},
-  journaltitle = {Medical Physics International Journal},
-  volume = {6},
-  number = {1},
-  pages = {119--127},
-  issn = {2306-4609},
-  url = {http://www.mpijournal.org/pdf/2018-01/MPI-2018-01-p119.pdf},
-  abstract = {We present educational aspects of matRad –an open-source treatment planning toolkit for threedimensional intensity-modulated radiotherapy treatment planning supporting photons, scanned protons and scanned carbon ions. matRad is publicly available for download on GitHub and does not require payable software-products to run or to change its source code. This manuscript helps new users to get familiar with the basic concept, the matRad GitHub environment, and potential applications. Specifically we discuss seven novel workflow examples that illustrate usage of matRad’s code base and we introduce three practical treatment planning examples from a planner's point of view. The workflow examples and the treatment planning tutorial are available in the form of Matlab scripts and documented with pdf files and wiki pages, respectively. They are intended as both learning and teaching material, e.g., in a classroom setting. The provided examples range from simple to complex treatment planning scenarios and can all be executed in a couple of minutes on a standard desktop computer.},
   langid = {english}
 }
 
@@ -1253,26 +1196,11 @@
   doi = {10.1088/1361-6560/ab8d77},
   url = {https://doi.org/10.1088%2F1361-6560%2Fab8d77},
   urldate = {2020-07-22},
-  abstract = {Range and setup uncertainties in charged particle therapy may induce a discrepancy between the planned and the delivered dose. Countermeasures based on probabilistic (stochastic) optimization usually assume a Gaussian probability density to model the underlying range and setup error. While this standard assumption is generally taken for granted, this study explicitly investigates the dosimetric consequences if the actual range and setup errors obey a different probability density function (PDF) over the course of treatment to the one used during the probabilistic treatment plan optimization. Discrete random sampling was performed for conventionally and probabilistically optimized proton and carbon ion treatment plans utilizing various PDFs that modeled the setup and range error. This method allowed us to assess the treatment plan robustness against different PDFs of conventional and probabilistic plans, which both explicitly assume Gaussian uncertainties. The induced uncertainty in dose was quantified by estimating the expectation value and standard deviation of the RBE-weighted dose for each PDF on the basis of 2500-5000 random dose samples. Probabilistic dose metrics and standard deviation volume histograms were computed to quantify treatment plan robustness of both optimization approaches. It was shown that the classical planning target volume margin extension concept did not compensate the influence of range and setup errors and consequently resulted in a non-negligible average standard deviation in dose of 7.3\% throughout the clinical target volume (CTV). In contrast, probabilistic optimization on normally distributed errors yielded treatment plans that not only entailed a lower standard deviation against normally distributed errors accounted for during optimization, but also lower standard deviations for other symmetric PDFs. It was shown that the impact of an incorrect probability distribution assumption is of lower importance after probabilistic optimization as the average uncertainty in the CTV drops to 3.9\%. Probabilistic optimization is an effective tool to create robust particle treatment plans. Normally distributed range and setup error assumptions for probabilistic optimization are a reasonable first approximation and yield treatment plans that are also robust against other PDFs.},
   langid = {english},
   preprintfile = {WieserHP_GaussianUncertainties_2020_acceptedPreprint.pdf}
 }
 
-@inproceedings{Xiao2024,
-  type = {{Oral Presentation}},
-  title = {{{SC29}}.07 {{AI-based}} prompt gamma prediction},
-  booktitle = {Physica {{Medica}}},
-  author = {Xiao, Fan and Kriechbaum, Michael and Radonic, Domagoj and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
-  date = {2024-09-01},
-  series = {Abstracts of the 5th {{European Congress}} of {{Medical Physics}}},
-  volume = {125},
-  pages = {103532},
-  doi = {10.1016/j.ejmp.2024.103532},
-  url = {https://www.sciencedirect.com/science/article/pii/S1120179724003582},
-  urldate = {2024-11-04}
-}
-
-@article{Xiao2024a,
+@article{Xiao2024,
   title = {Prompt gamma emission prediction using a long short-term memory network},
   author = {Xiao, Fan and Radonic, Domagoj and Kriechbaum, Michael and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
   date = {2024-11-02},
@@ -1285,6 +1213,19 @@
   doi = {10.1088/1361-6560/ad8e2a},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/ad8e2a},
   urldate = {2024-11-04},
-  abstract = {Objective: To present a long short-term memory (LSTM)-based prompt gamma (PG) emission prediction method for proton therapy. Approach: Computed tomography (CT) scans of 33 patients with a prostate tumor were included in the dataset. A set of 10 million histories proton pencil beam (PB)s was generated for Monte Carlo (MC) dose and PG simulation. For training (20 patients) and validation (3 patients), over 6000 PBs at 150, 175 and 200 MeV were simulated. 3D relative stopping power (RSP), PG and dose cuboids that included the PB were extracted. Three models were trained, validated and tested based on an LSTM-based network: (1) input RSP and output PG, (2) input RSP with dose and output PG (single-energy), and (3) input RSP/dose and output PG (multi-energy). 540 PBs at each of the four energy levels (150, 175, 200, and 125-210 MeV) were simulated across 10 patients to test the three models. The gamma passing rate (2\%/2mm) and PG range shift were evaluated and compared among the three models. Results: The model with input RSP/dose and output PG (multi-energy) showed the best performance in terms of gamma passing rate and range shift metrics. Its mean gamma passing rate of testing PBs of 125-210 MeV was 98.5\% and the worst case was 92.8\%. Its mean absolute range shift between predicted and MC PGs was 0.15 mm, where the maximum shift was 1.1mm. The prediction time of our models was within 130 ms per PB. Significance: We developed a sub-second LSTM-based PG emission prediction method. Its accuracy in prostate patients has been confirmed across an extensive range of proton energies.},
   langid = {english}
+}
+
+@inproceedings{Xiao2024a,
+  type = {{Oral Presentation}},
+  title = {{{SC29}}.07 {{AI-based}} prompt gamma prediction},
+  booktitle = {Physica {{Medica}}},
+  author = {Xiao, Fan and Kriechbaum, Michael and Radonic, Domagoj and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
+  date = {2024-09-01},
+  series = {Abstracts of the 5th {{European Congress}} of {{Medical Physics}}},
+  volume = {125},
+  pages = {103532},
+  doi = {10.1016/j.ejmp.2024.103532},
+  url = {https://www.sciencedirect.com/science/article/pii/S1120179724003582},
+  urldate = {2024-11-04}
 }

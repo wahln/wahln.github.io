@@ -12,9 +12,8 @@
   urldate = {2024-11-04}
 }
 
-@inproceedings{Bangert2019a,
+@inproceedings{Bangert2019,
   type = {{Symposium Presentation}},
-  ids = {Bangert2019},
   title = {{{SP-0469}}: {{Mitigation}} of range uncertainties with probabilistic {{IMPT}} optimization},
   shorttitle = {Mitigation of range uncertainties with probabilistic {{IMPT}} optimization},
   booktitle = {Radiotherapy and {{Oncology}}},
@@ -30,7 +29,7 @@
   langid = {english}
 }
 
-@online{Bangert2020a,
+@online{Bangert2020,
   title = {Developing {{matRad}}, an {{Open-Source Dose Calculation}} and {{Optimization Toolkit}} for {{Radiation Therapy Planning}}},
   author = {Bangert, Mark and Jäkel, Oliver and Wahl, Niklas and Wieser, Hans-Peter},
   date = {2020},
@@ -145,6 +144,21 @@
   keywords = {Physics - Medical Physics}
 }
 
+@online{Cristoforetti2025a,
+  title = {Trading robustness: a scenario-free approach to robust {{Multi-Criteria Optimization}} for {{Treatment Planning}}},
+  shorttitle = {Trading robustness},
+  author = {Cristoforetti, Remo and Süss, Philipp and Becher, Tobias and Wahl, Niklas},
+  date = {2025-10-14},
+  eprint = {2510.12519},
+  eprinttype = {arXiv},
+  eprintclass = {physics},
+  doi = {10.48550/arXiv.2510.12519},
+  url = {http://arxiv.org/abs/2510.12519},
+  urldate = {2025-10-15},
+  abstract = {Treatment planning in radiotherapy is inherently a multi-criteria optimization (MCO) problem. Traditionally, the treatment's robustness is not formulated as a part of this decision making problem, but dealt with separately through margins or robust optimization. This work facilitates integration of robustness into multi-criteria optimization using a recently proposed efficient scenario-free (s-f) robust optimization approach: The s-f approach relies on the fast evaluation of the expected dose distribution and mean variance during optimization. This is achieved by precomputation of probabilistic quantities, which can then be used for repeated solving of subproblems in the two explored MCO approaches: Lexicographic Ordering (LO) and Pareto Front (PF) approximation. Different prioritization strategies within the LO approach are used to assess the impact of variance reduction while a 3-objective PF approximation, including a variance reduction objective, is generated to visualize and analyze trade-offs between the competing objectives. The robust optimization is performed including 100 scenarios modeling setup and range errors, as well as organ motion, on 3D- and 4DCT lung cancer patient datasets. Robustness analysis is performed to assess and explore the efficacy of all optimization strategies. The s-f approach enabled robust optimization in MCO with computational times comparable to nominal MCO. Both MCO strategies highlighted the interplay between dosimetric and variance reduction objectives. The LO approach showed how prioritization affects plan quality and robustness, while the PF analysis revealed a clear trade-off between robustness and organ-at-risk sparing. The reported analysis highlighted the conflicting trade-off nature of plan robustness and dosimetric quality, demonstrating how robust MCO supports a more informed and flexible decision-making process in treatment planning.},
+  pubstate = {prepublished}
+}
+
 @inproceedings{Facchiano2024,
   type = {{Poster Oral}},
   title = {{{SO026}} / \#456 - {{An Ion Therapy Treatment Planning Framework}} for {{Direct Optimization}} of {{Nanodosimetric Ionization Detail Through Cluster Dose}}},
@@ -172,13 +186,13 @@
   eprintclass = {physics},
   doi = {10.48550/arXiv.2505.09667},
   url = {http://arxiv.org/abs/2505.09667},
-  urldate = {2025-05-16},
+  urldate = {2025-05-15},
   abstract = {Nanodosimetry relates Ionization Detail (ID) and ionization parameters (Ip) to biological endpoints relevant for charged-particle radiotherapy. This supports a more physics-based modeling of biological effectiveness than traditional dose-response relationships and RBE models. Faddegon et al. (2023) introduced cluster dose g(Ip) as a physical quantity, bridging ID to the treatment planning level, which can be directly optimized. We developed a framework enabling cluster dose optimization via a pencil-beam (PB) algorithm, and validated against Monte Carlo (MC) simulations. The framework, integrated into the treatment planning toolkit matRad, uses precomputed Ip values obtained from MC track-structure simulations. We applied our tool for plan optimization with protons, helium, and carbon ions in a water phantom and a prostate case. Recalculation with TOPAS showed 3D gamma passing rates {$>$}97\% (phantom) and {$>$}98\% (patient) using a 3\%/3mm criterion and a threshold of 10\% of the maximum dose. Cluster dose F5 optimization produced homogeneous target coverage, with heavier ions requiring lower absorbed doses for the same prescribed cluster dose level. This demonstrates the feasibility of fast, accurate cluster dose optimization using PB algorithms.},
   pubstate = {prepublished},
   keywords = {Physics - Medical Physics}
 }
 
-@article{Faddegon2023a,
+@article{Faddegon2023,
   title = {Ionization detail parameters and cluster dose: a mathematical model for selection of nanodosimetric quantities for use in treatment planning in charged particle radiotherapy},
   shorttitle = {Ionization detail parameters and cluster dose},
   author = {Faddegon, Bruce A and Blakely, Eleanor A and Burigo, Lucas Norberto and Censor, Yair and Dokic, Ivana and D-Kondo, J Naoki and Ortiz, Ramon and Ramos-Mendez, Jose and Rucinski, Antoni and Schubert, Keith E and Wahl, Niklas and Schulte, Reinhard W},
@@ -214,7 +228,7 @@
   keywords = {interfraction motion,ion beams,pelvis phantom,prostate,protons,treatment planning}
 }
 
-@inproceedings{Foka2022a,
+@inproceedings{Foka2022,
   type = {{Oral Presentation}},
   title = {Particle therapy masterclass},
   booktitle = {{{EPJ Web}} of {{Conferences}}},
@@ -355,7 +369,7 @@
   keywords = {FLASH proton therapy,linear energy transfer (LET),lung stereotactic body radiation therapy (SBRT),Monte Carlo simulation,radiotherapy optimization}
 }
 
-@inproceedings{Homolka2020a,
+@inproceedings{Homolka2020,
   type = {{Poster}},
   title = {{{PO-1490}}: {{Lung}} degradation effects on {{RBE-weighted}} dose in proton, carbon and helium treatment plans},
   shorttitle = {Lung degradation effects on {{RBE-weighted}} dose in proton, carbon and helium treatment plans},
@@ -399,21 +413,7 @@
   selected = {true}
 }
 
-@inproceedings{Liu2023a,
-  type = {{Oral Presentation}},
-  title = {Feasibility of proton {{SBRT FLASH}} treatment with dose, dose rate, and {{LET}} optimization using patient specific {{3D}} ridge},
-  booktitle = {Proceedings to the 60th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}}},
-  author = {Liu, Ruirui and Charyyev, Serdar and Wahl, Niklas and Liu, Wei and Zhou, Jun and Xiaofeng, Yang and Higgins, Kristin and Bradley, Jeffrey and Lin, Liyong},
-  date = {2023-02-14},
-  series = {International {{Journal}} of {{Particle Therapy}}},
-  volume = {9},
-  pages = {368},
-  location = {Miami},
-  doi = {10.14338/IJPT-23-PTCOG60-9.4},
-  eventtitle = {{{PTCOG}} 60}
-}
-
-@article{Liu2023b,
+@article{Liu2023,
   title = {An {{Integrated Physical Optimization}} framework for proton {{SBRT FLASH}} treatment planning allows dose, dose rate, and {{LET}} optimization using patient-specific ridge filters},
   author = {Liu, Ruirui and Charyyev, Serdar and Wahl, Niklas and Liu, Wei and Kang, Minglei and Zhou, Jun and Yang, Xiaofeng and Baltazar, Filipa and Palkowitsch, Martina and Higgins, Kristin and Dynan, William and Bradley, Jeffrey and Lin, Liyong},
   date = {2023-01-31},
@@ -432,6 +432,20 @@
   urldate = {2023-02-01},
   langid = {english},
   keywords = {dose rate,FLASH,IMPT,integrated physical optimization,LET,Patient-specific ridge filter,SBPT,sparse optimized ridge filter}
+}
+
+@inproceedings{Liu2023a,
+  type = {{Oral Presentation}},
+  title = {Feasibility of proton {{SBRT FLASH}} treatment with dose, dose rate, and {{LET}} optimization using patient specific {{3D}} ridge},
+  booktitle = {Proceedings to the 60th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}}},
+  author = {Liu, Ruirui and Charyyev, Serdar and Wahl, Niklas and Liu, Wei and Zhou, Jun and Xiaofeng, Yang and Higgins, Kristin and Bradley, Jeffrey and Lin, Liyong},
+  date = {2023-02-14},
+  series = {International {{Journal}} of {{Particle Therapy}}},
+  volume = {9},
+  pages = {368},
+  location = {Miami},
+  doi = {10.14338/IJPT-23-PTCOG60-9.4},
+  eventtitle = {{{PTCOG}} 60}
 }
 
 @inproceedings{Lourenco2023,
@@ -467,7 +481,7 @@
   eventtitle = {{{PTCOG}} 62}
 }
 
-@article{Marc2021a,
+@article{Marc2021,
   title = {Combined proton-photon treatment for breast cancer},
   author = {Marc, Louise and Fabiano, Silvia and Wahl, Niklas and Linsenmeier, Claudia and Lomax, Antony John and Unkelbach, Jan},
   date = {2021},
@@ -484,7 +498,7 @@
   langid = {english}
 }
 
-@inproceedings{Marc2021b,
+@inproceedings{Marc2021a,
   type = {{Poster}},
   title = {{{PO-1905}}: {{Combined}} proton-photon treatment for breast cancer using a fixed proton beamline},
   booktitle = {Radiotherapy and {{Oncology}}},
@@ -753,7 +767,7 @@
   keywords = {beam model,Monte Carlo,radiotherapy,treatment planning system,VHEE}
 }
 
-@article{Stammer2021b,
+@article{Stammer2021,
   title = {Efficient uncertainty quantification for {{Monte Carlo}} dose calculations using importance (re-)weighting},
   author = {Stammer, Pia and Burigo, Lucas and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
   date = {2021-06-22},
@@ -772,7 +786,7 @@
   keywords = {Mathematical Physics,Physics - Medical Physics}
 }
 
-@online{Stammer2021c,
+@online{Stammer2021b,
   title = {Efficient uncertainty quantification for {{Monte Carlo}} dose calculations using importance (re-)weighting},
   author = {Stammer, Pia and Burigo, Lucas and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
   date = {2021-12-15},
@@ -782,7 +796,7 @@
   organization = {ESTRO Physics Newsletter}
 }
 
-@inproceedings{Stammer2022a,
+@inproceedings{Stammer2022,
   type = {{Oral Presentation}},
   title = {Efficient uncertainty estimates in {{Monte Carlo}} dose calculation using importance reweighting},
   booktitle = {Proceedings to the 59th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}} ({{PTCOG59}} 2021 {{Online}})},
@@ -795,7 +809,7 @@
   eventtitle = {{{PTCOG}} 59}
 }
 
-@inproceedings{Stammer2022b,
+@inproceedings{Stammer2022a,
   type = {{Poster}},
   title = {{{PO-1728}}: {{Efficient}} modeling and quantification of time-dependent errors in {{IMPT}}},
   booktitle = {Radiotherapy and {{Oncology}}},
@@ -898,7 +912,7 @@
   langid = {english}
 }
 
-@article{Vargas-Bedoya2022a,
+@article{Vargas-Bedoya2022,
   title = {Contour {{Propagation}} for {{Radiotherapy Treatment Planning Using Nonrigid Registration}} and {{Parameter Optimization}}: {{Case Studies}} in {{Liver}} and {{Breast Cancer}}},
   shorttitle = {Contour {{Propagation}} for {{Radiotherapy Treatment Planning Using Nonrigid Registration}} and {{Parameter Optimization}}},
   author = {Vargas-Bedoya, Eliseo and Rivera, Juan Carlos and Puerta, Maria Eugenia and Angulo, Aurelio and Wahl, Niklas and Cabal, Gonzalo},
@@ -919,22 +933,7 @@
   keywords = {demons,heuristic methods,image registration,nonrigid registration}
 }
 
-@inproceedings{Voss2023,
-  type = {{Oral Presentation}},
-  title = {{{OC-0775}}: {{Comprehensive}} proton dose prediction with {{Bayesian LSTMs}}},
-  booktitle = {Radiotherapy and {{Oncology}}},
-  author = {Voss, Luke and Neishabouri, Ahmad and Ortkamp, Tim and Wahl, Niklas},
-  date = {2023-05-01},
-  volume = {182, Supplement 1},
-  pages = {S642-S644},
-  location = {Vienna, Austria},
-  doi = {10.1016/S0167-8140(23)08716-9},
-  url = {https://www.sciencedirect.com/science/article/pii/S0167814023087169},
-  urldate = {2023-08-15},
-  eventtitle = {{{ESTRO}} 2023}
-}
-
-@online{Voss2023a,
+@online{Voss2023,
   title = {{{BayesDose}}: {{Comprehensive}} proton dose prediction with model uncertainty using {{Bayesian LSTMs}}},
   shorttitle = {{{BayesDose}}},
   author = {Voss, Luke and Neishabouri, Ahmad and Ortkamp, Tim and Mairani, Andrea and Wahl, Niklas},
@@ -948,6 +947,21 @@
   abstract = {We propose the BayesDose-Framework, a Bayesian approach for fast and accurate dose prediction in proton therapy. Our framework is based on a previously published deterministic LSTM model and is trained and evaluated on simulated beamlet doses from water phantoms and patient geometries. We parameterize the network's weights using 2D Gaussian mixture models and use ensemble predictions to quantify mean dose predictions and their standard deviation. The BayesDose model performs similarly to the deterministic variant. The uncertainty predictions are conservative but correlate well spatially and in magnitude with dose differences. This correlation is reduced when applied to patient data with unseen relative stopping power value ranges, which could be successfully addressed by re-training. We parallelize predictions and presample network weights to reduce runtime overhead. Bayesian models like BayesDose can provide fast predictions with quality equal to deterministic models and may support decision making and quality assurance in clinical settings in the future.},
   pubstate = {prepublished},
   keywords = {Physics - Medical Physics}
+}
+
+@inproceedings{Voss2023a,
+  type = {{Oral Presentation}},
+  title = {{{OC-0775}}: {{Comprehensive}} proton dose prediction with {{Bayesian LSTMs}}},
+  booktitle = {Radiotherapy and {{Oncology}}},
+  author = {Voss, Luke and Neishabouri, Ahmad and Ortkamp, Tim and Wahl, Niklas},
+  date = {2023-05-01},
+  volume = {182, Supplement 1},
+  pages = {S642-S644},
+  location = {Vienna, Austria},
+  doi = {10.1016/S0167-8140(23)08716-9},
+  url = {https://www.sciencedirect.com/science/article/pii/S0167814023087169},
+  urldate = {2023-08-15},
+  eventtitle = {{{ESTRO}} 2023}
 }
 
 @inproceedings{Wahl2015,
@@ -1097,8 +1111,7 @@
   venue = {Montréal}
 }
 
-@article{Wahl2020b,
-  ids = {Wahl2020},
+@article{Wahl2020,
   title = {Analytical probabilistic modeling of dose-volume histograms},
   author = {Wahl, Niklas and Hennig, Philipp and Wieser, Hans-Peter and Bangert, Mark},
   date = {2020-09-06},
@@ -1119,7 +1132,7 @@
   keywords = {Physics - Medical Physics}
 }
 
-@inproceedings{Wahl2020c,
+@inproceedings{Wahl2020a,
   type = {{Poster}},
   title = {{{PO-1377}}: {{Monte Carlo}} vs. pencil-beam dose calculation for uncertainty estimation in proton therapy},
   shorttitle = {Monte {{Carlo}} vs. pencil-beam dose calculation for uncertainty estimation in proton therapy},
@@ -1145,7 +1158,21 @@
   venue = {Dresden}
 }
 
-@inproceedings{Wahl2023b,
+@inproceedings{Wahl2023a,
+  type = {{Oral Presentation}},
+  title = {Scenario-free probabilistic proton dose optimization using expected dose influence and total variance},
+  booktitle = {Proceedings to the 60th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}}},
+  author = {Wahl, Niklas and Wieser, Hans-Peter},
+  date = {2023-02-14},
+  series = {International {{Journal}} of {{Particle Therapy}}},
+  volume = {9},
+  pages = {383},
+  location = {Miami},
+  doi = {10.14338/IJPT-23-PTCOG60-9.4},
+  eventtitle = {{{PTCOG}} 60}
+}
+
+@inproceedings{Wahl2023c,
   type = {{Oral Presentation}},
   title = {{{MO-0563}}: {{Youth}} education and outreach with the international {{Particle Therapy Masterclass}}},
   booktitle = {Radiotherapy and {{Oncology}}},
@@ -1160,20 +1187,6 @@
   urldate = {2023-08-15},
   eventtitle = {{{ESTRO}} 2023},
   langid = {english}
-}
-
-@inproceedings{Wahl2023c,
-  type = {{Oral Presentation}},
-  title = {Scenario-free probabilistic proton dose optimization using expected dose influence and total variance},
-  booktitle = {Proceedings to the 60th {{Annual Conference}} of the {{Particle Therapy Cooperative Group}}},
-  author = {Wahl, Niklas and Wieser, Hans-Peter},
-  date = {2023-02-14},
-  series = {International {{Journal}} of {{Particle Therapy}}},
-  volume = {9},
-  pages = {383},
-  location = {Miami},
-  doi = {10.14338/IJPT-23-PTCOG60-9.4},
-  eventtitle = {{{PTCOG}} 60}
 }
 
 @inproceedings{Wahl2024,
@@ -1246,7 +1259,7 @@
   keywords = {matRadGrant}
 }
 
-@article{Wieser2018b,
+@article{Wieser2018,
   title = {{{matRad}} - an open-source treatment planning toolkit for educational purposes},
   author = {Wieser, Hans-Peter and Wahl, Niklas and Gabryś, Hubert S. and Müller, Lucas-Raphael and Pezzano, Giuseppe and Winter, Johanna and Ulrich, Silke and Burigo, Lucas Noberto and Jäkel, Oliver and Bangert, Mark},
   date = {2018},
@@ -1260,7 +1273,7 @@
   langid = {english}
 }
 
-@inproceedings{Wieser2018c,
+@inproceedings{Wieser2018a,
   type = {{Oral Presentation}},
   title = {{{OC-0088}}: {{Simultaneous}} consideration of biologyical and physical uncertainties in robust ion therapy planning},
   shorttitle = {Simultaneous consideration of biologyical and physical uncertainties in robust ion therapy planning},
@@ -1277,19 +1290,19 @@
   langid = {english}
 }
 
-@unpublished{Wieser2019b,
+@unpublished{Wieser2019,
   type = {Oral Presentation},
-  title = {Closed-form modeling of biological uncertainties in carbon ion therapy},
-  author = {Wieser, Hans-Peter and Hennig, Philipp and Wahl, Niklas and Bangert, Mark},
+  title = {Impact of {{Gaussian}} uncertainty assumptions for probabilistic optimization considering range errors},
+  author = {Wieser, Hans-Peter and Karger, Christian P. and Wahl, Niklas and Bangert, Mark},
   date = {2019},
   eventtitle = {19th {{ICCR}}},
   venue = {Montréal}
 }
 
-@unpublished{Wieser2019c,
+@unpublished{Wieser2019a,
   type = {Oral Presentation},
-  title = {Impact of {{Gaussian}} uncertainty assumptions for probabilistic optimization considering range errors},
-  author = {Wieser, Hans-Peter and Karger, Christian P. and Wahl, Niklas and Bangert, Mark},
+  title = {Closed-form modeling of biological uncertainties in carbon ion therapy},
+  author = {Wieser, Hans-Peter and Hennig, Philipp and Wahl, Niklas and Bangert, Mark},
   date = {2019},
   eventtitle = {19th {{ICCR}}},
   venue = {Montréal}
@@ -1315,21 +1328,7 @@
   preprintfile = {WieserHP_GaussianUncertainties_2020_acceptedPreprint.pdf}
 }
 
-@inproceedings{Xiao2024,
-  type = {{Oral Presentation}},
-  title = {{{SC29}}.07 {{AI-based}} prompt gamma prediction},
-  booktitle = {Physica {{Medica}}},
-  author = {Xiao, Fan and Kriechbaum, Michael and Radonic, Domagoj and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
-  date = {2024-09-01},
-  series = {Abstracts of the 5th {{European Congress}} of {{Medical Physics}}},
-  volume = {125},
-  pages = {103532},
-  doi = {10.1016/j.ejmp.2024.103532},
-  url = {https://www.sciencedirect.com/science/article/pii/S1120179724003582},
-  urldate = {2024-11-04}
-}
-
-@article{Xiao2024a,
+@article{Xiao2024,
   title = {Prompt gamma emission prediction using a long short-term memory network},
   author = {Xiao, Fan and Radonic, Domagoj and Kriechbaum, Michael and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
   date = {2024-11-02},
@@ -1344,4 +1343,18 @@
   urldate = {2024-11-04},
   abstract = {Objective: To present a long short-term memory (LSTM)-based prompt gamma (PG) emission prediction method for proton therapy. Approach: Computed tomography (CT) scans of 33 patients with a prostate tumor were included in the dataset. A set of 10 million histories proton pencil beam (PB)s was generated for Monte Carlo (MC) dose and PG simulation. For training (20 patients) and validation (3 patients), over 6000 PBs at 150, 175 and 200 MeV were simulated. 3D relative stopping power (RSP), PG and dose cuboids that included the PB were extracted. Three models were trained, validated and tested based on an LSTM-based network: (1) input RSP and output PG, (2) input RSP with dose and output PG (single-energy), and (3) input RSP/dose and output PG (multi-energy). 540 PBs at each of the four energy levels (150, 175, 200, and 125-210 MeV) were simulated across 10 patients to test the three models. The gamma passing rate (2\%/2mm) and PG range shift were evaluated and compared among the three models. Results: The model with input RSP/dose and output PG (multi-energy) showed the best performance in terms of gamma passing rate and range shift metrics. Its mean gamma passing rate of testing PBs of 125-210 MeV was 98.5\% and the worst case was 92.8\%. Its mean absolute range shift between predicted and MC PGs was 0.15 mm, where the maximum shift was 1.1mm. The prediction time of our models was within 130 ms per PB. Significance: We developed a sub-second LSTM-based PG emission prediction method. Its accuracy in prostate patients has been confirmed across an extensive range of proton energies.},
   langid = {english}
+}
+
+@inproceedings{Xiao2024a,
+  type = {{Oral Presentation}},
+  title = {{{SC29}}.07 {{AI-based}} prompt gamma prediction},
+  booktitle = {Physica {{Medica}}},
+  author = {Xiao, Fan and Kriechbaum, Michael and Radonic, Domagoj and Wahl, Niklas and Neishabouri, Ahmad and Delopoulos, Nikolaos and Parodi, Katia and Corradini, Stefanie and Belka, Claus and Kurz, Christopher and Landry, Guillaume and Dedes, Georgios},
+  date = {2024-09-01},
+  series = {Abstracts of the 5th {{European Congress}} of {{Medical Physics}}},
+  volume = {125},
+  pages = {103532},
+  doi = {10.1016/j.ejmp.2024.103532},
+  url = {https://www.sciencedirect.com/science/article/pii/S1120179724003582},
+  urldate = {2024-11-04}
 }

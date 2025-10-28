@@ -186,7 +186,7 @@
   eprintclass = {physics},
   doi = {10.48550/arXiv.2505.09667},
   url = {http://arxiv.org/abs/2505.09667},
-  urldate = {2025-05-15},
+  urldate = {2025-05-16},
   abstract = {Nanodosimetry relates Ionization Detail (ID) and ionization parameters (Ip) to biological endpoints relevant for charged-particle radiotherapy. This supports a more physics-based modeling of biological effectiveness than traditional dose-response relationships and RBE models. Faddegon et al. (2023) introduced cluster dose g(Ip) as a physical quantity, bridging ID to the treatment planning level, which can be directly optimized. We developed a framework enabling cluster dose optimization via a pencil-beam (PB) algorithm, and validated against Monte Carlo (MC) simulations. The framework, integrated into the treatment planning toolkit matRad, uses precomputed Ip values obtained from MC track-structure simulations. We applied our tool for plan optimization with protons, helium, and carbon ions in a water phantom and a prostate case. Recalculation with TOPAS showed 3D gamma passing rates {$>$}97\% (phantom) and {$>$}98\% (patient) using a 3\%/3mm criterion and a threshold of 10\% of the maximum dose. Cluster dose F5 optimization produced homogeneous target coverage, with heavier ions requiring lower absorbed doses for the same prescribed cluster dose level. This demonstrates the feasibility of fast, accurate cluster dose optimization using PB algorithms.},
   pubstate = {prepublished},
   keywords = {Physics - Medical Physics}
@@ -765,6 +765,24 @@
   abstract = {Background While electron beams of up to 20 MeV are commonly used in radiotherapy, the use of very-high-energy electrons (VHEEs) in the range of 100–200 MeV is now becoming a realistic option thanks to the recent advancements in accelerator technology. Indeed, VHEE offers several clinically attractive features and can be delivered using various conformation methods (including scanning, collimation, and focussing) at ultra-high dose rates. To date, there is a lack of research tools for fast simulation of treatment plans using VHEE beams. Purpose This work aims to implement and validate a simple and fast dose calculation algorithm based on the Fermi–Eyges theory of multiple Coulomb scattering for VHEE radiation therapy, with energies up to 200 MeV. A treatment planning system (TPS) toolkit with VHEE modality would indeed allow for further preclinical investigations, including treatment plan optimization and evaluation, and thus contribute to the gradual introduction of VHEE radiotherapy in clinical practice. Methods A VHEE pencil beam scanning double Gaussian model was introduced into the open-source TPS matRad environment along with new functions and options dedicated to VHEE dose calculations. Various geometries and field configurations were then calculated in matRad (up to 200 MeV and 15 × 15 cm2, with complex bone or lung heterogeneities) and the results were compared to Monte Carlo simulations in the TOPAS/Geant4 toolkit. Two types of beam model (divergent or focused) were also tested. Examples of clinical treatment plans were computed, and the results were compared between the two codes. Results VHEE modality was fully implemented in matRad with GUI capabilities while preserving all original TPS features. New relevant options such as the importation of specific spot-lists or adjustment of the lateral dose calculation cutoff to optimize the calculation speed were validated. Single spot and square field dose distributions were validated in water alone as well as in clinically relevant inhomogeneities. Dose maps from the VHEE model in matRad were in good agreement with TOPAS (2D gamma index [2\%/1 mm] with passing rates superior to 90\%, {$<$}6\% mean dose differences), except for large interface heterogeneities. Conclusions This work describes the implementation of a simple but efficient VHEE simulation model in matRad. A few configurations were studied in order to validate the model against accurate Monte Carlo simulations, demonstrating its usefulness for carrying out preliminary studies involving VHEE radiotherapy.},
   langid = {english},
   keywords = {beam model,Monte Carlo,radiotherapy,treatment planning system,VHEE}
+}
+
+@article{Sommer2025,
+  title = {A {{Monte Carlo}} dose engine for fast neutron therapy and boron neutron capture therapy for {{matRad}}},
+  author = {Sommer, Lucas and Chemnitz, Tobias and Wahl, Niklas and Bennan, Amit B A and Combs, Stephanie E and Wilkens, Jan J},
+  date = {2025-10},
+  journaltitle = {Biomedical Physics \& Engineering Express},
+  shortjournal = {Biomed. Phys. Eng. Express},
+  volume = {11},
+  number = {6},
+  pages = {065023},
+  publisher = {IOP Publishing},
+  issn = {2057-1976},
+  doi = {10.1088/2057-1976/ae12f7},
+  url = {https://doi.org/10.1088/2057-1976/ae12f7},
+  urldate = {2025-10-28},
+  abstract = {Objective: The purpose of the work presented here was to enable easy access to Monte Carlo dose calculation for both fast neutron therapy and boron neutron capture therapy for research purposes. The dose calculation approach was especially intended to hold high customization potential for individual user applications. Approach: The dose engine is based on the Monte Carlo code MCNP. It is integrated into the MATLAB-based open source research treatment planning software matRad as modular component. Main results: Total dose calculation is enabled for both fast neutron therapy and boron neutron capture therapy on patient CT data. The evaluation of the dose distribution is possible using the matRad graphical user interface and dose volume histograms. Customization options are provided for advanced users. Significance: The open source treatment planning software allows easy access to highly accurate Monte Carlo dose calculation for research projects.},
+  langid = {english}
 }
 
 @article{Stammer2021,

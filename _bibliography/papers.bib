@@ -58,6 +58,18 @@
   keywords = {⛔ No DOI found}
 }
 
+@inproceedings{Becher2024,
+  type = {{Poster}},
+  title = {An open source multi-criteria optimization framework for radiotherapy},
+  booktitle = {Proceedings of the {{XXth International Conference}} on the use of {{Computers}} in {{Radiation}} therapy},
+  author = {Becher, Tobias and Bennan, Amit Ben Antony and Cristoforetti, Remo and Wahl, Niklas},
+  date = {2024},
+  publisher = {HAL},
+  url = {https://www.iccr2024.org/papers/525928.pdf},
+  abstract = {We present an implementation of a Pareto plan navigation framework in the open source treatment planning toolkit matRad. It expands on the existing weighted sum approach and allows for calculation and navigation of Pareto surfaces. Furthermore we introduce a lexicographic approach as an alternative to the weighted sum method.},
+  langid = {english}
+}
+
 @article{Bennan2021a,
   title = {Joint optimization of photon – carbon ion treatments for {{Glioblastoma}}},
   author = {Bennan, Amit Ben Antony and Unkelbach, Jan and Wahl, Niklas and Salome, Patrick and Bangert, Mark},
@@ -124,6 +136,16 @@
   url = {https://www.sciencedirect.com/science/article/pii/S2331518024004050},
   urldate = {2024-09-09},
   eventtitle = {{{PTCOG62}}}
+}
+
+@inproceedings{Cristoforetti2024a,
+  type = {{Oral Presentation}},
+  title = {Trading {{Robustness}}? {{Introducing}} total variance objectives to {{Pareto}} surface approximation techniques for radiotherapy},
+  booktitle = {Proceedings of the {{XXth International Conference}} on the use of {{Computers}} in {{Radiation}} therapy},
+  author = {Cristoforetti, Remo and Salome, Philipp and Wahl, Niklas},
+  date = {2024},
+  publisher = {HAL},
+  url = {https://www.iccr2024.org/papers/526172.pdf}
 }
 
 @article{Cristoforetti2025,
@@ -333,19 +355,24 @@
   eventtitle = {{{PTCOG}} 62}
 }
 
-@online{Hardt2025,
-  title = {Helium {{Range Viability}} for {{Online Range Probing}} in {{Mixed Carbon-Helium Beams}}},
-  author = {Hardt, Jennifer J. and Pryanichnikov, Alexander A. and Jäkel, Oliver and Seco, Joao and Wahl, Niklas},
-  date = {2025-05-02},
+@article{Hardt2025a,
+  title = {Helium range viability for online range probing in mixed carbon–helium beams},
+  author = {Hardt, Jennifer Josephine and Pryanichnikov, Alexander A. and Jäkel, Oliver and Seco, Joao and Wahl, Niklas},
+  date = {2025-12-13},
+  journaltitle = {Medical Physics},
+  volume = {52},
+  number = {12},
   eprint = {2505.01165},
   eprinttype = {arXiv},
   eprintclass = {physics},
-  doi = {10.48550/arXiv.2505.01165},
-  url = {http://arxiv.org/abs/2505.01165},
-  urldate = {2025-05-05},
-  abstract = {Background: Recently, mixed carbon-helium beams were proposed for range verification in carbon ion therapy: Helium, with three times the range of carbon, serves as an on-line range probe, and is mixed into a therapeutic carbon beam. Purpose: Treatment monitoring is of special interest for lung cancer therapy, however the helium range might not always be sufficient to exit the patient distally. Therefore mixed beam use cases of several patient sites are considered. Methods: An extension to the open-source planning toolkit, matRad allows for calculation and optimization of mixed beam treatment plans. The use of the mixed beam method in 15 patients with lung cancer, as well as in a prostate and liver case, for various potential beam configurations was investigated. Planning strategies to optimize the residual helium range considering the sensitive energy range of the imaging detector were developed. A strategy involves adding helium to energies whose range is sufficient. Another one is to use range shifters to increase the helium energy and thus range. Results: In most patient cases, the residual helium range of at least one spot is too low. All investigated planning strategies can be used to ensure a high enough helium range while still keeping a low helium dose and a satisfactory total mixed carbon-helium beam dose. The use of range shifters allows for the detection of more spots. Conclusion: The mixed beam method shows promising results for online motioning. The use of range shifters ensures a high enough helium range and more detectable spots, allowing for a wider-spread application.},
-  pubstate = {prepublished},
-  keywords = {Physics - Medical Physics}
+  pages = {e70194},
+  issn = {2473-4209},
+  doi = {10.1002/mp.70194},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.70194},
+  urldate = {2025-12-16},
+  abstract = {BackgroundRecently, mixed carbon–helium beams were proposed for range verification in carbon ion therapy: helium, with three times the range of carbon, serves as an online range probe and is mixed into a therapeutic carbon beam. PurposeTreatment monitoring is of special interest for lung cancer therapy; however, the helium range might not always be sufficient to exit the patient distally. Therefore, mixed beam use cases of several patient sites are considered. MethodsAn extension to the open-source planning toolkit, matRad, allows for calculation and optimization of mixed beam treatment plans. The use of the mixed beam method in 15 patients with lung cancer, as well as in a prostate and liver case, for various potential beam configurations was investigated. Planning strategies to optimize the residual helium range considering the sensitive energy range of the imaging detector were developed. A strategy involves adding helium to energies whose range is sufficient. Another one is to use range shifters to increase the beam energy and thus helium range. ResultsIn most patient cases, the residual helium range of at least one spot is too low. All investigated planning strategies can be used to ensure a high enough helium range while still keeping a low helium dose and a satisfactory total mixed carbon–helium beam dose. The use of range shifters allows for the detection of more spots. ConclusionThe mixed beam method shows promising results for online monitoring. The use of range shifters ensures a high enough helium range and more detectable spots, allowing for a wider-spread application.},
+  langid = {english},
+  keywords = {carbon therapy,helium imaging,mixed beam,range shifter,range verification}
 }
 
 @article{Harrison2024,
@@ -605,6 +632,16 @@
   eventtitle = {{{PTCOG}} 62}
 }
 
+@inproceedings{Ortkamp2024a,
+  type = {{Oral Presentation}},
+  title = {pyanno4rt: a toolkit for machine learning ({{N}}) {{TCP}} model-based inverse radiotherapy treatment plan optimization},
+  booktitle = {Proceedings of the {{XXth International Conference}} on the use of {{Computers}} in {{Radiation}} therapy},
+  author = {Ortkamp, Tim and Salome, Patrick and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
+  date = {2024},
+  publisher = {HAL},
+  url = {https://www.iccr2024.org/papers/526039.pdf}
+}
+
 @online{Ortkamp2025,
   title = {Let's play {{POLO}}: {{Integrating}} the probability of lesion origin into proton treatment plan optimization for low-grade glioma patients},
   shorttitle = {Let's play {{POLO}}},
@@ -802,7 +839,7 @@
   langid = {english}
 }
 
-@article{Stammer2021,
+@article{Stammer2021a,
   title = {Efficient uncertainty quantification for {{Monte Carlo}} dose calculations using importance (re-)weighting},
   author = {Stammer, Pia and Burigo, Lucas and Jäkel, Oliver and Frank, Martin and Wahl, Niklas},
   date = {2021-06-22},
@@ -1392,6 +1429,17 @@
   doi = {10.1016/j.ejmp.2024.103532},
   url = {https://www.sciencedirect.com/science/article/pii/S1120179724003582},
   urldate = {2024-11-04}
+}
+
+@inproceedings{Xiao2024b,
+  title = {A long short-term memory network-based proton dose calculation method in a magnetic field},
+  booktitle = {Proceedings of the {{XXth International Conference}} on the use of {{Computers}} in {{Radiation}} therapy},
+  author = {Xiao, Fan and Radonic, Domagoj and Wahl, Niklas and Voss, Luke and Neishabouri, Ahmad and Delopoulos, Nikolaos and Corradini, Stefanie and Belka, Claus and Dedes, George and Kurz, Christopher and Landry, Guillaume},
+  date = {2024},
+  publisher = {HAL},
+  url = {https://www.iccr2024.org/papers/525670.pdf},
+  abstract = {Objective: To present a long short-term memory (LSTM) network-based dose calculation method for magnetic resonance (MR)guided proton therapy. Approach: 30 deformed planning computed tomography (CT) images of prostate cancer patients were collected for Monte Carlo (MC) dose calculation under a 1.5 T magnetic field. Proton pencil beams (PB) at 150, 175, and 200 MeV energies were simulated (6480 PBs at each energy). A 3D relative stopping power (RSP) cuboid covering the extent of the PB dose was extracted and flattened into the LSTM model, yielding a 3D predicted PB dose. Training and validation involved 25 patients; 5 patients were reserved for testing. Results: Test results of all PBs showed a mean gamma passing rate (2\%/2 mm) of 99.89\%, with an average center-of-mass discrepancy of 0.36 mm between predicted and simulated trajectories. The model inference time was 10 ms per beam. Conclusion: LSTM models for proton dose calculation in a magnetic field were developed and showed promising accuracy and efficiency for prostate cancer patients.},
+  langid = {english}
 }
 
 @article{Xiao2025,

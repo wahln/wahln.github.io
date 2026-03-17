@@ -453,7 +453,7 @@
   url = {https://link.springer.com/10.1007/978-3-662-72486-6},
   urldate = {2025-11-18},
   isbn = {978-3-662-72485-9 978-3-662-72486-6},
-  langid = {ngerman},
+  langid = {german},
   pagetotal = {XXII, 845},
   subtitle = {{Übersetzt aus dem Unverständlichen}}
 }
@@ -643,19 +643,20 @@
   url = {https://www.iccr2024.org/papers/526039.pdf}
 }
 
-@online{Ortkamp2025,
-  title = {Let's play {{POLO}}: {{Integrating}} the probability of lesion origin into proton treatment plan optimization for low-grade glioma patients},
-  shorttitle = {Let's play {{POLO}}},
+@article{Ortkamp2026,
+  type = {{accepted manuscript}},
+  title = {Integrating the probability of lesion origin into proton treatment plan optimization for low-grade glioma patients},
   author = {Ortkamp, Tim and Sallem, Habiba and Harrabi, Semi and Frank, Martin and Jäkel, Oliver and Bauer, Julia and Wahl, Niklas},
-  date = {2025-06-16},
+  date = {2026},
+  journaltitle = {Medical Physics},
+  shortjournal = {Med. Phys.},
   eprint = {2506.13539},
   eprinttype = {arXiv},
   eprintclass = {physics},
-  doi = {10.48550/arXiv.2506.13539},
+  doi = {10.1002/mp.70395},
   url = {http://arxiv.org/abs/2506.13539},
   urldate = {2025-06-17},
-  abstract = {In proton therapy of low-grade glioma (LGG) patients, contrast-enhancing brain lesions (CEBLs) on magnetic resonance imaging are considered predictive of late radiation-induced lesions. From the observation that CEBLs tend to concentrate in regions of increased dose-averaged linear energy transfer (LET) and proximal to the ventricular system, the probability of lesion origin (POLO) model has been established as a multivariate logistic regression model for the voxel-wise probability prediction of the CEBL origin. To date, leveraging the predictive power of the POLO model for treatment planning relies on hand tuning the dose and LET distribution to minimize the resulting probability predictions. In this paper, we therefore propose automated POLO model-based treatment planning by directly integrating POLO calculation and optimization into plan optimization for LGG patients. We introduce an extension of the original POLO model including a volumetric correction factor, and a model-based optimization scheme featuring a linear reformulation of the model together with feasible optimization functions based on the predicted POLO values. The developed framework is implemented in the open-source treatment planning toolkit matRad. Our framework can generate clinically acceptable treatment plans while automatically taking into account outcome predictions from the POLO model. It also supports the definition of customized POLO model-based objective and constraint functions. Optimization results from a sample LGG patient show that the POLO model-based outcome predictions can be minimized under expected shifts in dose, LET, and POLO distributions, while sustaining target coverage (\$\textbackslash Delta\_\{\textbackslash text\{PTV\}\} \textbackslash text\{d95\}\_\{RBE,fx\}\textbackslash approx\{0.03\}\$, \$\textbackslash Delta\_\{\textbackslash text\{GTV\}\} \textbackslash text\{d95\}\_\{RBE,fx\}\textbackslash approx\{0.001\}\$), even at large NTCP reductions of \$\textbackslash Delta\{\textbackslash text\{NTCP\}\}\textbackslash approx\{26\}\textbackslash\%\$.},
-  pubstate = {prepublished}
+  abstract = {In proton therapy of low-grade glioma (LGG) patients, contrast-enhancing brain lesions (CEBLs) on magnetic resonance imaging are considered predictive of late radiation-induced lesions. From the observation that CEBLs tend to concentrate in regions of increased dose-averaged linear energy transfer (LET) and proximal to the ventricular system, the probability of lesion origin (POLO) model has been established as a multivariate logistic regression model for the voxel-wise probability prediction of the CEBL origin. To date, leveraging the predictive power of the POLO model for treatment planning relies on hand tuning the dose and LET distribution to minimize the resulting probability predictions. In this paper, we therefore propose automated POLO model-based treatment planning by directly integrating POLO calculation and optimization into plan optimization for LGG patients. We introduce an extension of the original POLO model including a volumetric correction factor, and a model-based optimization scheme featuring a linear reformulation of the model together with feasible optimization functions based on the predicted POLO values. The developed framework is implemented in the open-source treatment planning toolkit matRad. Our framework can generate clinically acceptable treatment plans while automatically taking into account outcome predictions from the POLO model. It also supports the definition of customized POLO model-based objective and constraint functions. Optimization results from a sample LGG patient show that the POLO model-based outcome predictions can be minimized under expected shifts in dose, LET, and POLO distributions, while sustaining target coverage (\$\textbackslash Delta\_\{\textbackslash text\{PTV\}\} \textbackslash text\{d95\}\_\{RBE,fx\}\textbackslash approx\{0.03\}\$, \$\textbackslash Delta\_\{\textbackslash text\{GTV\}\} \textbackslash text\{d95\}\_\{RBE,fx\}\textbackslash approx\{0.001\}\$), even at large NTCP reductions of \$\textbackslash Delta\{\textbackslash text\{NTCP\}\}\textbackslash approx\{26\}\textbackslash\%\$.}
 }
 
 @unpublished{Palkowitsch2021,
@@ -948,10 +949,13 @@
   keywords = {Computer Science - Numerical Analysis,Mathematics - Numerical Analysis,Physics - Computational Physics,Physics - Medical Physics}
 }
 
-@online{Stammer2025a,
+@article{Stammer2025a,
+  type = {{accepted manuscript}},
   title = {A high-order deterministic dynamical low-rank method for proton transport in heterogeneous media},
   author = {Stammer, Pia and Wahl, Niklas and Kusch, Jonas and Lathouwers, Danny},
-  date = {2025-08-06},
+  date = {2026},
+  journaltitle = {Journal of Computational Physics},
+  shortjournal = {JCP},
   eprint = {2508.04484},
   eprinttype = {arXiv},
   eprintclass = {math},
@@ -959,7 +963,6 @@
   url = {http://arxiv.org/abs/2508.04484},
   urldate = {2025-08-07},
   abstract = {Dose calculations in proton therapy require the fast and accurate solution of a high-dimensional transport equation for a large number of (pencil) beams with different energies and directions. Deterministically solving this transport problem at a sufficient resolution can however be prohibitively expensive, especially due to highly forward peaked scattering of the protons. We propose using a model order reduction approach, the dynamical low-rank approximation (DLRA), which evolves the solution on the manifold of low-rank matrices in (pseudo-)time. For this, we compare a collided-uncollided split of the linear Boltzmann equation and its Fokker-Planck approximation. We treat the uncollided part using a ray-tracer and combine high-order phase space discretizations and a mixture model for materials with DLRA for the collided equation. Our method reproduces the results of a full-rank reference code at significantly lower rank, and thus computational cost and memory, and further makes computations feasible at much higher resolutions. At higher resolutions, we also achieve good accuracy with respect to TOPAS MC in homogeneous as well as heterogeneous materials. Finally, we demonstrate that several beam sources with different angles can be computed with little cost increase compared to individual beams.},
-  pubstate = {prepublished},
   keywords = {Computer Science - Numerical Analysis,Mathematics - Numerical Analysis,Physics - Computational Physics,Physics - Medical Physics}
 }
 

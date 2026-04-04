@@ -701,17 +701,20 @@
 }
 
 @article{Ortkamp2026,
-  type = {{accepted manuscript}},
-  title = {Integrating the probability of lesion origin into proton treatment plan optimization for low-grade glioma patients},
+  title = {Direct optimization of the probability of lesion origin in proton treatment planning for low-grade glioma patients},
   author = {Ortkamp, Tim and Sallem, Habiba and Harrabi, Semi and Frank, Martin and Jäkel, Oliver and Bauer, Julia and Wahl, Niklas},
-  date = {2026},
+  date = {2026-04-03},
   journaltitle = {Medical Physics},
   shortjournal = {Med. Phys.},
+  volume = {53},
+  number = {4},
   eprint = {2506.13539},
   eprinttype = {arXiv},
   eprintclass = {physics},
+  pages = {e70395},
+  issn = {2473-4209},
   doi = {10.1002/mp.70395},
-  url = {http://arxiv.org/abs/2506.13539},
+  url = {https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.70395},
   urldate = {2025-06-17},
   abstract = {In proton therapy of low-grade glioma (LGG) patients, contrast-enhancing brain lesions (CEBLs) on magnetic resonance imaging are considered predictive of late radiation-induced lesions. From the observation that CEBLs tend to concentrate in regions of increased dose-averaged linear energy transfer (LET) and proximal to the ventricular system, the probability of lesion origin (POLO) model has been established as a multivariate logistic regression model for the voxel-wise probability prediction of the CEBL origin. To date, leveraging the predictive power of the POLO model for treatment planning relies on hand tuning the dose and LET distribution to minimize the resulting probability predictions. In this paper, we therefore propose automated POLO model-based treatment planning by directly integrating POLO calculation and optimization into plan optimization for LGG patients. We introduce an extension of the original POLO model including a volumetric correction factor, and a model-based optimization scheme featuring a linear reformulation of the model together with feasible optimization functions based on the predicted POLO values. The developed framework is implemented in the open-source treatment planning toolkit matRad. Our framework can generate clinically acceptable treatment plans while automatically taking into account outcome predictions from the POLO model. It also supports the definition of customized POLO model-based objective and constraint functions. Optimization results from a sample LGG patient show that the POLO model-based outcome predictions can be minimized under expected shifts in dose, LET, and POLO distributions, while sustaining target coverage (\$\textbackslash Delta\_\{\textbackslash text\{PTV\}\} \textbackslash text\{d95\}\_\{RBE,fx\}\textbackslash approx\{0.03\}\$, \$\textbackslash Delta\_\{\textbackslash text\{GTV\}\} \textbackslash text\{d95\}\_\{RBE,fx\}\textbackslash approx\{0.001\}\$), even at large NTCP reductions of \$\textbackslash Delta\{\textbackslash text\{NTCP\}\}\textbackslash approx\{26\}\textbackslash\%\$.}
 }
@@ -1537,7 +1540,7 @@
   pages = {e70106},
   issn = {2473-4209},
   doi = {10.1002/mp.70106},
-  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.70106},
+  url = {https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.70106},
   urldate = {2025-11-05},
   abstract = {Background In magnetic resonance imaging (MRI)-guided online adaptive radiotherapy, MRI lacks tissue attenuation information necessary for accurate dose calculations. Although deep learning (DL)-based synthetic computed tomography (CT) generation models have been developed to obtain CT density information from MRI, they usually do not meet the requirement of real-time plan adaptation. Purpose We propose a DL-based photon dose calculation method directly on 0.35 T MRI to skip synthetic CT generation and show its feasibility for prostate patient cases. Methods The 0.35 T planning MRI and deformed planning CT (registered to the planning MRI) of 34 prostate cancer patients treated with a 0.35 T magnetic resonance-linear accelerator (MR-Linac) were collected. The air cavities (ACs) in the abdominopelvic area of the deformed CT images were corrected based on manual AC contouring on the MRI. Monte Carlo (MC) dose simulations under a 0.35 T magnetic field were performed on the corrected CT images. All photon beams were simulated using a uniform field size of \textbackslash 1\textbackslash,\textbackslash textcm \textbackslash times 1\textbackslash,\textbackslash textcm\textbackslash. 10 800 beams were simulated with \textbackslash 5\textbackslash times 10\textasciicircum 6\textbackslash{} initial photons for training (20 patients) and 2160 beams with \textbackslash 5\textbackslash times 10\textasciicircum 7\textbackslash{} photons for validation (4 patients). For testing, 1080 beams shooting through the planning target volume (PTV) in 10 patients and five optimized nine-field intensity-modulated plans were simulated with \textbackslash 5\textbackslash times 10\textasciicircum 7\textbackslash{} photons. 3D MRI cuboids covering the photon beams were input into a Unet model to predict AC segmentation, and 3D MRI and predicted AC cuboids were input into a long short-term memory (LSTM) model for beam's eye view (BEV) processing to predict dose. The gamma passing rate \textbackslash gamma \_\textbackslash mathrmpr\textbackslash{} (2\%/2mm, \textbackslash D{$>$}10\%D\_\textbackslash mathrmmax\textbackslash ), beam dose profiles of single beams and dose volume histogram (DVH) of intensity-modulated plans were evaluated. Results The test results for all photon beams from the proposed models demonstrated a mean \textbackslash gamma \_\textbackslash mathrmpr\textbackslash{} above 99.50\%. The five treatment plans recalculated by the DL model each achieved \textbackslash gamma \_\textbackslash mathrmpr\textbackslash{} values exceeding 99.80\%. Additionally, the model's inference time was approximately 12 ms per photon beam. Conclusions The proposed method showed that DL-based dose calculation directly on MRI is feasible for prostate cases, which has the potential to simplify the procedure for MRI-only workflows and can be beneficial for real-time plan adaptation.},
   langid = {english},

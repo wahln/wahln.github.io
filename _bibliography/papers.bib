@@ -516,7 +516,7 @@
   url = {https://link.springer.com/10.1007/978-3-662-72486-6},
   urldate = {2025-11-18},
   isbn = {978-3-662-72485-9 978-3-662-72486-6},
-  langid = {german},
+  langid = {ngerman},
   pagetotal = {XXII, 845},
   subtitle = {{Übersetzt aus dem Unverständlichen}}
 }
@@ -1570,4 +1570,18 @@
   abstract = {Purpose: Accurate dose calculation is essential in radiotherapy for precise tumor irradiation while sparing healthy tissue. With the growing adoption of MRI-guided and real-time adaptive radiotherapy, fast and accurate dose calculation on CT and MRI is increasingly needed. The DoseRAD2026 dataset and challenge provide a public benchmark of paired CT and MRI data with beam-level photon and proton Monte Carlo dose distributions for developing and evaluating advanced dose calculation methods. Acquisition and validation methods: The dataset comprises paired CT and MRI from 115 patients (75 training, 40 testing) treated on an MRI-linac for thoracic or abdominal lesions, derived from the SynthRAD2025 dataset. Pre-processing included deformable image registration, air-cavity correction, and resampling. Ground-truth photon (6 MV) and proton dose distributions were computed using open-source Monte Carlo algorithms, yielding 40,500 photon beams and 81,000 proton beamlets. Data format and usage notes: Data are organized into photon and proton subsets with paired CT-MRI images, beam-level dose distributions, and JSON beam configuration files. Files are provided in compressed MetaImage (.mha) format. The dataset is released under CC BY-NC 4.0, with training data available from April 2026 and the test set withheld until March 2030. Potential applications: The dataset supports benchmarking of fast dose calculation methods, including beam-level dose estimation for photon and proton therapy, MRI-based dose calculation in MRI-guided workflows, and real-time adaptive radiotherapy.},
   pubstate = {prepublished},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Physics - Medical Physics}
+}
+
+@article{Xiao2026a,
+  title = {Multi-model study of fast {{VMAT}} segment dose calculation with deep learning},
+  author = {Xiao, Fan and Wahl, Niklas and Belka, Claus and Kurz, Christopher and Dedes, Georgios and Landry, Guillaume},
+  date = {2026-04-23},
+  journaltitle = {Physics in Medicine \& Biology},
+  shortjournal = {Phys. Med. Biol.},
+  issn = {0031-9155},
+  doi = {10.1088/1361-6560/ae6413},
+  url = {http://iopscience.iop.org/article/10.1088/1361-6560/ae6413},
+  urldate = {2026-04-24},
+  abstract = {Objective: Deep learning (DL) methods enable photon dose calculation under two main coordinate representations: Beam’s Eye View (BEV) and patient coordinates. We evaluate dose calculation accuracy and speed under these coordinate paradigms and with representative DL models within a unified dataset and pipeline, and introduce two lightweight models for fast photon dose calculation. Approach: Planning computed tomography (CT) scans and volumetric modulated arc therapy (VMAT) plans from 24 prostate cancer patients were used. Monte Carlo (MC) simulation generated 5940, 540, and 3053 segment doses for training (11 patients), validation (3), and testing (10), respectively. For BEV, we used a combination of convolutional neural network (CNN) and convolutional long short-term memory network (ConvLSTM) called CNN-ConvLSTM, a CNN-Mamba combination (CNN-Mamba), a transformer-based architecture (DoTA), and a cascaded 3D UNet (C3D). These were trained on CT and segment-projection BEV cuboids. For patient coordinates, the DeepDose individual segment dose prediction framework implemented with C3D (DeepDose-C3D) was trained on cropped CT volumes with four physical inputs. Segment and plan dose accuracy were assessed using local gamma passing rates γPR (2\%/3 mm and 1\%/3 mm) and dose–volume histogram metrics. Dose calculation times (inference plus pre/post-processing) were measured on three different GPUs. Results: All five models achieved mean local γPR values ≥91.0\% (2\%/3 mm) for segment doses and ≥99.0\% (1\%/3 mm) for plan doses. Mean per-segment dose calculation times were 79, 67, 298, 490, 356 ms for CNN-ConvLSTM, CNN-Mamba, DoTA, C3D, and DeepDose-C3D, respectively. On the latest-generation GPU avaliable, the corresponding per-plan (average 305 segments) dose calculation times were 5.5, 6.2, 33.6, 38.7 35.4 s. Significance: Both BEV- and patient-coordinate DL methods achieved accurate photon plan dose calculation, with BEV-based approaches showing more robust segment performance. CNN-ConvLSTM and CNN-Mamba retain comparable accuracy at lower computational cost, enabling fast photon dose calculation.},
+  langid = {english}
 }

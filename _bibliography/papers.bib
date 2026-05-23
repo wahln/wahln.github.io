@@ -184,21 +184,6 @@
   keywords = {Physics - Medical Physics}
 }
 
-@online{Cristoforetti2025a,
-  title = {Trading robustness: a scenario-free approach to robust {{Multi-Criteria Optimization}} for {{Treatment Planning}}},
-  shorttitle = {Trading robustness},
-  author = {Cristoforetti, Remo and Süss, Philipp and Becher, Tobias and Wahl, Niklas},
-  date = {2025-10-14},
-  eprint = {2510.12519},
-  eprinttype = {arXiv},
-  eprintclass = {physics},
-  doi = {10.48550/arXiv.2510.12519},
-  url = {http://arxiv.org/abs/2510.12519},
-  urldate = {2025-10-15},
-  abstract = {Treatment planning in radiotherapy is inherently a multi-criteria optimization (MCO) problem. Traditionally, the treatment's robustness is not formulated as a part of this decision making problem, but dealt with separately through margins or robust optimization. This work facilitates integration of robustness into multi-criteria optimization using a recently proposed efficient scenario-free (s-f) robust optimization approach: The s-f approach relies on the fast evaluation of the expected dose distribution and mean variance during optimization. This is achieved by precomputation of probabilistic quantities, which can then be used for repeated solving of subproblems in the two explored MCO approaches: Lexicographic Ordering (LO) and Pareto Front (PF) approximation. Different prioritization strategies within the LO approach are used to assess the impact of variance reduction while a 3-objective PF approximation, including a variance reduction objective, is generated to visualize and analyze trade-offs between the competing objectives. The robust optimization is performed including 100 scenarios modeling setup and range errors, as well as organ motion, on 3D- and 4DCT lung cancer patient datasets. Robustness analysis is performed to assess and explore the efficacy of all optimization strategies. The s-f approach enabled robust optimization in MCO with computational times comparable to nominal MCO. Both MCO strategies highlighted the interplay between dosimetric and variance reduction objectives. The LO approach showed how prioritization affects plan quality and robustness, while the PF analysis revealed a clear trade-off between robustness and organ-at-risk sparing. The reported analysis highlighted the conflicting trade-off nature of plan robustness and dosimetric quality, demonstrating how robust MCO supports a more informed and flexible decision-making process in treatment planning.},
-  pubstate = {prepublished}
-}
-
 @inproceedings{Cristoforetti2025b,
   type = {{oral presentation}},
   title = {O142 / \#192 - {{Trading}} robustness: {{4D}} proton planning with scenario-free multi-criteria optimization approaches},
@@ -212,6 +197,27 @@
   doi = {10.1016/j.ijpt.2025.100898},
   eventtitle = {{{PTCOG}} 63},
   venue = {Buenos Aires}
+}
+
+@article{Cristoforetti2026,
+  title = {Trading robustness: {{A}} scenario-free approach to robust multi-criteria optimization for treatment planning},
+  shorttitle = {Trading robustness},
+  author = {Cristoforetti, Remo and Süss, Philipp and Becher, Tobias and Wahl, Niklas},
+  date = {2026},
+  journaltitle = {Medical Physics},
+  volume = {53},
+  number = {5},
+  eprint = {2510.12519},
+  eprinttype = {arXiv},
+  eprintclass = {physics},
+  pages = {e70498},
+  issn = {2473-4209},
+  doi = {10.1002/mp.70498},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.70498},
+  urldate = {2026-05-23},
+  abstract = {Background Treatment planning in radiotherapy is inherently a multi-criteria optimization (MCO) problem, as it requires balancing competing clinical goals. Traditionally, the treatment's robustness is not formulated as a part of this decision making problem, but dealt with separately through margins or robust optimization. Purpose This work facilitates integration of robustness into multi-criteria optimization using a recently proposed efficient “scenario-free” (s-f) robust optimization approach: Utilizing variance reduction objectives, whose computation is independent of the number of chosen error scenarios, robustness can become part of the multi-criteria decision making process at minimal computational overhead. Methods The s-f approach relies on the fast evaluation of the expected dose distribution and mean variance during optimization independent of the scenario number. This is achieved by precomputation of expected dose influence and total variance influence matrices, which can then be used for repeated solving of subproblems in the two explored MCO approaches: Lexicographic Ordering (LO) and full Pareto Front (PF) approximation. Different prioritization strategies within the LO approach are used to assess the impact of variance reduction on the optimization outcome. A 3-objective PF approximation, including a variance reduction objective, is generated to visualize and analyze trade-offs between the competing objectives. The robust optimization is performed including \textbackslash hskip.001pt 100\textbackslash{} scenarios modeling setup and range errors, as well as organ motion, on 3D- and 4DCT lung cancer patient datasets. Robustness analysis is performed to assess and explore the efficacy of all optimization strategies. Results The s-f approach enabled robust optimization in MCO with computational times comparable to nominal MCO. Both MCO strategies highlighted the interplay between dosimetric and variance reduction objectives. The LO approach showed how prioritization affects plan quality and robustness, while the PF analysis revealed a clear trade-off between robustness and organ-at-risk sparing. Conclusions The proposed s-f robust optimization approach allowed the efficient application of robust MCO by significantly reducing the required computational time. The reported analysis highlighted the conflicting trade-off nature of plan robustness and dosimetric quality, demonstrating how robust MCO supports a more informed and flexible decision-making process in treatment planning.},
+  langid = {english},
+  keywords = {multi criteria optimization,proton therapy,robust optimization}
 }
 
 @inproceedings{Facchiano2024,

@@ -2,3 +2,6 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# Local-only Jekyll dev overrides (kept off GitHub / production builds)
+_config_dev.yml

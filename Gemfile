@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "3.1.4"
+ruby "3.3.11"
 
 # These are my additions
 
@@ -24,7 +24,6 @@ group :jekyll_plugins do
     gem 'jekyll-target-blank'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
     gem 'unicode_utils'
     gem 'webrick'
 end

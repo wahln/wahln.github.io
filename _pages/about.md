@@ -26,18 +26,18 @@ I enjoy playing the piano, hiking or snowboarding in the mountains (guess the re
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/mittagskogel_panorama.jpg" title="Mittagskogel" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="/assets/img/mittagskogel_panorama.jpg" title="Mittagskogel" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/zugspitze1.jpg" title="Zugspitze Aufstieg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/zugspitze1.jpg" title="Zugspitze Aufstieg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/zugspitze2.jpg" title="Zugspiete Aufstieg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/zugspitze2.jpg" title="Zugspiete Aufstieg" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/grindelwald1.jpg" title="Grindelwald Snowboarding" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/grindelwald1.jpg" title="Grindelwald Snowboarding" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>

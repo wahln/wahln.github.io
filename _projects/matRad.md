@@ -13,7 +13,7 @@ category: pi
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/matRad_UI.png" title="matRad GUI" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="/assets/img/matRad_UI.png" title="matRad GUI" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -47,7 +47,7 @@ In particular we provide functionalities for
         matRad provides a graphical user interface for educational purposes and basic treatment plan prameterization and visualization, but mainly uses Matlab's dual scripting & visualization environment to allow a parallel workflow, alternating between scripting / command line input and triggering workflow steps in the graphical user interface.
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/matrad_philosophy.png" title="matRad GUI" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="/assets/img/matrad_philosophy.png" title="matRad GUI" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

@@ -1,0 +1,26 @@
+# Social media links and usernames. Migrated from _config.yml (al-folio < v0.10
+# kept these at the top level; v0.10+ reads them from this file).
+# Socials are displayed in the order defined here. Comment a line to hide it.
+#
+# NOTE: with remote_theme, al-folio's own _data/socials.yml is merged underneath
+# this file, so its example values (Einstein's inspire id, custom_social, rss,
+# example CV) leak through unless we explicitly override them below.
+
+email: niklaswahl2011@gmail.com
+github_username: wahln
+gitlab_username: wahln
+linkedin_username: niklaswahl
+x_username: niklaswahl_ # formerly twitter_username
+scholar_userid: 58BBKbkAAAA
+orcid_id: 0000-0002-1451-223X
+publons_id: J-3788-2019
+research_gate_profile: Niklas-Wahl
+work_url: https://www.dkfz.de/radopt
+cv_pdf: /assets/pdf/WahlN_CV_full.pdf
+
+# Suppress al-folio example defaults that leak in via the merged theme data.
+# Must use `false` (not blank): Jekyll's deep_merge keeps the theme value when the
+# override is nil, so an empty key would NOT hide Einstein's inspire id / custom social.
+inspirehep_id: false
+custom_social: false
+rss_icon: false

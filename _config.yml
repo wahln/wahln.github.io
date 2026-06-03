@@ -202,7 +202,6 @@ plugins:
   - jekyll-get-json
   - jekyll-imagemagick
   - jekyll-include-cache
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2

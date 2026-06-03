@@ -118,8 +118,6 @@ GEM
       jekyll (>= 3.4)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
-    jekyll-jupyter-notebook (0.0.6)
-      jekyll
     jekyll-link-attributes (2.0.1)
     jekyll-minifier (0.2.2)
       cssminify2 (~> 2.1.0)
@@ -246,7 +244,6 @@ DEPENDENCIES
   jekyll-get-json
   jekyll-imagemagick
   jekyll-include-cache
-  jekyll-jupyter-notebook
   jekyll-link-attributes
   jekyll-minifier
   jekyll-paginate-v2
